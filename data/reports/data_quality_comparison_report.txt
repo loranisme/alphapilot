@@ -1,0 +1,783 @@
+Data Quality Before/After Cleaning Comparison Report
+Generated at: 2026-04-04 15:01:03.572070
+================================================================================
+
+RAW vs CLEANED SCORE COMPARISON
+================================================================================
+
+Ticker: AAPL
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: ABBV
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: ABT
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: ACN
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: ADBE
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: ADP
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: AMAT
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: AMD
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: AMGN
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: AMZN
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: AON
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: AVGO
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: AXP
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: BAC
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: BDX
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: BKNG
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: BLK
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: BMY
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: BRK-B
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: C
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: CAT
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: CB
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: CL
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: CMCSA
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: COP
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: COST
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: CRM
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: CSCO
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: CSX
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: CVX
+  Overall: 62.84 -> 62.42 (Delta: -0.42)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 98.60 (Delta: -1.40)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: DE
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: DHR
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: DIS
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: DUK
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: ELV
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: EOG
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: ETN
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: GE
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: GILD
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: GOOG
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: GOOGL
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: GS
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: HD
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: HON
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: IBM
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: INTC
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: INTU
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: ISRG
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: JNJ
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: JPM
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: KO
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: LIN
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: LLY
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: LMT
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: LOW
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: MA
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: MCD
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: MDT
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: META
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: MO
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: MRK
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: MS
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: MSFT
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: NEE
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: NFLX
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: NKE
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: NOW
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: NVDA
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: ORCL
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: PEP
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: PG
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: PGR
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: PLD
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: PM
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: QCOM
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: REGN
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: RTX
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: SCHW
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: SLB
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: SO
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: SPGI
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: SYK
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: T
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: TJX
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: TMO
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: TSLA
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: TXN
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: UNH
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: UNP
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: V
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: VRTX
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: VZ
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: WFC
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: WMT
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: XOM
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+Ticker: ZTS
+  Overall: 62.84 -> 62.84 (Delta: +0.00)
+  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Poor -> Poor
+
+================================================================================
+SCORE INTERPRETATION
+================================================================================
+  Excellent: >= 90
+  Good: 80-89
+  Fair: 70-79
+  Poor: 60-69
+  Critical: < 60

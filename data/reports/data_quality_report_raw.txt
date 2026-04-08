@@ -1,0 +1,1209 @@
+Data Quality Monitoring Report (raw)
+Generated at: 2026-04-04 15:00:56.479643
+Total alerts: 516
+
+================================================================================
+DATA QUALITY SCORES
+================================================================================
+
+Ticker: AAPL
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: ABBV
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: ABT
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: ACN
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: ADBE
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: ADP
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: AMAT
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: AMD
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: AMGN
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: AMZN
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: AON
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: AVGO
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: AXP
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: BAC
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: BDX
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: BKNG
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: BLK
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: BMY
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: BRK-B
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: CAT
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: CB
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: CL
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: CMCSA
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: COP
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: COST
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: CRM
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: CSCO
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: CSX
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: CVX
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: C
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: DE
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: DHR
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: DIS
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: DUK
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: ELV
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: EOG
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: ETN
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: GE
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: GILD
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: GOOGL
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: GOOG
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: GS
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: HD
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: HON
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: IBM
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: INTC
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: INTU
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: ISRG
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: JNJ
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: JPM
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: KO
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: LIN
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: LLY
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: LMT
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: LOW
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: MA
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: MCD
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: MDT
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: META
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: MO
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: MRK
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: MSFT
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: MS
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: NEE
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: NFLX
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: NKE
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: NOW
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: NVDA
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: ORCL
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: PEP
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: PGR
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: PG
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: PLD
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: PM
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: QCOM
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: REGN
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: RTX
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: SCHW
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: SLB
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: SO
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: SPGI
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: SYK
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: TJX
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: TMO
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: TSLA
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: TXN
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: T
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: UNH
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: UNP
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: VRTX
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: VZ
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: V
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: WFC
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: WMT
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: XOM
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+Ticker: ZTS
+  Overall Score: 62.84 (Poor)
+  Completeness: 42.80
+  Validity: 100.00
+  Timeliness: 0.00
+  Consistency: 100.00
+
+================================================================================
+SCORE INTERPRETATION
+================================================================================
+  Excellent: >= 90
+  Good: 80-89
+  Fair: 70-79
+  Poor: 60-69
+  Critical: < 60
+
+================================================================================
+DETAILED ALERTS
+================================================================================
+
+[WARNING] 2026-04-04 15:00:45.645071: WARNING: AAPL missing 4663 trading days
+[WARNING] 2026-04-04 15:00:45.650980: WARNING: AAPL Volume has 49 IQR outliers
+[WARNING] 2026-04-04 15:00:45.651338: WARNING: AAPL Volume has 17 Z-Score outliers
+[WARNING] 2026-04-04 15:00:45.655403: WARNING: AAPL Volume has 3 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:45.655798: WARNING: AAPL data is 10 days old
+[WARNING] 2026-04-04 15:00:45.744525: WARNING: ABBV missing 4663 trading days
+[WARNING] 2026-04-04 15:00:45.749648: WARNING: ABBV Volume has 66 IQR outliers
+[WARNING] 2026-04-04 15:00:45.750030: WARNING: ABBV Volume has 19 Z-Score outliers
+[WARNING] 2026-04-04 15:00:45.754527: WARNING: ABBV Volume has 7 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:45.754926: WARNING: ABBV data is 10 days old
+[WARNING] 2026-04-04 15:00:45.847842: WARNING: ABT missing 4663 trading days
+[WARNING] 2026-04-04 15:00:45.853193: WARNING: ABT Volume has 63 IQR outliers
+[WARNING] 2026-04-04 15:00:45.853562: WARNING: ABT Volume has 10 Z-Score outliers
+[WARNING] 2026-04-04 15:00:45.858146: WARNING: ABT Volume has 5 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:45.858475: WARNING: ABT data is 10 days old
+[WARNING] 2026-04-04 15:00:45.980209: WARNING: ACN missing 4663 trading days
+[WARNING] 2026-04-04 15:00:45.985467: WARNING: ACN Volume has 60 IQR outliers
+[WARNING] 2026-04-04 15:00:45.985789: WARNING: ACN Volume has 16 Z-Score outliers
+[WARNING] 2026-04-04 15:00:45.989918: WARNING: ACN Volume has 3 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:45.990285: WARNING: ACN data is 10 days old
+[WARNING] 2026-04-04 15:00:46.079651: WARNING: ADBE missing 4663 trading days
+[WARNING] 2026-04-04 15:00:46.084899: WARNING: ADBE Volume has 62 IQR outliers
+[WARNING] 2026-04-04 15:00:46.085344: WARNING: ADBE Volume has 20 Z-Score outliers
+[WARNING] 2026-04-04 15:00:46.089549: WARNING: ADBE Volume has 4 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:46.089889: WARNING: ADBE data is 10 days old
+[WARNING] 2026-04-04 15:00:46.197201: WARNING: ADP missing 4663 trading days
+[WARNING] 2026-04-04 15:00:46.202437: WARNING: ADP Volume has 68 IQR outliers
+[WARNING] 2026-04-04 15:00:46.202773: WARNING: ADP Volume has 9 Z-Score outliers
+[WARNING] 2026-04-04 15:00:46.207062: WARNING: ADP Volume has 7 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:46.207401: WARNING: ADP data is 10 days old
+[WARNING] 2026-04-04 15:00:46.325651: WARNING: AMAT missing 4663 trading days
+[WARNING] 2026-04-04 15:00:46.326977: WARNING: AMAT Close has 46 IQR outliers
+[WARNING] 2026-04-04 15:00:46.327281: WARNING: AMAT Close has 21 Z-Score outliers
+[WARNING] 2026-04-04 15:00:46.331000: WARNING: AMAT Volume has 44 IQR outliers
+[WARNING] 2026-04-04 15:00:46.331358: WARNING: AMAT Volume has 18 Z-Score outliers
+[WARNING] 2026-04-04 15:00:46.335179: WARNING: AMAT Volume has 3 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:46.335478: WARNING: AMAT data is 10 days old
+[WARNING] 2026-04-04 15:00:46.438398: WARNING: AMD missing 4663 trading days
+[WARNING] 2026-04-04 15:00:46.439629: WARNING: AMD Close has 1 IQR outliers
+[WARNING] 2026-04-04 15:00:46.443879: WARNING: AMD Volume has 29 IQR outliers
+[WARNING] 2026-04-04 15:00:46.444305: WARNING: AMD Volume has 10 Z-Score outliers
+[WARNING] 2026-04-04 15:00:46.447644: WARNING: AMD Volume has 2 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:46.447946: WARNING: AMD data is 10 days old
+[WARNING] 2026-04-04 15:00:46.535576: WARNING: AMGN missing 4663 trading days
+[WARNING] 2026-04-04 15:00:46.548415: WARNING: AMGN Volume has 65 IQR outliers
+[WARNING] 2026-04-04 15:00:46.549202: WARNING: AMGN Volume has 16 Z-Score outliers
+[WARNING] 2026-04-04 15:00:46.558043: WARNING: AMGN Volume has 4 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:46.559343: WARNING: AMGN data is 10 days old
+[WARNING] 2026-04-04 15:00:46.653299: WARNING: AMZN missing 4663 trading days
+[WARNING] 2026-04-04 15:00:46.658060: WARNING: AMZN Volume has 65 IQR outliers
+[WARNING] 2026-04-04 15:00:46.658389: WARNING: AMZN Volume has 21 Z-Score outliers
+[WARNING] 2026-04-04 15:00:46.662134: WARNING: AMZN Volume has 4 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:46.662523: WARNING: AMZN data is 10 days old
+[WARNING] 2026-04-04 15:00:46.756292: WARNING: AON missing 4663 trading days
+[WARNING] 2026-04-04 15:00:46.761701: WARNING: AON Volume has 53 IQR outliers
+[WARNING] 2026-04-04 15:00:46.762057: WARNING: AON Volume has 21 Z-Score outliers
+[WARNING] 2026-04-04 15:00:46.766985: WARNING: AON Volume has 5 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:46.767374: WARNING: AON data is 10 days old
+[WARNING] 2026-04-04 15:00:46.862931: WARNING: AVGO missing 4663 trading days
+[WARNING] 2026-04-04 15:00:46.869058: WARNING: AVGO Volume has 72 IQR outliers
+[WARNING] 2026-04-04 15:00:46.869523: WARNING: AVGO Volume has 24 Z-Score outliers
+[WARNING] 2026-04-04 15:00:46.874332: WARNING: AVGO Volume has 6 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:46.874684: WARNING: AVGO data is 10 days old
+[WARNING] 2026-04-04 15:00:47.004523: WARNING: AXP missing 4663 trading days
+[WARNING] 2026-04-04 15:00:47.009716: WARNING: AXP Volume has 53 IQR outliers
+[WARNING] 2026-04-04 15:00:47.010199: WARNING: AXP Volume has 21 Z-Score outliers
+[WARNING] 2026-04-04 15:00:47.014335: WARNING: AXP Volume has 6 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:47.014659: WARNING: AXP data is 10 days old
+[WARNING] 2026-04-04 15:00:47.107486: WARNING: BAC missing 4663 trading days
+[WARNING] 2026-04-04 15:00:47.112639: WARNING: BAC Volume has 56 IQR outliers
+[WARNING] 2026-04-04 15:00:47.113014: WARNING: BAC Volume has 19 Z-Score outliers
+[WARNING] 2026-04-04 15:00:47.117033: WARNING: BAC Volume has 7 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:47.117346: WARNING: BAC data is 10 days old
+[WARNING] 2026-04-04 15:00:47.213114: WARNING: BDX missing 4663 trading days
+[WARNING] 2026-04-04 15:00:47.214326: WARNING: BDX Close has 70 IQR outliers
+[WARNING] 2026-04-04 15:00:47.218858: WARNING: BDX Volume has 51 IQR outliers
+[WARNING] 2026-04-04 15:00:47.219223: WARNING: BDX Volume has 15 Z-Score outliers
+[WARNING] 2026-04-04 15:00:47.223176: WARNING: BDX Volume has 3 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:47.223526: WARNING: BDX data is 10 days old
+[WARNING] 2026-04-04 15:00:47.338216: WARNING: BKNG missing 4663 trading days
+[WARNING] 2026-04-04 15:00:47.343817: WARNING: BKNG Volume has 56 IQR outliers
+[WARNING] 2026-04-04 15:00:47.344131: WARNING: BKNG Volume has 26 Z-Score outliers
+[WARNING] 2026-04-04 15:00:47.348309: WARNING: BKNG data is 10 days old
+[WARNING] 2026-04-04 15:00:47.441117: WARNING: BLK missing 4663 trading days
+[WARNING] 2026-04-04 15:00:47.446699: WARNING: BLK Volume has 40 IQR outliers
+[WARNING] 2026-04-04 15:00:47.447133: WARNING: BLK Volume has 17 Z-Score outliers
+[WARNING] 2026-04-04 15:00:47.451592: WARNING: BLK Volume has 3 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:47.452047: WARNING: BLK data is 10 days old
+[WARNING] 2026-04-04 15:00:47.570403: WARNING: BMY missing 4663 trading days
+[WARNING] 2026-04-04 15:00:47.576054: WARNING: BMY Volume has 41 IQR outliers
+[WARNING] 2026-04-04 15:00:47.576444: WARNING: BMY Volume has 14 Z-Score outliers
+[WARNING] 2026-04-04 15:00:47.580831: WARNING: BMY Volume has 2 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:47.581138: WARNING: BMY data is 10 days old
+[WARNING] 2026-04-04 15:00:47.700601: WARNING: BRK-B missing 4663 trading days
+[WARNING] 2026-04-04 15:00:47.705662: WARNING: BRK-B Volume has 45 IQR outliers
+[WARNING] 2026-04-04 15:00:47.706009: WARNING: BRK-B Volume has 18 Z-Score outliers
+[WARNING] 2026-04-04 15:00:47.709670: WARNING: BRK-B Volume has 8 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:47.710063: WARNING: BRK-B data is 10 days old
+[WARNING] 2026-04-04 15:00:47.802856: WARNING: CAT missing 4663 trading days
+[WARNING] 2026-04-04 15:00:47.804173: WARNING: CAT Close has 61 IQR outliers
+[WARNING] 2026-04-04 15:00:47.804687: WARNING: CAT Close has 16 Z-Score outliers
+[WARNING] 2026-04-04 15:00:47.808945: WARNING: CAT Volume has 54 IQR outliers
+[WARNING] 2026-04-04 15:00:47.809322: WARNING: CAT Volume has 21 Z-Score outliers
+[WARNING] 2026-04-04 15:00:47.813613: WARNING: CAT Volume has 3 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:47.813998: WARNING: CAT data is 10 days old
+[WARNING] 2026-04-04 15:00:47.906795: WARNING: CB missing 4663 trading days
+[WARNING] 2026-04-04 15:00:47.912404: WARNING: CB Volume has 44 IQR outliers
+[WARNING] 2026-04-04 15:00:47.912780: WARNING: CB Volume has 19 Z-Score outliers
+[WARNING] 2026-04-04 15:00:47.916904: WARNING: CB Volume has 1 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:47.917311: WARNING: CB data is 10 days old
+[WARNING] 2026-04-04 15:00:48.171849: WARNING: CL missing 4663 trading days
+[WARNING] 2026-04-04 15:00:48.179165: WARNING: CL Volume has 44 IQR outliers
+[WARNING] 2026-04-04 15:00:48.179601: WARNING: CL Volume has 14 Z-Score outliers
+[WARNING] 2026-04-04 15:00:48.183566: WARNING: CL Volume has 6 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:48.184083: WARNING: CL data is 10 days old
+[WARNING] 2026-04-04 15:00:48.291289: WARNING: CMCSA missing 4663 trading days
+[WARNING] 2026-04-04 15:00:48.296843: WARNING: CMCSA Volume has 51 IQR outliers
+[WARNING] 2026-04-04 15:00:48.297224: WARNING: CMCSA Volume has 11 Z-Score outliers
+[WARNING] 2026-04-04 15:00:48.301550: WARNING: CMCSA Volume has 5 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:48.302025: WARNING: CMCSA data is 10 days old
+[WARNING] 2026-04-04 15:00:48.400427: WARNING: COP missing 4663 trading days
+[WARNING] 2026-04-04 15:00:48.405761: WARNING: COP Volume has 60 IQR outliers
+[WARNING] 2026-04-04 15:00:48.406123: WARNING: COP Volume has 13 Z-Score outliers
+[WARNING] 2026-04-04 15:00:48.410998: WARNING: COP Volume has 11 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:48.411313: WARNING: COP data is 10 days old
+[WARNING] 2026-04-04 15:00:48.542686: WARNING: COST missing 4663 trading days
+[WARNING] 2026-04-04 15:00:48.548554: WARNING: COST Volume has 66 IQR outliers
+[WARNING] 2026-04-04 15:00:48.549124: WARNING: COST Volume has 22 Z-Score outliers
+[WARNING] 2026-04-04 15:00:48.553994: WARNING: COST Volume has 5 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:48.554419: WARNING: COST data is 10 days old
+[WARNING] 2026-04-04 15:00:48.648523: WARNING: CRM missing 4663 trading days
+[WARNING] 2026-04-04 15:00:48.654420: WARNING: CRM Volume has 56 IQR outliers
+[WARNING] 2026-04-04 15:00:48.654799: WARNING: CRM Volume has 18 Z-Score outliers
+[WARNING] 2026-04-04 15:00:48.658947: WARNING: CRM Volume has 6 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:48.659224: WARNING: CRM data is 10 days old
+[WARNING] 2026-04-04 15:00:48.759308: WARNING: CSCO missing 4663 trading days
+[WARNING] 2026-04-04 15:00:48.760575: WARNING: CSCO Close has 5 IQR outliers
+[WARNING] 2026-04-04 15:00:48.764929: WARNING: CSCO Volume has 71 IQR outliers
+[WARNING] 2026-04-04 15:00:48.765258: WARNING: CSCO Volume has 22 Z-Score outliers
+[WARNING] 2026-04-04 15:00:48.769378: WARNING: CSCO Volume has 4 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:48.769701: WARNING: CSCO data is 10 days old
+[WARNING] 2026-04-04 15:00:48.861660: WARNING: CSX missing 4663 trading days
+[WARNING] 2026-04-04 15:00:48.862902: WARNING: CSX Close has 27 IQR outliers
+[WARNING] 2026-04-04 15:00:48.863238: WARNING: CSX Close has 10 Z-Score outliers
+[WARNING] 2026-04-04 15:00:48.867525: WARNING: CSX Volume has 51 IQR outliers
+[WARNING] 2026-04-04 15:00:48.868015: WARNING: CSX Volume has 15 Z-Score outliers
+[WARNING] 2026-04-04 15:00:48.872195: WARNING: CSX Volume has 6 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:48.872533: WARNING: CSX data is 10 days old
+[WARNING] 2026-04-04 15:00:49.001032: WARNING: CVX missing 4663 trading days
+[WARNING] 2026-04-04 15:00:49.002344: WARNING: CVX Close has 41 IQR outliers
+[WARNING] 2026-04-04 15:00:49.002633: WARNING: CVX Close has 28 Z-Score outliers
+[WARNING] 2026-04-04 15:00:49.007564: WARNING: CVX Volume has 59 IQR outliers
+[WARNING] 2026-04-04 15:00:49.007937: WARNING: CVX Volume has 19 Z-Score outliers
+[WARNING] 2026-04-04 15:00:49.012157: WARNING: CVX Volume has 9 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:49.012488: WARNING: CVX data is 10 days old
+[WARNING] 2026-04-04 15:00:49.112944: WARNING: C missing 4663 trading days
+[WARNING] 2026-04-04 15:00:49.114141: WARNING: C Close has 25 IQR outliers
+[WARNING] 2026-04-04 15:00:49.118069: WARNING: C Volume has 49 IQR outliers
+[WARNING] 2026-04-04 15:00:49.118422: WARNING: C Volume has 18 Z-Score outliers
+[WARNING] 2026-04-04 15:00:49.122294: WARNING: C Volume has 1 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:49.122610: WARNING: C data is 10 days old
+[WARNING] 2026-04-04 15:00:49.226738: WARNING: DE missing 4663 trading days
+[WARNING] 2026-04-04 15:00:49.227959: WARNING: DE Close has 12 IQR outliers
+[WARNING] 2026-04-04 15:00:49.228295: WARNING: DE Close has 11 Z-Score outliers
+[WARNING] 2026-04-04 15:00:49.232271: WARNING: DE Volume has 54 IQR outliers
+[WARNING] 2026-04-04 15:00:49.232623: WARNING: DE Volume has 17 Z-Score outliers
+[WARNING] 2026-04-04 15:00:49.236643: WARNING: DE Volume has 10 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:49.236939: WARNING: DE data is 10 days old
+[WARNING] 2026-04-04 15:00:49.358249: WARNING: DHR missing 4663 trading days
+[WARNING] 2026-04-04 15:00:49.363334: WARNING: DHR Volume has 55 IQR outliers
+[WARNING] 2026-04-04 15:00:49.363659: WARNING: DHR Volume has 14 Z-Score outliers
+[WARNING] 2026-04-04 15:00:49.367182: WARNING: DHR Volume has 5 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:49.367550: WARNING: DHR data is 10 days old
+[WARNING] 2026-04-04 15:00:49.459555: WARNING: DIS missing 4663 trading days
+[WARNING] 2026-04-04 15:00:49.460911: WARNING: DIS Close has 2 Z-Score outliers
+[WARNING] 2026-04-04 15:00:49.465003: WARNING: DIS Volume has 65 IQR outliers
+[WARNING] 2026-04-04 15:00:49.465475: WARNING: DIS Volume has 19 Z-Score outliers
+[WARNING] 2026-04-04 15:00:49.469703: WARNING: DIS Volume has 11 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:49.470039: WARNING: DIS data is 10 days old
+[WARNING] 2026-04-04 15:00:49.573463: WARNING: DUK missing 4663 trading days
+[WARNING] 2026-04-04 15:00:49.578583: WARNING: DUK Volume has 41 IQR outliers
+[WARNING] 2026-04-04 15:00:49.578946: WARNING: DUK Volume has 18 Z-Score outliers
+[WARNING] 2026-04-04 15:00:49.582725: WARNING: DUK Volume has 2 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:49.583057: WARNING: DUK data is 10 days old
+[WARNING] 2026-04-04 15:00:49.695958: WARNING: ELV missing 4663 trading days
+[WARNING] 2026-04-04 15:00:49.700809: WARNING: ELV Volume has 54 IQR outliers
+[WARNING] 2026-04-04 15:00:49.701126: WARNING: ELV Volume has 16 Z-Score outliers
+[WARNING] 2026-04-04 15:00:49.704982: WARNING: ELV Volume has 4 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:49.705303: WARNING: ELV data is 10 days old
+[WARNING] 2026-04-04 15:00:49.798431: WARNING: EOG missing 4663 trading days
+[WARNING] 2026-04-04 15:00:49.799695: WARNING: EOG Close has 6 IQR outliers
+[WARNING] 2026-04-04 15:00:49.800059: WARNING: EOG Close has 4 Z-Score outliers
+[WARNING] 2026-04-04 15:00:49.803934: WARNING: EOG Volume has 50 IQR outliers
+[WARNING] 2026-04-04 15:00:49.804259: WARNING: EOG Volume has 17 Z-Score outliers
+[WARNING] 2026-04-04 15:00:49.807929: WARNING: EOG Volume has 7 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:49.808289: WARNING: EOG data is 10 days old
+[WARNING] 2026-04-04 15:00:49.909004: WARNING: ETN missing 4663 trading days
+[WARNING] 2026-04-04 15:00:49.914461: WARNING: ETN Volume has 60 IQR outliers
+[WARNING] 2026-04-04 15:00:49.914874: WARNING: ETN Volume has 21 Z-Score outliers
+[WARNING] 2026-04-04 15:00:49.929313: WARNING: ETN Volume has 6 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:49.929720: WARNING: ETN data is 10 days old
+[WARNING] 2026-04-04 15:00:50.048607: WARNING: GE missing 4663 trading days
+[WARNING] 2026-04-04 15:00:50.053641: WARNING: GE Volume has 44 IQR outliers
+[WARNING] 2026-04-04 15:00:50.054013: WARNING: GE Volume has 15 Z-Score outliers
+[WARNING] 2026-04-04 15:00:50.057601: WARNING: GE Volume has 4 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:50.057933: WARNING: GE data is 10 days old
+[WARNING] 2026-04-04 15:00:50.147896: WARNING: GILD missing 4663 trading days
+[WARNING] 2026-04-04 15:00:50.152874: WARNING: GILD Volume has 50 IQR outliers
+[WARNING] 2026-04-04 15:00:50.153196: WARNING: GILD Volume has 17 Z-Score outliers
+[WARNING] 2026-04-04 15:00:50.156824: WARNING: GILD Volume has 9 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:50.157196: WARNING: GILD data is 10 days old
+[WARNING] 2026-04-04 15:00:50.268953: WARNING: GOOGL missing 4663 trading days
+[WARNING] 2026-04-04 15:00:50.270410: WARNING: GOOGL Close has 101 IQR outliers
+[WARNING] 2026-04-04 15:00:50.279132: WARNING: GOOGL Volume has 60 IQR outliers
+[WARNING] 2026-04-04 15:00:50.279581: WARNING: GOOGL Volume has 20 Z-Score outliers
+[WARNING] 2026-04-04 15:00:50.283332: WARNING: GOOGL Volume has 4 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:50.283665: WARNING: GOOGL data is 10 days old
+[WARNING] 2026-04-04 15:00:50.370652: WARNING: GOOG missing 4663 trading days
+[WARNING] 2026-04-04 15:00:50.371937: WARNING: GOOG Close has 101 IQR outliers
+[WARNING] 2026-04-04 15:00:50.375926: WARNING: GOOG Volume has 61 IQR outliers
+[WARNING] 2026-04-04 15:00:50.376264: WARNING: GOOG Volume has 20 Z-Score outliers
+[WARNING] 2026-04-04 15:00:50.380443: WARNING: GOOG Volume has 1 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:50.380788: WARNING: GOOG data is 10 days old
+[WARNING] 2026-04-04 15:00:50.473593: WARNING: GS missing 4663 trading days
+[WARNING] 2026-04-04 15:00:50.478706: WARNING: GS Volume has 51 IQR outliers
+[WARNING] 2026-04-04 15:00:50.479061: WARNING: GS Volume has 18 Z-Score outliers
+[WARNING] 2026-04-04 15:00:50.482739: WARNING: GS Volume has 5 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:50.483043: WARNING: GS data is 10 days old
+[WARNING] 2026-04-04 15:00:50.571031: WARNING: HD missing 4663 trading days
+[WARNING] 2026-04-04 15:00:50.575836: WARNING: HD Volume has 55 IQR outliers
+[WARNING] 2026-04-04 15:00:50.576219: WARNING: HD Volume has 20 Z-Score outliers
+[WARNING] 2026-04-04 15:00:50.580375: WARNING: HD Volume has 5 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:50.601920: WARNING: HD data is 10 days old
+[WARNING] 2026-04-04 15:00:50.707864: WARNING: HON missing 4663 trading days
+[WARNING] 2026-04-04 15:00:50.709228: WARNING: HON Close has 28 IQR outliers
+[WARNING] 2026-04-04 15:00:50.709605: WARNING: HON Close has 8 Z-Score outliers
+[WARNING] 2026-04-04 15:00:50.713796: WARNING: HON Volume has 55 IQR outliers
+[WARNING] 2026-04-04 15:00:50.714248: WARNING: HON Volume has 17 Z-Score outliers
+[WARNING] 2026-04-04 15:00:50.718090: WARNING: HON Volume has 4 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:50.718442: WARNING: HON data is 10 days old
+[WARNING] 2026-04-04 15:00:50.815435: WARNING: IBM missing 4663 trading days
+[WARNING] 2026-04-04 15:00:50.820382: WARNING: IBM Volume has 71 IQR outliers
+[WARNING] 2026-04-04 15:00:50.820725: WARNING: IBM Volume has 15 Z-Score outliers
+[WARNING] 2026-04-04 15:00:50.824933: WARNING: IBM Volume has 5 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:50.825237: WARNING: IBM data is 10 days old
+[WARNING] 2026-04-04 15:00:50.945667: WARNING: INTC missing 4663 trading days
+[WARNING] 2026-04-04 15:00:50.950369: WARNING: INTC Volume has 65 IQR outliers
+[WARNING] 2026-04-04 15:00:50.950709: WARNING: INTC Volume has 20 Z-Score outliers
+[WARNING] 2026-04-04 15:00:50.954511: WARNING: INTC Volume has 1 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:50.954812: WARNING: INTC data is 10 days old
+[WARNING] 2026-04-04 15:00:51.047932: WARNING: INTU missing 4663 trading days
+[WARNING] 2026-04-04 15:00:51.053365: WARNING: INTU Volume has 81 IQR outliers
+[WARNING] 2026-04-04 15:00:51.053711: WARNING: INTU Volume has 26 Z-Score outliers
+[WARNING] 2026-04-04 15:00:51.058558: WARNING: INTU Volume has 4 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:51.058910: WARNING: INTU data is 10 days old
+[WARNING] 2026-04-04 15:00:51.151972: WARNING: ISRG missing 4663 trading days
+[WARNING] 2026-04-04 15:00:51.156654: WARNING: ISRG Volume has 56 IQR outliers
+[WARNING] 2026-04-04 15:00:51.157008: WARNING: ISRG Volume has 19 Z-Score outliers
+[WARNING] 2026-04-04 15:00:51.160794: WARNING: ISRG Volume has 4 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:51.161136: WARNING: ISRG data is 10 days old
+[WARNING] 2026-04-04 15:00:51.280188: WARNING: JNJ missing 4663 trading days
+[WARNING] 2026-04-04 15:00:51.281664: WARNING: JNJ Close has 122 IQR outliers
+[WARNING] 2026-04-04 15:00:51.285205: WARNING: JNJ Close has 37 Z-Score outliers
+[WARNING] 2026-04-04 15:00:51.290601: WARNING: JNJ Volume has 64 IQR outliers
+[WARNING] 2026-04-04 15:00:51.290970: WARNING: JNJ Volume has 12 Z-Score outliers
+[WARNING] 2026-04-04 15:00:51.296573: WARNING: JNJ Volume has 12 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:51.296915: WARNING: JNJ data is 10 days old
+[WARNING] 2026-04-04 15:00:51.389827: WARNING: JPM missing 4663 trading days
+[WARNING] 2026-04-04 15:00:51.394714: WARNING: JPM Volume has 61 IQR outliers
+[WARNING] 2026-04-04 15:00:51.395095: WARNING: JPM Volume has 21 Z-Score outliers
+[WARNING] 2026-04-04 15:00:51.399339: WARNING: JPM Volume has 4 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:51.399700: WARNING: JPM data is 10 days old
+[WARNING] 2026-04-04 15:00:51.496117: WARNING: KO missing 4663 trading days
+[WARNING] 2026-04-04 15:00:51.501518: WARNING: KO Volume has 62 IQR outliers
+[WARNING] 2026-04-04 15:00:51.502032: WARNING: KO Volume has 19 Z-Score outliers
+[WARNING] 2026-04-04 15:00:51.506071: WARNING: KO Volume has 6 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:51.506425: WARNING: KO data is 10 days old
+[WARNING] 2026-04-04 15:00:51.633127: WARNING: LIN missing 4663 trading days
+[WARNING] 2026-04-04 15:00:51.640053: WARNING: LIN Volume has 49 IQR outliers
+[WARNING] 2026-04-04 15:00:51.640568: WARNING: LIN Volume has 5 Z-Score outliers
+[WARNING] 2026-04-04 15:00:51.645435: WARNING: LIN Volume has 3 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:51.645821: WARNING: LIN data is 10 days old
+[WARNING] 2026-04-04 15:00:51.740039: WARNING: LLY missing 4663 trading days
+[WARNING] 2026-04-04 15:00:51.745427: WARNING: LLY Volume has 64 IQR outliers
+[WARNING] 2026-04-04 15:00:51.745818: WARNING: LLY Volume has 17 Z-Score outliers
+[WARNING] 2026-04-04 15:00:51.750084: WARNING: LLY Volume has 6 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:51.750472: WARNING: LLY data is 10 days old
+[WARNING] 2026-04-04 15:00:51.846025: WARNING: LMT missing 4663 trading days
+[WARNING] 2026-04-04 15:00:51.847191: WARNING: LMT Close has 97 IQR outliers
+[WARNING] 2026-04-04 15:00:51.847475: WARNING: LMT Close has 28 Z-Score outliers
+[WARNING] 2026-04-04 15:00:51.851478: WARNING: LMT Volume has 68 IQR outliers
+[WARNING] 2026-04-04 15:00:51.851971: WARNING: LMT Volume has 19 Z-Score outliers
+[WARNING] 2026-04-04 15:00:51.856013: WARNING: LMT Volume has 8 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:51.856408: WARNING: LMT data is 10 days old
+[WARNING] 2026-04-04 15:00:51.989953: WARNING: LOW missing 4663 trading days
+[WARNING] 2026-04-04 15:00:51.994783: WARNING: LOW Volume has 49 IQR outliers
+[WARNING] 2026-04-04 15:00:51.995160: WARNING: LOW Volume has 19 Z-Score outliers
+[WARNING] 2026-04-04 15:00:51.998741: WARNING: LOW Volume has 6 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:51.999067: WARNING: LOW data is 10 days old
+[WARNING] 2026-04-04 15:00:52.100981: WARNING: MA missing 4663 trading days
+[WARNING] 2026-04-04 15:00:52.105990: WARNING: MA Volume has 53 IQR outliers
+[WARNING] 2026-04-04 15:00:52.106375: WARNING: MA Volume has 20 Z-Score outliers
+[WARNING] 2026-04-04 15:00:52.109881: WARNING: MA Volume has 4 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:52.110205: WARNING: MA data is 10 days old
+[WARNING] 2026-04-04 15:00:52.202552: WARNING: MCD missing 4663 trading days
+[WARNING] 2026-04-04 15:00:52.207357: WARNING: MCD Volume has 58 IQR outliers
+[WARNING] 2026-04-04 15:00:52.207676: WARNING: MCD Volume has 19 Z-Score outliers
+[WARNING] 2026-04-04 15:00:52.211271: WARNING: MCD Volume has 1 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:52.211771: WARNING: MCD data is 10 days old
+[WARNING] 2026-04-04 15:00:52.318896: WARNING: MDT missing 4663 trading days
+[WARNING] 2026-04-04 15:00:52.323687: WARNING: MDT Volume has 44 IQR outliers
+[WARNING] 2026-04-04 15:00:52.324105: WARNING: MDT Volume has 14 Z-Score outliers
+[WARNING] 2026-04-04 15:00:52.327488: WARNING: MDT Volume has 7 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:52.327836: WARNING: MDT data is 10 days old
+[WARNING] 2026-04-04 15:00:52.420420: WARNING: META missing 4663 trading days
+[WARNING] 2026-04-04 15:00:52.425370: WARNING: META Volume has 51 IQR outliers
+[WARNING] 2026-04-04 15:00:52.425770: WARNING: META Volume has 19 Z-Score outliers
+[WARNING] 2026-04-04 15:00:52.429606: WARNING: META Volume has 6 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:52.429969: WARNING: META data is 10 days old
+[WARNING] 2026-04-04 15:00:52.518071: WARNING: MO missing 4663 trading days
+[WARNING] 2026-04-04 15:00:52.523998: WARNING: MO Volume has 63 IQR outliers
+[WARNING] 2026-04-04 15:00:52.524510: WARNING: MO Volume has 26 Z-Score outliers
+[WARNING] 2026-04-04 15:00:52.528835: WARNING: MO Volume has 4 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:52.529286: WARNING: MO data is 10 days old
+[WARNING] 2026-04-04 15:00:52.650881: WARNING: MRK missing 4663 trading days
+[WARNING] 2026-04-04 15:00:52.655768: WARNING: MRK Volume has 58 IQR outliers
+[WARNING] 2026-04-04 15:00:52.656121: WARNING: MRK Volume has 16 Z-Score outliers
+[WARNING] 2026-04-04 15:00:52.659765: WARNING: MRK Volume has 6 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:52.660114: WARNING: MRK data is 10 days old
+[WARNING] 2026-04-04 15:00:52.756544: WARNING: MSFT missing 4663 trading days
+[WARNING] 2026-04-04 15:00:52.761585: WARNING: MSFT Volume has 54 IQR outliers
+[WARNING] 2026-04-04 15:00:52.762046: WARNING: MSFT Volume has 17 Z-Score outliers
+[WARNING] 2026-04-04 15:00:52.765626: WARNING: MSFT Volume has 4 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:52.765924: WARNING: MSFT data is 10 days old
+[WARNING] 2026-04-04 15:00:52.864291: WARNING: MS missing 4663 trading days
+[WARNING] 2026-04-04 15:00:52.869259: WARNING: MS Volume has 56 IQR outliers
+[WARNING] 2026-04-04 15:00:52.869544: WARNING: MS Volume has 21 Z-Score outliers
+[WARNING] 2026-04-04 15:00:52.873122: WARNING: MS Volume has 4 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:52.873394: WARNING: MS data is 10 days old
+[WARNING] 2026-04-04 15:00:52.989460: WARNING: NEE missing 4663 trading days
+[WARNING] 2026-04-04 15:00:52.990672: WARNING: NEE Close has 45 IQR outliers
+[WARNING] 2026-04-04 15:00:52.994714: WARNING: NEE Volume has 58 IQR outliers
+[WARNING] 2026-04-04 15:00:52.995025: WARNING: NEE Volume has 21 Z-Score outliers
+[WARNING] 2026-04-04 15:00:52.998648: WARNING: NEE Volume has 3 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:52.998933: WARNING: NEE data is 10 days old
+[WARNING] 2026-04-04 15:00:53.116656: WARNING: NFLX missing 4663 trading days
+[WARNING] 2026-04-04 15:00:53.121300: WARNING: NFLX Volume has 79 IQR outliers
+[WARNING] 2026-04-04 15:00:53.121609: WARNING: NFLX Volume has 11 Z-Score outliers
+[WARNING] 2026-04-04 15:00:53.125825: WARNING: NFLX Volume has 5 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:53.126170: WARNING: NFLX data is 10 days old
+[WARNING] 2026-04-04 15:00:53.216399: WARNING: NKE missing 4663 trading days
+[WARNING] 2026-04-04 15:00:53.221355: WARNING: NKE Volume has 48 IQR outliers
+[WARNING] 2026-04-04 15:00:53.221720: WARNING: NKE Volume has 17 Z-Score outliers
+[WARNING] 2026-04-04 15:00:53.225964: WARNING: NKE Volume has 7 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:53.226336: WARNING: NKE data is 10 days old
+[WARNING] 2026-04-04 15:00:53.335092: WARNING: NOW missing 4663 trading days
+[WARNING] 2026-04-04 15:00:53.340555: WARNING: NOW Volume has 73 IQR outliers
+[WARNING] 2026-04-04 15:00:53.341049: WARNING: NOW Volume has 24 Z-Score outliers
+[WARNING] 2026-04-04 15:00:53.345080: WARNING: NOW Volume has 1 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:53.345436: WARNING: NOW data is 10 days old
+[WARNING] 2026-04-04 15:00:53.435807: WARNING: NVDA missing 4663 trading days
+[WARNING] 2026-04-04 15:00:53.440424: WARNING: NVDA Volume has 11 IQR outliers
+[WARNING] 2026-04-04 15:00:53.440802: WARNING: NVDA Volume has 9 Z-Score outliers
+[WARNING] 2026-04-04 15:00:53.444001: WARNING: NVDA Volume has 5 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:53.444344: WARNING: NVDA data is 10 days old
+[WARNING] 2026-04-04 15:00:53.530644: WARNING: ORCL missing 4663 trading days
+[WARNING] 2026-04-04 15:00:53.531764: WARNING: ORCL Close has 24 IQR outliers
+[WARNING] 2026-04-04 15:00:53.532015: WARNING: ORCL Close has 9 Z-Score outliers
+[WARNING] 2026-04-04 15:00:53.535724: WARNING: ORCL Volume has 113 IQR outliers
+[WARNING] 2026-04-04 15:00:53.536116: WARNING: ORCL Volume has 21 Z-Score outliers
+[WARNING] 2026-04-04 15:00:53.540426: WARNING: ORCL Volume has 6 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:53.540769: WARNING: ORCL data is 10 days old
+[WARNING] 2026-04-04 15:00:53.656620: WARNING: PEP missing 4663 trading days
+[WARNING] 2026-04-04 15:00:53.661639: WARNING: PEP Volume has 46 IQR outliers
+[WARNING] 2026-04-04 15:00:53.662022: WARNING: PEP Volume has 17 Z-Score outliers
+[WARNING] 2026-04-04 15:00:53.665593: WARNING: PEP Volume has 4 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:53.665910: WARNING: PEP data is 10 days old
+[WARNING] 2026-04-04 15:00:53.758541: WARNING: PGR missing 4663 trading days
+[WARNING] 2026-04-04 15:00:53.763363: WARNING: PGR Volume has 49 IQR outliers
+[WARNING] 2026-04-04 15:00:53.763724: WARNING: PGR Volume has 17 Z-Score outliers
+[WARNING] 2026-04-04 15:00:53.767210: WARNING: PGR Volume has 7 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:53.767497: WARNING: PGR data is 10 days old
+[WARNING] 2026-04-04 15:00:53.858544: WARNING: PG missing 4663 trading days
+[WARNING] 2026-04-04 15:00:53.863216: WARNING: PG Volume has 62 IQR outliers
+[WARNING] 2026-04-04 15:00:53.863598: WARNING: PG Volume has 15 Z-Score outliers
+[WARNING] 2026-04-04 15:00:53.867183: WARNING: PG Volume has 3 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:53.867480: WARNING: PG data is 10 days old
+[WARNING] 2026-04-04 15:00:53.972612: WARNING: PLD missing 4663 trading days
+[WARNING] 2026-04-04 15:00:53.973797: WARNING: PLD Close has 33 IQR outliers
+[WARNING] 2026-04-04 15:00:53.974118: WARNING: PLD Close has 14 Z-Score outliers
+[WARNING] 2026-04-04 15:00:53.978040: WARNING: PLD Volume has 58 IQR outliers
+[WARNING] 2026-04-04 15:00:53.978447: WARNING: PLD Volume has 19 Z-Score outliers
+[WARNING] 2026-04-04 15:00:53.982144: WARNING: PLD Volume has 9 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:53.982437: WARNING: PLD data is 10 days old
+[WARNING] 2026-04-04 15:00:54.081139: WARNING: PM missing 4663 trading days
+[WARNING] 2026-04-04 15:00:54.086247: WARNING: PM Volume has 46 IQR outliers
+[WARNING] 2026-04-04 15:00:54.086955: WARNING: PM Volume has 16 Z-Score outliers
+[WARNING] 2026-04-04 15:00:54.091919: WARNING: PM Volume has 3 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:54.092678: WARNING: PM data is 10 days old
+[WARNING] 2026-04-04 15:00:54.194345: WARNING: QCOM missing 4663 trading days
+[WARNING] 2026-04-04 15:00:54.195641: WARNING: QCOM Close has 1 Z-Score outliers
+[WARNING] 2026-04-04 15:00:54.199557: WARNING: QCOM Volume has 65 IQR outliers
+[WARNING] 2026-04-04 15:00:54.199984: WARNING: QCOM Volume has 15 Z-Score outliers
+[WARNING] 2026-04-04 15:00:54.204136: WARNING: QCOM Volume has 2 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:54.204496: WARNING: QCOM data is 10 days old
+[WARNING] 2026-04-04 15:00:54.316013: WARNING: REGN missing 4663 trading days
+[WARNING] 2026-04-04 15:00:54.317231: WARNING: REGN Close has 41 IQR outliers
+[WARNING] 2026-04-04 15:00:54.321309: WARNING: REGN Volume has 52 IQR outliers
+[WARNING] 2026-04-04 15:00:54.321707: WARNING: REGN Volume has 15 Z-Score outliers
+[WARNING] 2026-04-04 15:00:54.325896: WARNING: REGN Volume has 5 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:54.326310: WARNING: REGN data is 10 days old
+[WARNING] 2026-04-04 15:00:54.421529: WARNING: RTX missing 4663 trading days
+[WARNING] 2026-04-04 15:00:54.422720: WARNING: RTX Close has 57 IQR outliers
+[WARNING] 2026-04-04 15:00:54.427136: WARNING: RTX Volume has 59 IQR outliers
+[WARNING] 2026-04-04 15:00:54.427558: WARNING: RTX Volume has 17 Z-Score outliers
+[WARNING] 2026-04-04 15:00:54.431679: WARNING: RTX Volume has 6 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:54.431997: WARNING: RTX data is 10 days old
+[WARNING] 2026-04-04 15:00:54.522291: WARNING: SCHW missing 4663 trading days
+[WARNING] 2026-04-04 15:00:54.527023: WARNING: SCHW Volume has 80 IQR outliers
+[WARNING] 2026-04-04 15:00:54.527426: WARNING: SCHW Volume has 19 Z-Score outliers
+[WARNING] 2026-04-04 15:00:54.532098: WARNING: SCHW Volume has 9 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:54.532405: WARNING: SCHW data is 10 days old
+[WARNING] 2026-04-04 15:00:54.642743: WARNING: SLB missing 4663 trading days
+[WARNING] 2026-04-04 15:00:54.647604: WARNING: SLB Volume has 41 IQR outliers
+[WARNING] 2026-04-04 15:00:54.648021: WARNING: SLB Volume has 17 Z-Score outliers
+[WARNING] 2026-04-04 15:00:54.651558: WARNING: SLB Volume has 7 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:54.651947: WARNING: SLB data is 10 days old
+[WARNING] 2026-04-04 15:00:54.747012: WARNING: SO missing 4663 trading days
+[WARNING] 2026-04-04 15:00:54.752385: WARNING: SO Volume has 45 IQR outliers
+[WARNING] 2026-04-04 15:00:54.752843: WARNING: SO Volume has 16 Z-Score outliers
+[WARNING] 2026-04-04 15:00:54.757202: WARNING: SO Volume has 3 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:54.757558: WARNING: SO data is 10 days old
+[WARNING] 2026-04-04 15:00:54.854599: WARNING: SPGI missing 4663 trading days
+[WARNING] 2026-04-04 15:00:54.859278: WARNING: SPGI Volume has 49 IQR outliers
+[WARNING] 2026-04-04 15:00:54.859672: WARNING: SPGI Volume has 18 Z-Score outliers
+[WARNING] 2026-04-04 15:00:54.863447: WARNING: SPGI Volume has 6 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:54.863829: WARNING: SPGI data is 10 days old
+[WARNING] 2026-04-04 15:00:54.971085: WARNING: SYK missing 4663 trading days
+[WARNING] 2026-04-04 15:00:54.975740: WARNING: SYK Volume has 42 IQR outliers
+[WARNING] 2026-04-04 15:00:54.976121: WARNING: SYK Volume has 19 Z-Score outliers
+[WARNING] 2026-04-04 15:00:54.979590: WARNING: SYK Volume has 2 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:54.979921: WARNING: SYK data is 10 days old
+[WARNING] 2026-04-04 15:00:55.072003: WARNING: TJX missing 4663 trading days
+[WARNING] 2026-04-04 15:00:55.076570: WARNING: TJX Volume has 60 IQR outliers
+[WARNING] 2026-04-04 15:00:55.076975: WARNING: TJX Volume has 20 Z-Score outliers
+[WARNING] 2026-04-04 15:00:55.080455: WARNING: TJX Volume has 2 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:55.080768: WARNING: TJX data is 10 days old
+[WARNING] 2026-04-04 15:00:55.173654: WARNING: TMO missing 4663 trading days
+[WARNING] 2026-04-04 15:00:55.175011: WARNING: TMO Close has 48 IQR outliers
+[WARNING] 2026-04-04 15:00:55.178965: WARNING: TMO Volume has 38 IQR outliers
+[WARNING] 2026-04-04 15:00:55.179369: WARNING: TMO Volume has 10 Z-Score outliers
+[WARNING] 2026-04-04 15:00:55.182738: WARNING: TMO Volume has 6 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:55.183101: WARNING: TMO data is 10 days old
+[WARNING] 2026-04-04 15:00:55.304432: WARNING: TSLA missing 4663 trading days
+[WARNING] 2026-04-04 15:00:55.309375: WARNING: TSLA Volume has 33 IQR outliers
+[WARNING] 2026-04-04 15:00:55.309725: WARNING: TSLA Volume has 12 Z-Score outliers
+[WARNING] 2026-04-04 15:00:55.313234: WARNING: TSLA Volume has 2 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:55.313603: WARNING: TSLA data is 10 days old
+[WARNING] 2026-04-04 15:00:55.405224: WARNING: TXN missing 4663 trading days
+[WARNING] 2026-04-04 15:00:55.410183: WARNING: TXN Volume has 55 IQR outliers
+[WARNING] 2026-04-04 15:00:55.410590: WARNING: TXN Volume has 22 Z-Score outliers
+[WARNING] 2026-04-04 15:00:55.414279: WARNING: TXN Volume has 4 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:55.414610: WARNING: TXN data is 10 days old
+[WARNING] 2026-04-04 15:00:55.507931: WARNING: T missing 4663 trading days
+[WARNING] 2026-04-04 15:00:55.513077: WARNING: T Volume has 56 IQR outliers
+[WARNING] 2026-04-04 15:00:55.513476: WARNING: T Volume has 21 Z-Score outliers
+[WARNING] 2026-04-04 15:00:55.517111: WARNING: T Volume has 8 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:55.517444: WARNING: T data is 10 days old
+[WARNING] 2026-04-04 15:00:55.624013: WARNING: UNH missing 4663 trading days
+[WARNING] 2026-04-04 15:00:55.627174: WARNING: UNH Close has 187 IQR outliers
+[WARNING] 2026-04-04 15:00:55.634833: WARNING: UNH Volume has 83 IQR outliers
+[WARNING] 2026-04-04 15:00:55.635758: WARNING: UNH Volume has 16 Z-Score outliers
+[WARNING] 2026-04-04 15:00:55.641731: WARNING: UNH Volume has 7 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:55.642289: WARNING: UNH data is 10 days old
+[WARNING] 2026-04-04 15:00:55.733037: WARNING: UNP missing 4663 trading days
+[WARNING] 2026-04-04 15:00:55.737994: WARNING: UNP Volume has 74 IQR outliers
+[WARNING] 2026-04-04 15:00:55.738389: WARNING: UNP Volume has 12 Z-Score outliers
+[WARNING] 2026-04-04 15:00:55.742026: WARNING: UNP Volume has 5 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:55.742343: WARNING: UNP data is 10 days old
+[WARNING] 2026-04-04 15:00:55.826648: WARNING: VRTX missing 4663 trading days
+[WARNING] 2026-04-04 15:00:55.831323: WARNING: VRTX Volume has 54 IQR outliers
+[WARNING] 2026-04-04 15:00:55.831734: WARNING: VRTX Volume has 17 Z-Score outliers
+[WARNING] 2026-04-04 15:00:55.835604: WARNING: VRTX Volume has 8 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:55.835891: WARNING: VRTX data is 10 days old
+[WARNING] 2026-04-04 15:00:55.942449: WARNING: VZ missing 4663 trading days
+[WARNING] 2026-04-04 15:00:55.947278: WARNING: VZ Volume has 51 IQR outliers
+[WARNING] 2026-04-04 15:00:55.947714: WARNING: VZ Volume has 22 Z-Score outliers
+[WARNING] 2026-04-04 15:00:55.951232: WARNING: VZ Volume has 4 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:55.951572: WARNING: VZ data is 10 days old
+[WARNING] 2026-04-04 15:00:56.041694: WARNING: V missing 4663 trading days
+[WARNING] 2026-04-04 15:00:56.046949: WARNING: V Volume has 56 IQR outliers
+[WARNING] 2026-04-04 15:00:56.047384: WARNING: V Volume has 18 Z-Score outliers
+[WARNING] 2026-04-04 15:00:56.051240: WARNING: V Volume has 4 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:56.051647: WARNING: V data is 10 days old
+[WARNING] 2026-04-04 15:00:56.143521: WARNING: WFC missing 4663 trading days
+[WARNING] 2026-04-04 15:00:56.148286: WARNING: WFC Volume has 56 IQR outliers
+[WARNING] 2026-04-04 15:00:56.148643: WARNING: WFC Volume has 19 Z-Score outliers
+[WARNING] 2026-04-04 15:00:56.154023: WARNING: WFC Volume has 4 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:56.154665: WARNING: WFC data is 10 days old
+[WARNING] 2026-04-04 15:00:56.268522: WARNING: WMT missing 4663 trading days
+[WARNING] 2026-04-04 15:00:56.273404: WARNING: WMT Volume has 71 IQR outliers
+[WARNING] 2026-04-04 15:00:56.273784: WARNING: WMT Volume has 11 Z-Score outliers
+[WARNING] 2026-04-04 15:00:56.278458: WARNING: WMT Volume has 6 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:56.278787: WARNING: WMT data is 10 days old
+[WARNING] 2026-04-04 15:00:56.367858: WARNING: XOM missing 4663 trading days
+[WARNING] 2026-04-04 15:00:56.369068: WARNING: XOM Close has 59 IQR outliers
+[WARNING] 2026-04-04 15:00:56.369422: WARNING: XOM Close has 31 Z-Score outliers
+[WARNING] 2026-04-04 15:00:56.373233: WARNING: XOM Volume has 57 IQR outliers
+[WARNING] 2026-04-04 15:00:56.373613: WARNING: XOM Volume has 16 Z-Score outliers
+[WARNING] 2026-04-04 15:00:56.377101: WARNING: XOM Volume has 1 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:56.377525: WARNING: XOM data is 10 days old
+[WARNING] 2026-04-04 15:00:56.468600: WARNING: ZTS missing 4663 trading days
+[WARNING] 2026-04-04 15:00:56.474135: WARNING: ZTS Volume has 40 IQR outliers
+[WARNING] 2026-04-04 15:00:56.474620: WARNING: ZTS Volume has 14 Z-Score outliers
+[WARNING] 2026-04-04 15:00:56.478542: WARNING: ZTS Volume has 1 DBSCAN outliers
+[WARNING] 2026-04-04 15:00:56.478943: WARNING: ZTS data is 10 days old
