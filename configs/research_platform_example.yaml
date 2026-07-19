@@ -1,0 +1,10 @@
+horizon: 5
+groups: 5
+purge_periods: 5
+embargo_periods: 0
+cost_bps: 10.0
+min_names: 30
+quantile: 0.2
+max_weight: 0.05
+classification_coverage: 0.90
+seed: 42
