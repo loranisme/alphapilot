@@ -53,7 +53,11 @@ def evaluate_ic(
             [factor.loc[date].rename("factor"), forward_returns.loc[date].rename("return")],
             axis=1,
         ).dropna()
-        if len(pair) < min_names or pair["factor"].nunique() <= 1:
+        if (
+            len(pair) < min_names
+            or pair["factor"].nunique() <= 1
+            or pair["return"].nunique() <= 1
+        ):
             continue
         values[date] = pair["factor"].corr(pair["return"], method=method)
     return pd.Series(values, dtype=float).sort_index()

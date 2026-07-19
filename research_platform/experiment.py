@@ -17,13 +17,14 @@ from .portfolio import build_long_short_weights, simulate_portfolio
 class ExperimentInputs:
     variants: dict[str, pd.DataFrame]
     forward_returns: pd.DataFrame
+    asset_returns: pd.DataFrame
     industry: pd.DataFrame
     data_fingerprint: str
 
 
 def _portfolio_targets(
     panel: pd.DataFrame,
-    industry: pd.DataFrame,
+    industry: pd.DataFrame | None,
     config: ExperimentConfig,
 ) -> tuple[pd.DataFrame, int]:
     targets = pd.DataFrame(0.0, index=panel.index, columns=panel.columns)
@@ -34,7 +35,9 @@ def _portfolio_targets(
                 panel.loc[date],
                 quantile=config.quantile,
                 max_weight=config.max_weight,
-                industry=industry.reindex(index=panel.index, columns=panel.columns).loc[date],
+                industry=None
+                if industry is None
+                else industry.reindex(index=panel.index, columns=panel.columns).loc[date],
             )
         except ValueError:
             invalid += 1
@@ -67,8 +70,13 @@ def run_experiment(
             n_groups=config.groups,
             min_names=config.min_names,
         )
-        targets, invalid_dates = _portfolio_targets(aligned, industry, config)
-        portfolio = simulate_portfolio(targets, inputs.forward_returns, cost_bps=config.cost_bps)
+        portfolio_mode = "global" if name == "raw" else "industry_neutral"
+        targets, invalid_dates = _portfolio_targets(
+            aligned,
+            None if portfolio_mode == "global" else industry,
+            config,
+        )
+        portfolio = simulate_portfolio(targets, inputs.asset_returns, cost_bps=config.cost_bps)
         row = {
             "variant": name,
             "ic_mean": float(ic.mean()) if len(ic) else np.nan,
@@ -77,7 +85,14 @@ def run_experiment(
             "top_bottom_mean": float(quantile.spread.mean()) if len(quantile.spread) else np.nan,
         }
         diagnostics.append(row)
-        portfolio_rows.append({"variant": name, **portfolio.metrics, "invalid_weight_dates": invalid_dates})
+        portfolio_rows.append(
+            {
+                "variant": name,
+                "portfolio_mode": portfolio_mode,
+                **portfolio.metrics,
+                "invalid_weight_dates": invalid_dates,
+            }
+        )
         metrics[name] = row
 
     gates = {
@@ -96,4 +111,3 @@ def run_experiment(
             "config": config.to_dict(),
         },
     )
-

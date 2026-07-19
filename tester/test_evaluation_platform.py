@@ -45,6 +45,14 @@ def test_evaluate_ic_recovers_positive_rank_signal():
     assert np.allclose(result.to_numpy(), 1.0, atol=1e-12)
 
 
+def test_evaluate_ic_skips_constant_return_cross_sections():
+    dates = pd.bdate_range("2024-01-02", periods=2)
+    factor = pd.DataFrame([[1.0, 2.0], [2.0, 1.0]], index=dates, columns=["A", "B"])
+    forward = pd.DataFrame(0.0, index=dates, columns=["A", "B"])
+    result = evaluate_ic(factor, forward, method="spearman", min_names=2)
+    assert result.empty
+
+
 def test_quantile_backtest_is_monotonic_for_known_signal():
     dates = pd.bdate_range("2024-01-02", periods=5)
     tickers = [f"T{i}" for i in range(10)]

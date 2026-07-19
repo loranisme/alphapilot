@@ -32,6 +32,11 @@ def _markdown_report(result: ExperimentResult) -> str:
     lines = ["# Factor Research Experiment", "", "## Quality gates", ""]
     for name, passed in result.quality.get("gates", {}).items():
         lines.append(f"- {'PASS' if passed else 'FAIL'}: `{name}`")
+    lines.extend(["", "## Data quality observations", ""])
+    for name, value in result.quality.items():
+        if name == "gates":
+            continue
+        lines.append(f"- {name}: {value}")
     lines.extend(["", "## Factor diagnostics", ""])
     diagnostics = result.tables.get("factor_diagnostics", pd.DataFrame())
     lines.append(diagnostics.to_markdown(index=False) if not diagnostics.empty else "No diagnostics generated.")
@@ -73,4 +78,3 @@ def write_result(result: ExperimentResult, output_dir: str | Path) -> list[Path]
     )
     _atomic_text(report_path, _markdown_report(result))
     return [summary_path, diagnostics_path, portfolio_path, quality_path, report_path]
-
