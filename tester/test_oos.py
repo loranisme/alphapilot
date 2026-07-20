@@ -75,3 +75,13 @@ def test_invalid_oos_rebalance_date_holds_existing_positions():
         targets.loc[invalid_date], targets.iloc[4], check_names=False
     )
     assert result.portfolio_diagnostics["raw"].loc[invalid_date, "action"] == "hold_invalid"
+
+
+def test_oos_config_loads_immutable_yaml(tmp_path):
+    path = tmp_path / "oos.yaml"
+    path.write_text("horizon: 5\npurge: 5\nrebalance_interval: 5\ncost_bps: 12.0\n")
+
+    config = OOSConfig.from_yaml(path)
+
+    assert config.cost_bps == 12.0
+    assert config.to_dict()["soft_strength"] == 0.5

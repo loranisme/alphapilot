@@ -2,10 +2,12 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
+import yaml
 
 from .evaluation import evaluate_ic, generate_purged_folds
 from .portfolio import PortfolioResult, build_buffered_targets, simulate_portfolio
@@ -29,12 +31,28 @@ class OOSConfig:
     cost_bps: float = 10.0
     min_names: int = 30
     min_abs_ic: float = 0.005
+    cost_stress_bps: tuple[float, ...] = (0.0, 5.0, 10.0, 20.0)
+    max_industry_exposure: float = 0.08
+    min_soft_ic_retention: float = 0.80
+    min_cost_reduction: float = 0.40
 
     def __post_init__(self):
         if self.purge < self.horizon:
             raise ValueError("purge must be at least horizon")
         if self.rebalance_interval != self.horizon:
             raise ValueError("rebalance_interval must equal prediction horizon")
+
+    def to_dict(self) -> dict:
+        return asdict(self)
+
+    @classmethod
+    def from_yaml(cls, path: str | Path) -> "OOSConfig":
+        payload = yaml.safe_load(Path(path).read_text(encoding="utf-8")) or {}
+        if not isinstance(payload, dict):
+            raise TypeError("OOS config must be a YAML mapping")
+        if "cost_stress_bps" in payload:
+            payload["cost_stress_bps"] = tuple(payload["cost_stress_bps"])
+        return cls(**payload)
 
 
 @dataclass(frozen=True)

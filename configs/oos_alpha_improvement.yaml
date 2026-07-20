@@ -1,0 +1,18 @@
+horizon: 5
+min_train: 300
+test_size: 50
+step: 50
+purge: 5
+soft_strength: 0.5
+rebalance_interval: 5
+entry_quantile: 0.20
+exit_quantile: 0.30
+factor_weight_cap: 0.20
+name_weight_cap: 0.02
+cost_bps: 10.0
+cost_stress_bps: [0.0, 5.0, 10.0, 20.0]
+min_names: 30
+min_abs_ic: 0.005
+max_industry_exposure: 0.08
+min_soft_ic_retention: 0.80
+min_cost_reduction: 0.40
