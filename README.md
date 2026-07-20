@@ -39,3 +39,29 @@ python -m research_platform.cli run-experiment \
 第一版只使用免费公开数据。历史标普成分股由当前成分与公开变更记录反向重建，行业分类优先使用公开 GICS 快照，缺失时显式降级为 SEC SIC。免费数据不等同于商业 point-in-time 数据库；所有来源、覆盖和降级必须写入质量报告。
 
 信号在交易日 `t` 生成，组合从 `t+1` 开始持有。walk-forward 在训练与测试之间至少 purge 一个预测周期。IC 是排序预测能力，不能替代真实组合收益；组合报告会单独扣除换手交易成本。行业中性化保证暴露控制，不保证 alpha 一定提高。
+
+## 真 OOS Alpha 改进实验
+
+下面的命令使用本地免费 OHLCV 和缓存的公开 GICS 快照，按固定参数运行
+Raw、Soft Neutral（主路径）和 Strict Neutral（诊断路径）：
+
+```bash
+python scripts/run_oos_alpha_validation.py
+```
+
+固定研究约束包括：5 日预测与调仓、至少 5 日 purge、4 个 IS 时间块中至少
+3 个方向一致、近期半段同向、因子权重非负且单因子不超过 20%、Soft Neutral
+强度 0.5、20% 入场/30% 退出缓冲、单名 2% 上限和单边 10 bps 成本。
+
+输出位于 `outputs/oos_alpha_improvement/`：
+
+- `fold_metrics.csv`：逐 fold 的 Raw/Soft/Strict IC、收益、波动和 Sharpe；
+- `year_metrics.csv`：逐年稳定性；
+- `cost_stress.csv`：0/5/10/20 bps 成本压力；
+- `industry_exposure.csv`：每日行业净暴露；
+- `quality_report.json`：固定验收门槛的实际 PASS/FAIL；
+- `metadata.json`：数据指纹、固定配置和非 PIT 分类声明；
+- `report.md`：便于人工审阅的汇总。
+
+研究门槛失败是有效结果，并不代表程序执行失败。失败后不允许根据 OOS 结果
+调整中性化强度、调仓频率、缓冲区或权重；应回到新的 IS 研究假设后再开独立实验。
