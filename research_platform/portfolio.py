@@ -17,6 +17,87 @@ class PortfolioResult:
     metrics: dict[str, float]
 
 
+@dataclass(frozen=True)
+class BufferedTargetResult:
+    targets: pd.DataFrame
+    diagnostics: pd.DataFrame
+
+
+def _equal_gross_weights(names: set, gross: float, cap: float) -> pd.Series:
+    if not names or len(names) * cap < gross - 1e-12:
+        raise ValueError("name cap is infeasible for selected cross-section")
+    return pd.Series(gross / len(names), index=sorted(names), dtype=float)
+
+
+def buffered_cross_section(
+    score: pd.Series,
+    previous: pd.Series,
+    entry_quantile: float = 0.20,
+    exit_quantile: float = 0.30,
+    max_weight: float = 0.02,
+) -> pd.Series:
+    """Build a dollar-neutral target with entry and exit rank buffers."""
+    if not 0 < entry_quantile <= exit_quantile <= 0.5:
+        raise ValueError("quantiles must satisfy 0 < entry <= exit <= 0.5")
+    if not 0 < max_weight <= 1:
+        raise ValueError("max_weight must be within (0, 1]")
+    numeric = pd.to_numeric(score, errors="coerce")
+    valid = numeric.dropna().sort_values()
+    if valid.nunique() <= 1:
+        raise ValueError("signal cross-section is invalid")
+    entry_n = max(1, int(np.floor(len(valid) * entry_quantile)))
+    exit_n = max(entry_n, int(np.floor(len(valid) * exit_quantile)))
+    prior = previous.reindex(score.index).fillna(0.0)
+    prior_long = set(prior.index[prior > 0])
+    prior_short = set(prior.index[prior < 0])
+    long_names = set(valid.nlargest(entry_n).index) | (
+        prior_long & set(valid.nlargest(exit_n).index)
+    )
+    short_names = set(valid.nsmallest(entry_n).index) | (
+        prior_short & set(valid.nsmallest(exit_n).index)
+    )
+    target = pd.Series(0.0, index=score.index, dtype=float)
+    long_weights = _equal_gross_weights(long_names, gross=1.0, cap=max_weight)
+    short_weights = _equal_gross_weights(short_names, gross=1.0, cap=max_weight)
+    target.loc[long_weights.index] = long_weights
+    target.loc[short_weights.index] = -short_weights
+    return target
+
+
+def build_buffered_targets(
+    scores: pd.DataFrame,
+    rebalance_interval: int = 5,
+    entry_quantile: float = 0.20,
+    exit_quantile: float = 0.30,
+    max_weight: float = 0.02,
+) -> BufferedTargetResult:
+    """Create stateful targets and hold through scheduled or invalid dates."""
+    if rebalance_interval < 1:
+        raise ValueError("rebalance_interval must be positive")
+    targets = pd.DataFrame(0.0, index=scores.index, columns=scores.columns)
+    previous = pd.Series(0.0, index=scores.columns, dtype=float)
+    rows = []
+    for position, date in enumerate(scores.index):
+        if position % rebalance_interval != 0:
+            action = "hold_schedule"
+        elif pd.to_numeric(scores.loc[date], errors="coerce").dropna().nunique() <= 1:
+            action = "hold_invalid"
+        else:
+            previous = buffered_cross_section(
+                scores.loc[date],
+                previous,
+                entry_quantile=entry_quantile,
+                exit_quantile=exit_quantile,
+                max_weight=max_weight,
+            )
+            action = "rebalance"
+        targets.loc[date] = previous
+        rows.append({"date": date, "action": action})
+    diagnostics = pd.DataFrame(rows).set_index("date")
+    diagnostics.index.name = None
+    return BufferedTargetResult(targets=targets, diagnostics=diagnostics)
+
+
 def _group_weights(signal: pd.Series, quantile: float) -> pd.Series:
     clean = pd.to_numeric(signal, errors="coerce").dropna().sort_values()
     count = max(1, int(np.floor(len(clean) * quantile)))
