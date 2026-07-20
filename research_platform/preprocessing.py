@@ -20,6 +20,118 @@ class PanelNeutralizationResult:
     diagnostics: pd.DataFrame
 
 
+@dataclass(frozen=True)
+class IndustryScoreVariants:
+    raw: pd.Series
+    soft: pd.Series
+    strict: pd.Series
+    fitted: pd.Series
+    diagnostics: dict
+
+
+@dataclass(frozen=True)
+class IndustryScoreVariantsPanel:
+    raw: pd.DataFrame
+    soft: pd.DataFrame
+    strict: pd.DataFrame
+    fitted: pd.DataFrame
+    diagnostics: pd.DataFrame
+
+
+def standardize_series(values: pd.Series) -> pd.Series:
+    """Cross-sectionally standardize finite values while preserving the index."""
+    numeric = pd.to_numeric(values, errors="coerce")
+    result = pd.Series(np.nan, index=values.index, dtype=float, name=values.name)
+    valid = numeric.dropna()
+    scale = float(valid.std(ddof=0))
+    if len(valid) >= 2 and np.isfinite(scale) and scale > 1e-12:
+        result.loc[valid.index] = (valid - valid.mean()) / scale
+    return result
+
+
+def _invalid_score_variants(index: pd.Index, reason: str, coverage: float):
+    invalid = pd.Series(np.nan, index=index, dtype=float)
+    return IndustryScoreVariants(
+        raw=invalid.copy(),
+        soft=invalid.copy(),
+        strict=invalid.copy(),
+        fitted=invalid.copy(),
+        diagnostics={"valid": False, "reason": reason, "coverage": coverage},
+    )
+
+
+def build_industry_score_variants(
+    score: pd.Series,
+    industry: pd.Series,
+    soft_strength: float = 0.5,
+    min_names: int = 30,
+) -> IndustryScoreVariants:
+    """Return raw, partially neutralized, and fully neutralized score variants."""
+    if not 0 <= soft_strength <= 1:
+        raise ValueError("soft_strength must be within [0, 1]")
+    if min_names < 2:
+        raise ValueError("min_names must be at least 2")
+    numeric = pd.to_numeric(score, errors="coerce")
+    valid_signal_count = int(numeric.notna().sum())
+    aligned = pd.concat({"score": numeric, "industry": industry}, axis=1).dropna()
+    coverage = len(aligned) / valid_signal_count if valid_signal_count else 0.0
+    if len(aligned) < min_names:
+        return _invalid_score_variants(score.index, "insufficient_names", coverage)
+
+    design = pd.get_dummies(aligned["industry"], drop_first=True, dtype=float)
+    design.insert(0, "intercept", 1.0)
+    matrix = design.to_numpy()
+    beta, *_ = np.linalg.lstsq(matrix, aligned["score"].to_numpy(), rcond=None)
+    fitted = pd.Series(np.nan, index=score.index, dtype=float)
+    fitted.loc[aligned.index] = matrix @ beta
+    raw = standardize_series(numeric.where(industry.notna()))
+    soft = standardize_series(numeric - soft_strength * fitted)
+    strict = standardize_series(numeric - fitted)
+    if strict.notna().sum() < 2:
+        return _invalid_score_variants(score.index, "constant_residual", coverage)
+    return IndustryScoreVariants(
+        raw=raw,
+        soft=soft,
+        strict=strict,
+        fitted=fitted,
+        diagnostics={
+            "valid": True,
+            "reason": None,
+            "coverage": coverage,
+            "n_names": len(aligned),
+            "rank": int(np.linalg.matrix_rank(matrix)),
+        },
+    )
+
+
+def build_industry_score_variants_panel(
+    score: pd.DataFrame,
+    industry: pd.DataFrame,
+    soft_strength: float = 0.5,
+    min_names: int = 30,
+) -> IndustryScoreVariantsPanel:
+    """Apply industry decomposition independently to every signal date."""
+    aligned_industry = industry.reindex(index=score.index, columns=score.columns)
+    outputs = {
+        key: pd.DataFrame(np.nan, index=score.index, columns=score.columns, dtype=float)
+        for key in ("raw", "soft", "strict", "fitted")
+    }
+    rows = []
+    for date in score.index:
+        variants = build_industry_score_variants(
+            score.loc[date],
+            aligned_industry.loc[date],
+            soft_strength=soft_strength,
+            min_names=min_names,
+        )
+        for key in outputs:
+            outputs[key].loc[date] = getattr(variants, key)
+        rows.append({"date": date, **variants.diagnostics})
+    diagnostics = pd.DataFrame(rows).set_index("date")
+    diagnostics.index.name = None
+    return IndustryScoreVariantsPanel(diagnostics=diagnostics, **outputs)
+
+
 def winsorize_panel(
     panel: pd.DataFrame,
     lower_q: float = 0.01,
