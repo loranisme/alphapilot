@@ -65,3 +65,33 @@ python scripts/run_oos_alpha_validation.py
 
 研究门槛失败是有效结果，并不代表程序执行失败。失败后不允许根据 OOS 结果
 调整中性化强度、调仓频率、缓冲区或权重；应回到新的 IS 研究假设后再开独立实验。
+
+## Alpha101 扩充与相关性筛选实验
+
+下面的命令在同一份本地免费 OHLCV、同一组 walk-forward 折叠和同一交易成本下
+比较三条研究臂：A 为现有 13 因子和原稳定性选择器，B 为现有 13 因子和相关性
+选择器，C 为现有 13 因子加 12 个精选 Alpha101 因子和相关性选择器。
+
+```bash
+python scripts/run_alpha101_correlation_oos.py
+```
+
+相关性选择器先在每个 IS 折叠内按因子值相关性做 0.75 阈值的连通分量聚类，
+每簇只保留一个代表；随后对方向对齐的 IC 相关矩阵做 50% 对角收缩和软惩罚，
+再加入固定的 5 日 rank 换手惩罚。有效折必须保留 5–6 个因子，单因子权重不超过
+20%；若不足 5 个，组合保持旧仓，不放宽门槛。
+
+输出位于 `outputs/alpha101_correlation_oos/`：
+
+- `factor_value_correlation.csv`、`ic_correlation.csv`：逐折相关性与有效样本数；
+- `correlation_clusters.csv`、`factor_selection_by_fold.csv`：冗余簇、代表与最终选择；
+- `candidate_coverage.csv`：全部候选的覆盖率、稳定性和淘汰原因；
+- `ablation_metrics.csv`、`fold_metrics.csv`、`year_metrics.csv`：A/B/C 总体、逐折和逐年结果；
+- `cost_stress.csv`、`industry_exposure.csv`：0/5/10/20 bps 成本与行业暴露；
+- `quality_report.json`、`metadata.json`、`report.md`：工程门、研究门、数据指纹和人工汇总。
+
+12 个候选来自 Zura Kakushadze 的
+[101 Formulaic Alphas](https://arxiv.org/abs/1601.00991)：#2、#7、#12、#17、
+#21、#22、#30、#34、#35、#40、#46、#101。本实现仅用于个人研究；论文
+Appendix A 的公式与代码权利仍归其权利人。免费数据没有历史 PIT 成分股/行业数据库，
+行业分类仍是当前 GICS 快照；真实 VWAP、历史市值和 PIT 行业依赖公式未纳入本次实验。

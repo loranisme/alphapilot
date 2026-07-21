@@ -2,10 +2,12 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field
+from dataclasses import asdict, dataclass, field
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
+import yaml
 
 from .evaluation import evaluate_ic, generate_purged_folds
 from .oos import (
@@ -32,6 +34,27 @@ class AblationConfig:
     ic_soft_threshold: float = 0.25
     min_factors: int = 5
     max_factors: int = 6
+
+    def to_dict(self) -> dict[str, object]:
+        correlation = asdict(self)
+        correlation.pop("oos")
+        return {"oos": self.oos.to_dict(), "correlation": correlation}
+
+    @classmethod
+    def from_yaml(cls, path: str | Path) -> "AblationConfig":
+        payload = yaml.safe_load(Path(path).read_text(encoding="utf-8")) or {}
+        if not isinstance(payload, dict):
+            raise TypeError("ablation config must be a YAML mapping")
+        oos_payload = payload.get("oos", {})
+        correlation_payload = payload.get("correlation", {})
+        if not isinstance(oos_payload, dict) or not isinstance(correlation_payload, dict):
+            raise TypeError("oos and correlation config sections must be mappings")
+        if "cost_stress_bps" in oos_payload:
+            oos_payload = {
+                **oos_payload,
+                "cost_stress_bps": tuple(oos_payload["cost_stress_bps"]),
+            }
+        return cls(oos=OOSConfig(**oos_payload), **correlation_payload)
 
 
 @dataclass(frozen=True)
