@@ -64,38 +64,70 @@ Null hypothesis: the factor has no predictive power for future returns. Realized
 the bootstrap by resampling the time axis of the already-computed per-date IC
 series with a circular block bootstrap:
 
-- Block length = 10 days (> half the max horizon; preserves overlap autocorrelation
-  and volatility clustering).
 - `n_boot = 2000`, fixed `seed = 42` for reproducibility.
-- Each resample recomputes `IC_bar` for the entire 25×7 grid and records the
-  grid-wide `max |IC_bar|`.
-- Empirical p-value: `p_emp(f,h) = P(noise max|IC_bar| >= observed |IC_bar(f,h)|)`.
+- Each resample studentizes each cell and records the family-wide `max |z|`.
+- Empirical p-value: `p_emp = P(noise max|z| >= observed |z|)`.
 
-Taking the grid-wide max IS the multiple-testing correction: it absorbs the
-correlation between horizons and between factors, so it does not over-penalize the
-way Bonferroni/BH over 175 nominally-independent hypotheses would. This is why we
-chose a bootstrap max-statistic over analytic t + BH.
+Two corrections below (studentization; horizon-matched blocks + per-horizon
+families) were added during implementation after the naive `max |IC_bar|` version
+produced indefensible rankings. Both are recorded here.
+
+**Studentized statistic (correction 1).** Raw `max |IC_bar|` is the wrong scale
+when effective sample size varies 44× across horizons (n_eff = 975 at h=1 vs 22 at
+h=42). Long-horizon cells swing far more in absolute IC, dominating the max and
+inverting the ranking — the first real run had a t=1.6 cell PASS while a t=3.5 cell
+was REJECTED. We studentize each cell by its own block-bootstrap SE,
+`z = IC_bar / SE_boot`, and take the grid-wide `max |z|`. Taking the max IS the
+family-wise correction: it absorbs horizon/factor correlation, so it does not
+over-penalize like Bonferroni/BH over 175 nominally-independent hypotheses. (This
+is why we chose a bootstrap max-statistic over analytic t + BH.)
+
+**Horizon-matched blocks + per-horizon families (correction 2).** A block shorter
+than the horizon cannot capture the autocorrelation overlapping h-day returns
+induce (dependence to ~lag h): it underestimates SE and inflates z. At block=10
+this manufactured a spurious `min_ret_reversal@h42` PASS that vanished once the
+block reached the horizon. But no single global block serves the whole grid — long
+horizons need block ≥ horizon, while a large block over-smooths and spuriously
+inflates short-horizon cells (h=1 PASS count climbed 4→13 as block grew 10→84). We
+therefore run **each horizon as its own family** with `block(h) = max(10, 2h)`,
+apply the studentized family-wise max-T across the 25 factors within that horizon,
+then **Bonferroni across the 7 horizons** for the headline verdict. Both
+`p_horizon` and `p_global` are reported.
 
 **Resampling level.** We resample the *time labels of the already-computed daily IC
-series*, not the raw factor↔return alignment. Shuffling date blocks of the daily IC
-series is distributionally equivalent to shuffling the forward-return alignment and
-recomputing `IC_bar`, because `IC_bar` is a mean over per-date ICs and the null
-breaks the date→return correspondence either way. This equivalence is what lets us
-avoid 2000×175 cross-sectional Spearman recomputations; it is documented in the code.
+series*, not the raw factor↔return alignment. This lets us avoid 2000×175
+cross-sectional Spearman recomputations.
 
-The daily IC series for all 25×7 grid cells are resampled with the **same** block
-index draw per bootstrap iteration, preserving cross-factor and cross-horizon
-correlation under the null so that the grid-wide max is meaningful.
+**Imposing the null (null-centering).** A plain block bootstrap of an IC series
+*preserves* its observed mean, so it does not describe a no-signal world — a
+genuinely strong factor's resampled means would cluster around its real edge, not
+zero, and it would never reject. We therefore **demean each column before
+resampling** (subtract its own mean IC). The bootstrap of the demeaned,
+block-resampled series is the sampling distribution of the mean under H0 (mean IC =
+0) with the column's autocorrelation and variance structure retained. Taking the
+grid-wide max of these H0 deviations is the Westfall–Young family-wise correction.
+(Discovered during TDD: without centering, planted-signal tests correctly failed to
+PASS.)
+
+Within a horizon family, all factor columns are resampled with the **same** block
+index draw per bootstrap iteration, preserving cross-factor correlation under the
+null so that the family-wide max is meaningful.
 
 ### Verdict
-`verdict = PASS if p_emp < 0.05 else REJECT`. A secondary `p_emp < 0.10` flag is
-reported for reference; the default gate is 0.05.
+`verdict = PASS if p_global < 0.05 else REJECT`, where `p_global` is the
+per-horizon family-wise p Bonferroni-adjusted across the 7 horizons.
+`verdict_horizon` (against `p_horizon`) and a `p_global < 0.10` flag are reported
+for reference.
 
-### Honest expected outcome
-All 25 factors have naive |t| < 1.5 (strongest: min_ret_reversal at 1.11). After
-max-statistic correction, near-certain result is REJECT across the board. Phase B's
-value is not finding a winner but *proving*, defensibly, that the current pool has
-no usable factor — the key evidence for whether to pursue Phase C (new data).
+### Actual outcome
+With both corrections, exactly **1 of 175 cells** clears the global 5% bar:
+`alpha101_034@h1` at `p_global = 0.045` (marginal). Every other cell — the entire
+existing 13-factor pool at every horizon, and 11 of 12 Alpha101 factors — is
+rejected. The single survivor is a horizon-1 daily-reversal signal (highest
+turnover, least tradeable). At h=5, where the portfolio pipeline actually operated,
+nothing is significant. This defensibly establishes that the current OHLCV pool has
+no tradeable cross-sectional alpha, motivating Phase C (new data) over further
+Phase A tuning on this pool.
 
 ## Module interface
 
@@ -104,20 +136,33 @@ no usable factor — the key evidence for whether to pursue Phase C (new data).
 
 def effective_sample_size(n_dates: int, horizon: int) -> float: ...
 
+@dataclass(frozen=True)
+class BootstrapNull:              # columns, per-cell se, null_max_z, block, n_boot, seed
+    ...
+
 def block_bootstrap_null(
-    ic_panel: pd.DataFrame,      # index=date, columns=MultiIndex[(factor, horizon)]
-    block: int = 10,
-    n_boot: int = 2000,
-    seed: int = 42,
-) -> np.ndarray:                 # shape (n_boot,), grid-wide max|IC_bar| per draw
+    ic_panel: pd.DataFrame,       # index=date, columns=MultiIndex[(factor, horizon)]
+    block: int = 10, n_boot: int = 2000, seed: int = 42,
+) -> BootstrapNull:               # studentized family: per-cell SE + null max|z|
 
 def factor_evidence(
+    ic_panel: pd.DataFrame, boot: BootstrapNull, p_threshold: float = 0.05,
+) -> pd.DataFrame:                # factor,horizon,n_obs,ic_bar,se_boot,z_stat,n_eff,
+                                  # t_naive,p_emp,verdict,flag_10pct
+
+def default_block_for_horizon(horizon: int) -> int: ...   # max(10, 2*horizon)
+
+def evaluate_factor_grid(         # the top-level entry Phase A will reuse
     ic_panel: pd.DataFrame,
-    null_max: np.ndarray,
-    n_dates_by_horizon: dict[int, int],
-    p_threshold: float = 0.05,
-) -> pd.DataFrame:               # columns: factor,horizon,ic_bar,n_eff,t_naive,p_emp,verdict
+    block_for_horizon=default_block_for_horizon,
+    n_boot: int = 2000, seed: int = 42, p_threshold: float = 0.05,
+) -> pd.DataFrame:                # + block, crit_z_5pct, p_horizon, p_global,
+                                  # verdict_horizon; verdict/flag_10pct vs p_global
 ```
+
+`block_bootstrap_null` and `factor_evidence` stay generic (one family, any block);
+`evaluate_factor_grid` composes them per horizon with matched blocks and the
+across-horizon Bonferroni. All three are pure and unit-tested on synthetic panels.
 
 ## Data flow
 
@@ -125,23 +170,26 @@ def factor_evidence(
 _load_real_inputs(PROJECT_ROOT)                      # 25 factors + close[976×493]
   -> for each (factor, h): ic_series via evaluate_ic(factor, forward_h)
   -> assemble ic_panel (index=date, columns=(factor,horizon))
-  -> null_max = block_bootstrap_null(ic_panel, 10, 2000, 42)
-  -> evidence = factor_evidence(ic_panel, null_max, n_dates_by_horizon)
+  -> grid = evaluate_factor_grid(ic_panel, n_boot=2000, seed=42)
+       # internally: per horizon h -> slice -> block_bootstrap_null(block(h))
+       #             -> factor_evidence -> Bonferroni across horizons
   -> write outputs/factor_evidence/
 ```
 
-Bootstrap operates on the daily-IC panel, not raw cross-sections, per the
-equivalence above.
+The bootstrap operates on the daily-IC panel, not raw cross-sections.
 
 ## Outputs
 
 ```
 outputs/factor_evidence/
-  evidence.csv        175 rows: factor,horizon,ic_bar,n_eff,t_naive,p_emp,verdict
-  null_summary.json   block,n_boot,seed, null quantiles (50/90/95/99%), global critical |IC_bar|
-  report.md           method + params; per-factor best-horizon table sorted by p_emp;
-                      factor×horizon IC_bar heat table; PASS count (expected 0) + one-line
-                      conclusion; explicit survivorship-bias / current-universe disclaimer
+  evidence.csv        175 rows: factor,horizon,n_obs,ic_bar,se_boot,z_stat,n_eff,
+                      t_naive,p_emp,verdict,flag_10pct,block,crit_z_5pct,
+                      p_horizon,p_global,verdict_horizon
+  null_summary.json   n_boot,seed,p_threshold,statistic,correction,
+                      block_by_horizon, family_wise_critical_z_5pct_by_horizon
+  report.md           method + params; global/per-horizon PASS counts + conclusion;
+                      per-factor best-horizon table sorted by p_global; factor×horizon
+                      IC_bar heat table; survivorship-bias / current-universe caveats
 ```
 
 `report.md` header carries the survivorship-bias warning (universe = current 493
