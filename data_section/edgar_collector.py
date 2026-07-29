@@ -12,7 +12,9 @@ https://www.sec.gov/os/accessing-edgar-data.
 
 from __future__ import annotations
 
+import http.client
 import json
+import socket
 import time
 import urllib.error
 import urllib.request
@@ -21,9 +23,21 @@ from pathlib import Path
 _TICKERS_URL = "https://www.sec.gov/files/company_tickers.json"
 _FACTS_URL = "https://data.sec.gov/api/xbrl/companyfacts/CIK{cik:010d}.json"
 _DEFAULT_UA = "factor-research contact@example.com"  # override with a real contact
-_MIN_INTERVAL = 0.11  # seconds between requests (<10/s)
-_RETRY_ATTEMPTS = 3
-_RETRY_SLEEP = 1.5
+_MIN_INTERVAL = 0.15  # seconds between requests (<10/s; SEC drops on sustained bursts)
+_RETRY_ATTEMPTS = 4
+_RETRY_SLEEP = 2.0
+
+# Transient network failures worth retrying. RemoteDisconnected (a ConnectionError
+# / HTTPException subclass) is what SEC raises when it drops a connection under
+# load, and it is NOT a urllib.error.URLError — it must be caught explicitly or it
+# escapes retry and aborts the whole crawl.
+_TRANSIENT_ERRORS = (
+    urllib.error.URLError,
+    http.client.HTTPException,
+    ConnectionError,
+    TimeoutError,
+    socket.timeout,
+)
 
 
 class _RateLimiter:
@@ -48,10 +62,11 @@ def _get_json(url: str, user_agent: str, limiter: _RateLimiter) -> dict | None:
         except urllib.error.HTTPError as exc:
             if exc.code == 404:
                 return None
+            # 403/429/5xx: back off (SEC throttles bursts) and retry
             if attempt == _RETRY_ATTEMPTS - 1:
                 raise
             time.sleep(_RETRY_SLEEP * (attempt + 1))
-        except (urllib.error.URLError, TimeoutError):
+        except _TRANSIENT_ERRORS:
             if attempt == _RETRY_ATTEMPTS - 1:
                 raise
             time.sleep(_RETRY_SLEEP * (attempt + 1))
@@ -106,7 +121,14 @@ def fetch_companyfacts(
                 if on_progress:
                     on_progress(i, ticker, "no_cik")
                 continue
-            facts = _get_json(_FACTS_URL.format(cik=cik), user_agent, limiter)
+            # A ticker that still fails after all retries is skipped, not fatal:
+            # one dropped connection must not lose an in-progress crawl.
+            try:
+                facts = _get_json(_FACTS_URL.format(cik=cik), user_agent, limiter)
+            except Exception:
+                if on_progress:
+                    on_progress(i, ticker, "error")
+                continue
             if facts is not None:
                 cache_path.write_text(json.dumps(facts), encoding="utf-8")
         if facts:
