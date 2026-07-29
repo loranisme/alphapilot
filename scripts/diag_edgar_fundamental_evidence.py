@@ -92,6 +92,9 @@ def run(sample: int | None, output_dir: Path, project_root: Path = PROJECT_ROOT)
     def _progress(i, ticker, status):
         if status == "ok":
             fetched["n"] += 1
+        if (i + 1) % 25 == 0 or status in ("error", "no_cik"):
+            print(f"  fetch {i + 1}/{len(tickers)} ok={fetched['n']} "
+                  f"last={ticker}:{status}", file=sys.stderr, flush=True)
 
     raw = fetch_companyfacts(tickers, user_agent=USER_AGENT, on_progress=_progress)
     panels = build_pit_fundamentals(raw, close.index)
