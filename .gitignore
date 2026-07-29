@@ -18,4 +18,5 @@ __pycache__/
 .superpowers/
 .worktrees/
 data/metadata/
+data/edgar_cache/
 outputs/
