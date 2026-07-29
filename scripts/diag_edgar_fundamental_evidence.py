@@ -29,14 +29,18 @@ from factor_section.factor_design import FundamentalFactorDesigner
 from research_platform.edgar_fundamentals import CONTRACT_COLUMNS, build_pit_fundamentals
 from research_platform.significance import evaluate_factor_grid
 from scripts.diag_factor_evidence import HORIZONS, build_ic_panel
-from scripts.run_alpha101_correlation_oos import _load_real_inputs
+from scripts.run_alpha101_correlation_oos import (
+    _load_extended_inputs,
+    _load_real_inputs,
+)
 
 USER_AGENT = "factor-research yqcgao@g.ucla.edu"
 
 
-def load_price_close(project_root: Path) -> pd.DataFrame:
+def load_price_close(project_root: Path, extended: bool = False) -> pd.DataFrame:
     """Reuse the exact price universe / calendar of the OHLCV experiments."""
-    _existing, _alpha101, close, _industry, _meta = _load_real_inputs(
+    loader = _load_extended_inputs if extended else _load_real_inputs
+    _existing, _alpha101, close, _industry, _meta = loader(
         project_root, allow_network=False
     )
     return close
@@ -81,8 +85,9 @@ def build_fundamental_factor_panels(
     }
 
 
-def run(sample: int | None, output_dir: Path, project_root: Path = PROJECT_ROOT):
-    close = load_price_close(project_root)
+def run(sample: int | None, output_dir: Path, project_root: Path = PROJECT_ROOT,
+        extended: bool = False):
+    close = load_price_close(project_root, extended=extended)
     tickers = list(close.columns)
     if sample:
         tickers = tickers[:sample]
@@ -191,11 +196,13 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--sample", type=int, default=None,
                         help="use only the first N tickers (validation mode)")
+    parser.add_argument("--extended", action="store_true",
+                        help="use the extended 2019-2026 price-calendar window")
     args = parser.parse_args()
-    out = PROJECT_ROOT / "outputs" / (
-        "edgar_fundamental_validation" if args.sample else "edgar_fundamental_evidence"
-    )
-    result = run(args.sample, out)
+    suffix = "_extended" if args.extended else ""
+    base = "edgar_fundamental_validation" if args.sample else "edgar_fundamental_evidence"
+    out = PROJECT_ROOT / "outputs" / (base + suffix)
+    result = run(args.sample, out, extended=args.extended)
     cov = {k: v for k, v in result["coverage"].items() if k != "per_ticker"}
     print(json.dumps(cov, indent=2))
     if "grid" in result:

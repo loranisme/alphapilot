@@ -11,6 +11,7 @@ own family, Bonferroni across horizons). Writes an evidence table + report.
 
 from __future__ import annotations
 
+import argparse
 import json
 from pathlib import Path
 import sys
@@ -27,7 +28,10 @@ from research_platform.significance import (
     default_block_for_horizon,
     evaluate_factor_grid,
 )
-from scripts.run_alpha101_correlation_oos import _load_real_inputs
+from scripts.run_alpha101_correlation_oos import (
+    _load_extended_inputs,
+    _load_real_inputs,
+)
 
 HORIZONS = (1, 2, 3, 5, 10, 21, 42)
 N_BOOT = 2000
@@ -166,10 +170,16 @@ def write_report(grid: pd.DataFrame, metadata: dict, output_dir: Path) -> None:
     (output_dir / "report.md").write_text("\n".join(lines), encoding="utf-8")
 
 
-def run(output_dir: Path, project_root: Path = PROJECT_ROOT) -> pd.DataFrame:
-    existing, alpha101, close, _industry, metadata = _load_real_inputs(
-        project_root, allow_network=False
-    )
+def run(output_dir: Path, project_root: Path = PROJECT_ROOT,
+        extended: bool = False) -> pd.DataFrame:
+    if extended:
+        existing, alpha101, close, _industry, metadata = _load_extended_inputs(
+            project_root, allow_network=False
+        )
+    else:
+        existing, alpha101, close, _industry, metadata = _load_real_inputs(
+            project_root, allow_network=False
+        )
     factors = {**existing, **alpha101}
     ic_panel = build_ic_panel(factors, close)
     grid = evaluate_factor_grid(
@@ -180,10 +190,16 @@ def run(output_dir: Path, project_root: Path = PROJECT_ROOT) -> pd.DataFrame:
 
 
 def main() -> int:
-    grid = run(PROJECT_ROOT / "outputs" / "factor_evidence")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--extended", action="store_true",
+                        help="use the extended 2019-2026 price-calendar window")
+    args = parser.parse_args()
+    out = PROJECT_ROOT / "outputs" / (
+        "factor_evidence_extended" if args.extended else "factor_evidence"
+    )
+    grid = run(out, extended=args.extended)
     n_pass = int((grid["verdict"] == "PASS").sum())
-    print(f"PASS {n_pass} / {len(grid)} cells (global p<{P_THRESHOLD}). "
-          "See outputs/factor_evidence/report.md")
+    print(f"PASS {n_pass} / {len(grid)} cells (global p<{P_THRESHOLD}). See {out}/report.md")
     return 0
 
 

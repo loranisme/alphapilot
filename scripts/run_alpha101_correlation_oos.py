@@ -173,6 +173,67 @@ def _load_real_inputs(
     return payload
 
 
+def _load_extended_inputs(
+    project_root: Path,
+    start_date: str = "2019-01-02",
+    allow_network: bool = False,
+) -> tuple[
+    dict[str, pd.DataFrame],
+    dict[str, pd.DataFrame],
+    pd.DataFrame,
+    pd.DataFrame,
+    dict[str, object],
+]:
+    """Same universe as ``_load_real_inputs`` but with the research date index
+    derived from the raw price calendar (2018-07 onward) instead of the report
+    file that caps the window at 2022-04. Factors are computed on full raw
+    history so the extended window has proper lookback warmup.
+    """
+    report_path = project_root / "data" / "reports" / "composite_alpha_latest.csv"
+    report, invalid_dates = _load_factor_report(report_path)
+    classification = _load_classification_snapshot(
+        project_root / "data" / "metadata" / "sp500_constituents.csv",
+        allow_network=allow_network,
+    )
+    raw_dir = project_root / "data" / "raw"
+    tickers = [
+        ticker
+        for ticker in report.columns
+        if pd.notna(classification.get(ticker))
+        and (raw_dir / f"{ticker}_20years.csv").exists()
+    ]
+    # Load the full available history (raw files begin ~2018-07).
+    bundle = load_research_ohlcv(raw_dir, tickers, start=None, end=None)
+    close_all = pd.DataFrame(
+        {ticker: frame["Close"] for ticker, frame in bundle.frames.items()}
+    ).sort_index()
+    start_ts = pd.Timestamp(start_date)
+    coverage = close_all.notna().sum(axis=1)
+    # A trading day is any date where at least half the peak cross-section trades.
+    threshold = max(30, int(0.5 * coverage.max()))
+    dates = coverage.index[(coverage >= threshold) & (coverage.index >= start_ts)]
+    dates = pd.DatetimeIndex(dates).sort_values()
+
+    existing, alpha101, close = _build_factor_inputs(bundle, dates)
+    industry_row = classification.reindex(close.columns)
+    industry = pd.DataFrame(
+        np.tile(industry_row.to_numpy(), (len(dates), 1)),
+        index=dates,
+        columns=close.columns,
+    )
+    metadata = {
+        "data_fingerprint": _input_fingerprint(close, existing, alpha101, industry),
+        "report_invalid_dates": invalid_dates,
+        "requested_tickers": bundle.metadata["requested_tickers"],
+        "loaded_tickers": bundle.metadata["loaded_tickers"],
+        "missing_tickers": bundle.metadata["missing_tickers"],
+        "date_start": dates.min(),
+        "date_end": dates.max(),
+        "window": "extended_price_calendar",
+    }
+    return existing, alpha101, close, industry, metadata
+
+
 def hash_outputs(output_dir: str | Path) -> str:
     digest = sha256()
     for path in sorted(Path(output_dir).glob("*")):
