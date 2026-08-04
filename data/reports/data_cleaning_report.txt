@@ -1,2012 +1,2013 @@
 Data Cleaning Report
-Generated at: 2026-04-06 23:40:22.659939
+Generated at: 2026-06-30 14:17:36.938406
 ================================================================================
 
 Cleaning Operations:
 
-  A: Missing values 0 -> 0
-  A: Fixed 0 OHLC violations
-  A: Fixed 0 volume issues
-  A: Winsorized (缩尾) 12 处极端值
   AAPL: Missing values 0 -> 0
   AAPL: Fixed 0 OHLC violations
   AAPL: Fixed 0 volume issues
-  AAPL: Winsorized (缩尾) 13 处极端值
+  AAPL: Winsorized (缩尾) 26 处极端值
   ABBV: Missing values 0 -> 0
   ABBV: Fixed 0 OHLC violations
   ABBV: Fixed 0 volume issues
-  ABBV: Winsorized (缩尾) 26 处极端值
+  ABBV: Winsorized (缩尾) 47 处极端值
   ABNB: Missing values 0 -> 0
   ABNB: Fixed 0 OHLC violations
   ABNB: Fixed 0 volume issues
-  ABNB: Winsorized (缩尾) 28 处极端值
+  ABNB: Winsorized (缩尾) 48 处极端值
   ABT: Missing values 0 -> 0
   ABT: Fixed 0 OHLC violations
   ABT: Fixed 0 volume issues
-  ABT: Winsorized (缩尾) 20 处极端值
+  ABT: Winsorized (缩尾) 44 处极端值
   ACGL: Missing values 0 -> 0
   ACGL: Fixed 0 OHLC violations
   ACGL: Fixed 0 volume issues
-  ACGL: Winsorized (缩尾) 17 处极端值
+  ACGL: Winsorized (缩尾) 36 处极端值
   ACN: Missing values 0 -> 0
   ACN: Fixed 0 OHLC violations
   ACN: Fixed 0 volume issues
-  ACN: Winsorized (缩尾) 19 处极端值
+  ACN: Winsorized (缩尾) 57 处极端值
   ADBE: Missing values 0 -> 0
   ADBE: Fixed 0 OHLC violations
   ADBE: Fixed 0 volume issues
-  ADBE: Winsorized (缩尾) 23 处极端值
+  ADBE: Winsorized (缩尾) 35 处极端值
   ADI: Missing values 0 -> 0
   ADI: Fixed 0 OHLC violations
   ADI: Fixed 0 volume issues
-  ADI: Winsorized (缩尾) 16 处极端值
+  ADI: Winsorized (缩尾) 29 处极端值
   ADM: Missing values 0 -> 0
   ADM: Fixed 0 OHLC violations
   ADM: Fixed 0 volume issues
-  ADM: Winsorized (缩尾) 30 处极端值
+  ADM: Winsorized (缩尾) 44 处极端值
   ADP: Missing values 0 -> 0
   ADP: Fixed 0 OHLC violations
   ADP: Fixed 0 volume issues
-  ADP: Winsorized (缩尾) 16 处极端值
+  ADP: Winsorized (缩尾) 29 处极端值
   ADSK: Missing values 0 -> 0
   ADSK: Fixed 0 OHLC violations
   ADSK: Fixed 0 volume issues
-  ADSK: Winsorized (缩尾) 27 处极端值
+  ADSK: Winsorized (缩尾) 39 处极端值
   AEE: Missing values 0 -> 0
   AEE: Fixed 0 OHLC violations
   AEE: Fixed 0 volume issues
-  AEE: Winsorized (缩尾) 5 处极端值
+  AEE: Winsorized (缩尾) 18 处极端值
   AEP: Missing values 0 -> 0
   AEP: Fixed 0 OHLC violations
   AEP: Fixed 0 volume issues
-  AEP: Winsorized (缩尾) 17 处极端值
+  AEP: Winsorized (缩尾) 30 处极端值
   AES: Missing values 0 -> 0
   AES: Fixed 0 OHLC violations
   AES: Fixed 0 volume issues
-  AES: Winsorized (缩尾) 13 处极端值
+  AES: Winsorized (缩尾) 40 处极端值
   AFL: Missing values 0 -> 0
   AFL: Fixed 0 OHLC violations
   AFL: Fixed 0 volume issues
-  AFL: Winsorized (缩尾) 32 处极端值
+  AFL: Winsorized (缩尾) 30 处极端值
   AIG: Missing values 0 -> 0
   AIG: Fixed 0 OHLC violations
   AIG: Fixed 0 volume issues
-  AIG: Winsorized (缩尾) 17 处极端值
+  AIG: Winsorized (缩尾) 35 处极端值
   AIZ: Missing values 0 -> 0
   AIZ: Fixed 0 OHLC violations
   AIZ: Fixed 0 volume issues
-  AIZ: Winsorized (缩尾) 25 处极端值
+  AIZ: Winsorized (缩尾) 43 处极端值
   AJG: Missing values 0 -> 0
   AJG: Fixed 0 OHLC violations
   AJG: Fixed 0 volume issues
-  AJG: Winsorized (缩尾) 20 处极端值
+  AJG: Winsorized (缩尾) 39 处极端值
   AKAM: Missing values 0 -> 0
   AKAM: Fixed 0 OHLC violations
   AKAM: Fixed 0 volume issues
-  AKAM: Winsorized (缩尾) 33 处极端值
+  AKAM: Winsorized (缩尾) 66 处极端值
   ALB: Missing values 0 -> 0
   ALB: Fixed 0 OHLC violations
   ALB: Fixed 0 volume issues
-  ALB: Winsorized (缩尾) 9 处极端值
+  ALB: Winsorized (缩尾) 26 处极端值
   ALGN: Missing values 0 -> 0
   ALGN: Fixed 0 OHLC violations
   ALGN: Fixed 0 volume issues
-  ALGN: Winsorized (缩尾) 13 处极端值
-  ALL: Missing values 0 -> 0
-  ALL: Fixed 0 OHLC violations
-  ALL: Fixed 0 volume issues
-  ALL: Winsorized (缩尾) 21 处极端值
+  ALGN: Winsorized (缩尾) 27 处极端值
   ALLE: Missing values 0 -> 0
   ALLE: Fixed 0 OHLC violations
   ALLE: Fixed 0 volume issues
-  ALLE: Winsorized (缩尾) 13 处极端值
+  ALLE: Winsorized (缩尾) 24 处极端值
+  ALL: Missing values 0 -> 0
+  ALL: Fixed 0 OHLC violations
+  ALL: Fixed 0 volume issues
+  ALL: Winsorized (缩尾) 24 处极端值
   AMAT: Missing values 0 -> 0
   AMAT: Fixed 0 OHLC violations
   AMAT: Fixed 0 volume issues
-  AMAT: Winsorized (缩尾) 9 处极端值
+  AMAT: Winsorized (缩尾) 80 处极端值
   AMCR: Missing values 0 -> 0
   AMCR: Fixed 0 OHLC violations
-  AMCR: Fixed 0 volume issues
-  AMCR: Winsorized (缩尾) 12 处极端值
+  AMCR: Fixed 131 volume issues
+  AMCR: Winsorized (缩尾) 75 处极端值
   AMD: Missing values 0 -> 0
   AMD: Fixed 0 OHLC violations
   AMD: Fixed 0 volume issues
-  AMD: Winsorized (缩尾) 2 处极端值
+  AMD: Winsorized (缩尾) 163 处极端值
   AME: Missing values 0 -> 0
   AME: Fixed 0 OHLC violations
   AME: Fixed 0 volume issues
-  AME: Winsorized (缩尾) 11 处极端值
+  AME: Winsorized (缩尾) 21 处极端值
   AMGN: Missing values 0 -> 0
   AMGN: Fixed 0 OHLC violations
   AMGN: Fixed 0 volume issues
-  AMGN: Winsorized (缩尾) 26 处极端值
+  AMGN: Winsorized (缩尾) 46 处极端值
   AMP: Missing values 0 -> 0
   AMP: Fixed 0 OHLC violations
   AMP: Fixed 0 volume issues
-  AMP: Winsorized (缩尾) 22 处极端值
+  AMP: Winsorized (缩尾) 26 处极端值
   AMT: Missing values 0 -> 0
   AMT: Fixed 0 OHLC violations
   AMT: Fixed 0 volume issues
-  AMT: Winsorized (缩尾) 11 处极端值
+  AMT: Winsorized (缩尾) 14 处极端值
   AMZN: Missing values 0 -> 0
   AMZN: Fixed 0 OHLC violations
   AMZN: Fixed 0 volume issues
-  AMZN: Winsorized (缩尾) 19 处极端值
+  AMZN: Winsorized (缩尾) 21 处极端值
   ANET: Missing values 0 -> 0
   ANET: Fixed 0 OHLC violations
   ANET: Fixed 0 volume issues
-  ANET: Winsorized (缩尾) 20 处极端值
+  ANET: Winsorized (缩尾) 38 处极端值
   AON: Missing values 0 -> 0
   AON: Fixed 0 OHLC violations
   AON: Fixed 0 volume issues
-  AON: Winsorized (缩尾) 21 处极端值
+  AON: Winsorized (缩尾) 32 处极端值
   AOS: Missing values 0 -> 0
   AOS: Fixed 0 OHLC violations
   AOS: Fixed 0 volume issues
-  AOS: Winsorized (缩尾) 14 处极端值
+  AOS: Winsorized (缩尾) 40 处极端值
   APA: Missing values 0 -> 0
   APA: Fixed 0 OHLC violations
   APA: Fixed 0 volume issues
-  APA: Winsorized (缩尾) 13 处极端值
+  APA: Winsorized (缩尾) 47 处极端值
   APD: Missing values 0 -> 0
   APD: Fixed 0 OHLC violations
   APD: Fixed 0 volume issues
-  APD: Winsorized (缩尾) 15 处极端值
+  APD: Winsorized (缩尾) 26 处极端值
   APH: Missing values 0 -> 0
   APH: Fixed 0 OHLC violations
   APH: Fixed 0 volume issues
-  APH: Winsorized (缩尾) 13 处极端值
+  APH: Winsorized (缩尾) 19 处极端值
   APO: Missing values 0 -> 0
   APO: Fixed 0 OHLC violations
   APO: Fixed 0 volume issues
-  APO: Winsorized (缩尾) 27 处极端值
+  APO: Winsorized (缩尾) 33 处极端值
   APP: Missing values 0 -> 0
   APP: Fixed 0 OHLC violations
   APP: Fixed 0 volume issues
-  APP: Winsorized (缩尾) 26 处极端值
+  APP: Winsorized (缩尾) 30 处极端值
   APTV: Missing values 0 -> 0
   APTV: Fixed 0 OHLC violations
   APTV: Fixed 0 volume issues
-  APTV: Winsorized (缩尾) 17 处极端值
-  ARE: Missing values 0 -> 0
-  ARE: Fixed 0 OHLC violations
-  ARE: Fixed 0 volume issues
-  ARE: Winsorized (缩尾) 20 处极端值
+  APTV: Winsorized (缩尾) 30 处极端值
   ARES: Missing values 0 -> 0
   ARES: Fixed 0 OHLC violations
   ARES: Fixed 0 volume issues
-  ARES: Winsorized (缩尾) 30 处极端值
+  ARES: Winsorized (缩尾) 71 处极端值
+  ARE: Missing values 0 -> 0
+  ARE: Fixed 0 OHLC violations
+  ARE: Fixed 0 volume issues
+  ARE: Winsorized (缩尾) 44 处极端值
   ATO: Missing values 0 -> 0
   ATO: Fixed 0 OHLC violations
   ATO: Fixed 0 volume issues
-  ATO: Winsorized (缩尾) 19 处极端值
+  ATO: Winsorized (缩尾) 42 处极端值
   AVB: Missing values 0 -> 0
   AVB: Fixed 0 OHLC violations
   AVB: Fixed 0 volume issues
-  AVB: Winsorized (缩尾) 7 处极端值
+  AVB: Winsorized (缩尾) 21 处极端值
   AVGO: Missing values 0 -> 0
   AVGO: Fixed 0 OHLC violations
   AVGO: Fixed 0 volume issues
-  AVGO: Winsorized (缩尾) 42 处极端值
+  AVGO: Winsorized (缩尾) 69 处极端值
   AVY: Missing values 0 -> 0
   AVY: Fixed 0 OHLC violations
   AVY: Fixed 0 volume issues
-  AVY: Winsorized (缩尾) 18 处极端值
+  AVY: Winsorized (缩尾) 19 处极端值
   AWK: Missing values 0 -> 0
   AWK: Fixed 0 OHLC violations
   AWK: Fixed 0 volume issues
-  AWK: Winsorized (缩尾) 11 处极端值
+  AWK: Winsorized (缩尾) 38 处极端值
   AXON: Missing values 0 -> 0
   AXON: Fixed 0 OHLC violations
   AXON: Fixed 0 volume issues
-  AXON: Winsorized (缩尾) 22 处极端值
+  AXON: Winsorized (缩尾) 47 处极端值
   AXP: Missing values 0 -> 0
   AXP: Fixed 0 OHLC violations
   AXP: Fixed 0 volume issues
-  AXP: Winsorized (缩尾) 21 处极端值
+  AXP: Winsorized (缩尾) 59 处极端值
   AZO: Missing values 0 -> 0
   AZO: Fixed 0 OHLC violations
   AZO: Fixed 0 volume issues
-  AZO: Winsorized (缩尾) 15 处极端值
-  BA: Missing values 0 -> 0
-  BA: Fixed 0 OHLC violations
-  BA: Fixed 0 volume issues
-  BA: Winsorized (缩尾) 20 处极端值
+  AZO: Winsorized (缩尾) 30 处极端值
+  A: Missing values 0 -> 0
+  A: Fixed 0 OHLC violations
+  A: Fixed 0 volume issues
+  A: Winsorized (缩尾) 21 处极端值
   BAC: Missing values 0 -> 0
   BAC: Fixed 0 OHLC violations
   BAC: Fixed 0 volume issues
-  BAC: Winsorized (缩尾) 21 处极端值
+  BAC: Winsorized (缩尾) 35 处极端值
   BALL: Missing values 0 -> 0
   BALL: Fixed 0 OHLC violations
   BALL: Fixed 0 volume issues
-  BALL: Winsorized (缩尾) 21 处极端值
+  BALL: Winsorized (缩尾) 23 处极端值
   BAX: Missing values 0 -> 0
   BAX: Fixed 0 OHLC violations
   BAX: Fixed 0 volume issues
-  BAX: Winsorized (缩尾) 11 处极端值
+  BAX: Winsorized (缩尾) 27 处极端值
+  BA: Missing values 0 -> 0
+  BA: Fixed 0 OHLC violations
+  BA: Fixed 0 volume issues
+  BA: Winsorized (缩尾) 117 处极端值
   BBY: Missing values 0 -> 0
   BBY: Fixed 0 OHLC violations
   BBY: Fixed 0 volume issues
-  BBY: Winsorized (缩尾) 29 处极端值
+  BBY: Winsorized (缩尾) 45 处极端值
   BDX: Missing values 0 -> 0
   BDX: Fixed 0 OHLC violations
   BDX: Fixed 0 volume issues
-  BDX: Winsorized (缩尾) 11 处极端值
+  BDX: Winsorized (缩尾) 25 处极端值
   BEN: Missing values 0 -> 0
   BEN: Fixed 0 OHLC violations
   BEN: Fixed 0 volume issues
-  BEN: Winsorized (缩尾) 24 处极端值
+  BEN: Winsorized (缩尾) 37 处极端值
   BF-B: Missing values 0 -> 0
   BF-B: Fixed 0 OHLC violations
   BF-B: Fixed 0 volume issues
-  BF-B: Winsorized (缩尾) 16 处极端值
+  BF-B: Winsorized (缩尾) 58 处极端值
   BG: Missing values 0 -> 0
   BG: Fixed 0 OHLC violations
   BG: Fixed 0 volume issues
-  BG: Winsorized (缩尾) 16 处极端值
+  BG: Winsorized (缩尾) 24 处极端值
   BIIB: Missing values 0 -> 0
   BIIB: Fixed 0 OHLC violations
   BIIB: Fixed 0 volume issues
-  BIIB: Winsorized (缩尾) 15 处极端值
-  BK: Missing values 0 -> 0
-  BK: Fixed 0 OHLC violations
-  BK: Fixed 0 volume issues
-  BK: Winsorized (缩尾) 16 处极端值
+  BIIB: Winsorized (缩尾) 53 处极端值
   BKNG: Missing values 0 -> 0
   BKNG: Fixed 0 OHLC violations
   BKNG: Fixed 0 volume issues
-  BKNG: Winsorized (缩尾) 19 处极端值
+  BKNG: Winsorized (缩尾) 31 处极端值
   BKR: Missing values 0 -> 0
   BKR: Fixed 0 OHLC violations
-  BKR: Fixed 0 volume issues
-  BKR: Winsorized (缩尾) 16 处极端值
+  BKR: Fixed 1 volume issues
+  BKR: Winsorized (缩尾) 27 处极端值
+  BK: Missing values 0 -> 0
+  BK: Fixed 1 OHLC violations
+  BK: Fixed 0 volume issues
+  BK: Winsorized (缩尾) 583 处极端值
   BLDR: Missing values 0 -> 0
   BLDR: Fixed 0 OHLC violations
   BLDR: Fixed 0 volume issues
-  BLDR: Winsorized (缩尾) 8 处极端值
+  BLDR: Winsorized (缩尾) 19 处极端值
   BLK: Missing values 0 -> 0
   BLK: Fixed 0 OHLC violations
   BLK: Fixed 0 volume issues
-  BLK: Winsorized (缩尾) 17 处极端值
+  BLK: Winsorized (缩尾) 34 处极端值
   BMY: Missing values 0 -> 0
   BMY: Fixed 0 OHLC violations
   BMY: Fixed 0 volume issues
-  BMY: Winsorized (缩尾) 14 处极端值
-  BR: Missing values 0 -> 0
-  BR: Fixed 0 OHLC violations
-  BR: Fixed 0 volume issues
-  BR: Winsorized (缩尾) 40 处极端值
+  BMY: Winsorized (缩尾) 26 处极端值
   BRK-B: Missing values 0 -> 0
   BRK-B: Fixed 0 OHLC violations
   BRK-B: Fixed 0 volume issues
-  BRK-B: Winsorized (缩尾) 15 处极端值
+  BRK-B: Winsorized (缩尾) 43 处极端值
   BRO: Missing values 0 -> 0
   BRO: Fixed 0 OHLC violations
   BRO: Fixed 0 volume issues
-  BRO: Winsorized (缩尾) 22 处极端值
+  BRO: Winsorized (缩尾) 46 处极端值
+  BR: Missing values 0 -> 0
+  BR: Fixed 0 OHLC violations
+  BR: Fixed 0 volume issues
+  BR: Winsorized (缩尾) 65 处极端值
   BSX: Missing values 0 -> 0
   BSX: Fixed 0 OHLC violations
   BSX: Fixed 0 volume issues
-  BSX: Winsorized (缩尾) 17 处极端值
-  BX: Missing values 0 -> 0
-  BX: Fixed 0 OHLC violations
-  BX: Fixed 0 volume issues
-  BX: Winsorized (缩尾) 25 处极端值
+  BSX: Winsorized (缩尾) 29 处极端值
   BXP: Missing values 0 -> 0
   BXP: Fixed 0 OHLC violations
   BXP: Fixed 0 volume issues
-  BXP: Winsorized (缩尾) 12 处极端值
-  C: Missing values 0 -> 0
-  C: Fixed 0 OHLC violations
-  C: Fixed 0 volume issues
-  C: Winsorized (缩尾) 10 处极端值
+  BXP: Winsorized (缩尾) 16 处极端值
+  BX: Missing values 0 -> 0
+  BX: Fixed 0 OHLC violations
+  BX: Fixed 0 volume issues
+  BX: Winsorized (缩尾) 39 处极端值
   CAG: Missing values 0 -> 0
   CAG: Fixed 0 OHLC violations
   CAG: Fixed 0 volume issues
-  CAG: Winsorized (缩尾) 24 处极端值
+  CAG: Winsorized (缩尾) 61 处极端值
   CAH: Missing values 0 -> 0
   CAH: Fixed 0 OHLC violations
   CAH: Fixed 0 volume issues
-  CAH: Winsorized (缩尾) 20 处极端值
+  CAH: Winsorized (缩尾) 30 处极端值
   CARR: Missing values 0 -> 0
   CARR: Fixed 0 OHLC violations
   CARR: Fixed 0 volume issues
-  CARR: Winsorized (缩尾) 11 处极端值
+  CARR: Winsorized (缩尾) 32 处极端值
   CAT: Missing values 0 -> 0
   CAT: Fixed 0 OHLC violations
   CAT: Fixed 0 volume issues
-  CAT: Winsorized (缩尾) 21 处极端值
-  CB: Missing values 0 -> 0
-  CB: Fixed 0 OHLC violations
-  CB: Fixed 0 volume issues
-  CB: Winsorized (缩尾) 15 处极端值
+  CAT: Winsorized (缩尾) 73 处极端值
   CBOE: Missing values 0 -> 0
   CBOE: Fixed 0 OHLC violations
   CBOE: Fixed 0 volume issues
-  CBOE: Winsorized (缩尾) 15 处极端值
+  CBOE: Winsorized (缩尾) 30 处极端值
   CBRE: Missing values 0 -> 0
   CBRE: Fixed 0 OHLC violations
   CBRE: Fixed 0 volume issues
-  CBRE: Winsorized (缩尾) 20 处极端值
+  CBRE: Winsorized (缩尾) 36 处极端值
+  CB: Missing values 0 -> 0
+  CB: Fixed 0 OHLC violations
+  CB: Fixed 0 volume issues
+  CB: Winsorized (缩尾) 26 处极端值
   CCI: Missing values 0 -> 0
   CCI: Fixed 0 OHLC violations
-  CCI: Fixed 0 volume issues
-  CCI: Winsorized (缩尾) 17 处极端值
+  CCI: Fixed 1 volume issues
+  CCI: Winsorized (缩尾) 20 处极端值
   CCL: Missing values 0 -> 0
   CCL: Fixed 0 OHLC violations
   CCL: Fixed 0 volume issues
-  CCL: Winsorized (缩尾) 17 处极端值
+  CCL: Winsorized (缩尾) 25 处极端值
   CDNS: Missing values 0 -> 0
   CDNS: Fixed 0 OHLC violations
   CDNS: Fixed 0 volume issues
-  CDNS: Winsorized (缩尾) 22 处极端值
+  CDNS: Winsorized (缩尾) 24 处极端值
   CDW: Missing values 0 -> 0
   CDW: Fixed 0 OHLC violations
   CDW: Fixed 0 volume issues
-  CDW: Winsorized (缩尾) 10 处极端值
+  CDW: Winsorized (缩尾) 32 处极端值
   CEG: Missing values 0 -> 0
   CEG: Fixed 0 OHLC violations
   CEG: Fixed 0 volume issues
-  CEG: Winsorized (缩尾) 15 处极端值
-  CF: Missing values 0 -> 0
-  CF: Fixed 0 OHLC violations
-  CF: Fixed 0 volume issues
-  CF: Winsorized (缩尾) 48 处极端值
+  CEG: Winsorized (缩尾) 19 处极端值
   CFG: Missing values 0 -> 0
   CFG: Fixed 0 OHLC violations
   CFG: Fixed 0 volume issues
-  CFG: Winsorized (缩尾) 16 处极端值
+  CFG: Winsorized (缩尾) 24 处极端值
+  CF: Missing values 0 -> 0
+  CF: Fixed 0 OHLC violations
+  CF: Fixed 0 volume issues
+  CF: Winsorized (缩尾) 39 处极端值
   CHD: Missing values 0 -> 0
   CHD: Fixed 0 OHLC violations
-  CHD: Fixed 0 volume issues
-  CHD: Winsorized (缩尾) 16 处极端值
+  CHD: Fixed 1 volume issues
+  CHD: Winsorized (缩尾) 26 处极端值
   CHRW: Missing values 0 -> 0
   CHRW: Fixed 0 OHLC violations
   CHRW: Fixed 0 volume issues
-  CHRW: Winsorized (缩尾) 362 处极端值
+  CHRW: Winsorized (缩尾) 632 处极端值
   CHTR: Missing values 0 -> 0
   CHTR: Fixed 0 OHLC violations
   CHTR: Fixed 0 volume issues
-  CHTR: Winsorized (缩尾) 19 处极端值
-  CI: Missing values 0 -> 0
-  CI: Fixed 0 OHLC violations
-  CI: Fixed 0 volume issues
-  CI: Winsorized (缩尾) 17 处极端值
+  CHTR: Winsorized (缩尾) 49 处极端值
   CIEN: Missing values 0 -> 0
   CIEN: Fixed 0 OHLC violations
   CIEN: Fixed 0 volume issues
-  CIEN: Winsorized (缩尾) 445 处极端值
+  CIEN: Winsorized (缩尾) 852 处极端值
   CINF: Missing values 0 -> 0
   CINF: Fixed 0 OHLC violations
   CINF: Fixed 0 volume issues
-  CINF: Winsorized (缩尾) 24 处极端值
-  CL: Missing values 0 -> 0
-  CL: Fixed 0 OHLC violations
-  CL: Fixed 0 volume issues
-  CL: Winsorized (缩尾) 8 处极端值
+  CINF: Winsorized (缩尾) 54 处极端值
+  CI: Missing values 0 -> 0
+  CI: Fixed 0 OHLC violations
+  CI: Fixed 0 volume issues
+  CI: Winsorized (缩尾) 32 处极端值
   CLX: Missing values 0 -> 0
   CLX: Fixed 0 OHLC violations
   CLX: Fixed 0 volume issues
-  CLX: Winsorized (缩尾) 18 处极端值
+  CLX: Winsorized (缩尾) 43 处极端值
+  CL: Missing values 0 -> 0
+  CL: Fixed 0 OHLC violations
+  CL: Fixed 0 volume issues
+  CL: Winsorized (缩尾) 15 处极端值
   CMCSA: Missing values 0 -> 0
   CMCSA: Fixed 0 OHLC violations
   CMCSA: Fixed 0 volume issues
-  CMCSA: Winsorized (缩尾) 11 处极端值
+  CMCSA: Winsorized (缩尾) 31 处极端值
   CME: Missing values 0 -> 0
   CME: Fixed 0 OHLC violations
   CME: Fixed 0 volume issues
-  CME: Winsorized (缩尾) 16 处极端值
+  CME: Winsorized (缩尾) 28 处极端值
   CMG: Missing values 0 -> 0
   CMG: Fixed 0 OHLC violations
   CMG: Fixed 0 volume issues
-  CMG: Winsorized (缩尾) 20 处极端值
+  CMG: Winsorized (缩尾) 43 处极端值
   CMI: Missing values 0 -> 0
   CMI: Fixed 0 OHLC violations
   CMI: Fixed 0 volume issues
-  CMI: Winsorized (缩尾) 32 处极端值
+  CMI: Winsorized (缩尾) 205 处极端值
   CMS: Missing values 0 -> 0
   CMS: Fixed 0 OHLC violations
   CMS: Fixed 0 volume issues
-  CMS: Winsorized (缩尾) 8 处极端值
+  CMS: Winsorized (缩尾) 20 处极端值
   CNC: Missing values 0 -> 0
   CNC: Fixed 0 OHLC violations
-  CNC: Fixed 0 volume issues
-  CNC: Winsorized (缩尾) 46 处极端值
+  CNC: Fixed 1 volume issues
+  CNC: Winsorized (缩尾) 68 处极端值
   CNP: Missing values 0 -> 0
   CNP: Fixed 0 OHLC violations
   CNP: Fixed 0 volume issues
-  CNP: Winsorized (缩尾) 15 处极端值
+  CNP: Winsorized (缩尾) 43 处极端值
   COF: Missing values 0 -> 0
   COF: Fixed 0 OHLC violations
   COF: Fixed 0 volume issues
-  COF: Winsorized (缩尾) 20 处极端值
+  COF: Winsorized (缩尾) 37 处极端值
   COHR: Missing values 0 -> 0
   COHR: Fixed 0 OHLC violations
   COHR: Fixed 0 volume issues
-  COHR: Winsorized (缩尾) 125 处极端值
+  COHR: Winsorized (缩尾) 589 处极端值
   COIN: Missing values 0 -> 0
   COIN: Fixed 0 OHLC violations
   COIN: Fixed 0 volume issues
-  COIN: Winsorized (缩尾) 18 处极端值
+  COIN: Winsorized (缩尾) 21 处极端值
   COO: Missing values 0 -> 0
   COO: Fixed 0 OHLC violations
   COO: Fixed 0 volume issues
-  COO: Winsorized (缩尾) 19 处极端值
+  COO: Winsorized (缩尾) 42 处极端值
   COP: Missing values 0 -> 0
   COP: Fixed 0 OHLC violations
   COP: Fixed 0 volume issues
-  COP: Winsorized (缩尾) 19 处极端值
+  COP: Winsorized (缩尾) 30 处极端值
   COR: Missing values 0 -> 0
   COR: Fixed 0 OHLC violations
   COR: Fixed 0 volume issues
-  COR: Winsorized (缩尾) 30 处极端值
+  COR: Winsorized (缩尾) 46 处极端值
   COST: Missing values 0 -> 0
   COST: Fixed 0 OHLC violations
   COST: Fixed 0 volume issues
-  COST: Winsorized (缩尾) 28 处极端值
+  COST: Winsorized (缩尾) 57 处极端值
   CPAY: Missing values 0 -> 0
   CPAY: Fixed 0 OHLC violations
   CPAY: Fixed 0 volume issues
-  CPAY: Winsorized (缩尾) 17 处极端值
+  CPAY: Winsorized (缩尾) 42 处极端值
   CPB: Missing values 0 -> 0
   CPB: Fixed 0 OHLC violations
   CPB: Fixed 0 volume issues
-  CPB: Winsorized (缩尾) 27 处极端值
+  CPB: Winsorized (缩尾) 76 处极端值
   CPRT: Missing values 0 -> 0
   CPRT: Fixed 0 OHLC violations
   CPRT: Fixed 0 volume issues
-  CPRT: Winsorized (缩尾) 19 处极端值
+  CPRT: Winsorized (缩尾) 41 处极端值
   CPT: Missing values 0 -> 0
   CPT: Fixed 0 OHLC violations
   CPT: Fixed 0 volume issues
-  CPT: Winsorized (缩尾) 11 处极端值
+  CPT: Winsorized (缩尾) 24 处极端值
   CRH: Missing values 0 -> 0
   CRH: Fixed 0 OHLC violations
   CRH: Fixed 0 volume issues
-  CRH: Winsorized (缩尾) 10 处极端值
+  CRH: Winsorized (缩尾) 22 处极端值
   CRL: Missing values 0 -> 0
   CRL: Fixed 0 OHLC violations
   CRL: Fixed 0 volume issues
-  CRL: Winsorized (缩尾) 19 处极端值
+  CRL: Winsorized (缩尾) 40 处极端值
   CRM: Missing values 0 -> 0
   CRM: Fixed 0 OHLC violations
   CRM: Fixed 0 volume issues
-  CRM: Winsorized (缩尾) 20 处极端值
+  CRM: Winsorized (缩尾) 50 处极端值
   CRWD: Missing values 0 -> 0
   CRWD: Fixed 0 OHLC violations
   CRWD: Fixed 0 volume issues
-  CRWD: Winsorized (缩尾) 31 处极端值
+  CRWD: Winsorized (缩尾) 47 处极端值
   CSCO: Missing values 0 -> 0
   CSCO: Fixed 0 OHLC violations
   CSCO: Fixed 0 volume issues
-  CSCO: Winsorized (缩尾) 35 处极端值
+  CSCO: Winsorized (缩尾) 274 处极端值
   CSGP: Missing values 0 -> 0
   CSGP: Fixed 0 OHLC violations
   CSGP: Fixed 0 volume issues
-  CSGP: Winsorized (缩尾) 38 处极端值
+  CSGP: Winsorized (缩尾) 71 处极端值
   CSX: Missing values 0 -> 0
   CSX: Fixed 0 OHLC violations
   CSX: Fixed 0 volume issues
-  CSX: Winsorized (缩尾) 12 处极端值
+  CSX: Winsorized (缩尾) 27 处极端值
   CTAS: Missing values 0 -> 0
   CTAS: Fixed 0 OHLC violations
   CTAS: Fixed 0 volume issues
-  CTAS: Winsorized (缩尾) 18 处极端值
+  CTAS: Winsorized (缩尾) 36 处极端值
   CTRA: Missing values 0 -> 0
-  CTRA: Fixed 0 OHLC violations
-  CTRA: Fixed 0 volume issues
-  CTRA: Winsorized (缩尾) 50 处极端值
+  CTRA: Fixed 1 OHLC violations
+  CTRA: Fixed 1 volume issues
+  CTRA: Winsorized (缩尾) 42 处极端值
   CTSH: Missing values 0 -> 0
   CTSH: Fixed 0 OHLC violations
   CTSH: Fixed 0 volume issues
-  CTSH: Winsorized (缩尾) 15 处极端值
+  CTSH: Winsorized (缩尾) 43 处极端值
   CTVA: Missing values 0 -> 0
   CTVA: Fixed 0 OHLC violations
   CTVA: Fixed 0 volume issues
-  CTVA: Winsorized (缩尾) 18 处极端值
+  CTVA: Winsorized (缩尾) 32 处极端值
   CVNA: Missing values 0 -> 0
   CVNA: Fixed 0 OHLC violations
   CVNA: Fixed 0 volume issues
-  CVNA: Winsorized (缩尾) 42 处极端值
+  CVNA: Winsorized (缩尾) 102 处极端值
   CVS: Missing values 0 -> 0
   CVS: Fixed 0 OHLC violations
   CVS: Fixed 0 volume issues
-  CVS: Winsorized (缩尾) 14 处极端值
+  CVS: Winsorized (缩尾) 32 处极端值
   CVX: Missing values 0 -> 0
   CVX: Fixed 0 OHLC violations
   CVX: Fixed 0 volume issues
-  CVX: Winsorized (缩尾) 104 处极端值
-  D: Missing values 0 -> 0
-  D: Fixed 0 OHLC violations
-  D: Fixed 0 volume issues
-  D: Winsorized (缩尾) 10 处极端值
+  CVX: Winsorized (缩尾) 47 处极端值
+  C: Missing values 0 -> 0
+  C: Fixed 0 OHLC violations
+  C: Fixed 0 volume issues
+  C: Winsorized (缩尾) 379 处极端值
   DAL: Missing values 0 -> 0
   DAL: Fixed 0 OHLC violations
   DAL: Fixed 0 volume issues
-  DAL: Winsorized (缩尾) 21 处极端值
+  DAL: Winsorized (缩尾) 98 处极端值
   DASH: Missing values 0 -> 0
   DASH: Fixed 0 OHLC violations
   DASH: Fixed 0 volume issues
-  DASH: Winsorized (缩尾) 19 处极端值
-  DD: Missing values 0 -> 0
-  DD: Fixed 0 OHLC violations
-  DD: Fixed 0 volume issues
-  DD: Winsorized (缩尾) 87 处极端值
+  DASH: Winsorized (缩尾) 24 处极端值
   DDOG: Missing values 0 -> 0
   DDOG: Fixed 0 OHLC violations
   DDOG: Fixed 0 volume issues
-  DDOG: Winsorized (缩尾) 18 处极端值
-  DE: Missing values 0 -> 0
-  DE: Fixed 0 OHLC violations
-  DE: Fixed 0 volume issues
-  DE: Winsorized (缩尾) 22 处极端值
+  DDOG: Winsorized (缩尾) 38 处极端值
+  DD: Missing values 0 -> 0
+  DD: Fixed 0 OHLC violations
+  DD: Fixed 0 volume issues
+  DD: Winsorized (缩尾) 164 处极端值
   DECK: Missing values 0 -> 0
   DECK: Fixed 0 OHLC violations
   DECK: Fixed 0 volume issues
-  DECK: Winsorized (缩尾) 28 处极端值
+  DECK: Winsorized (缩尾) 34 处极端值
   DELL: Missing values 0 -> 0
   DELL: Fixed 0 OHLC violations
   DELL: Fixed 0 volume issues
-  DELL: Winsorized (缩尾) 22 处极端值
-  DG: Missing values 0 -> 0
-  DG: Fixed 0 OHLC violations
-  DG: Fixed 0 volume issues
-  DG: Winsorized (缩尾) 20 处极端值
+  DELL: Winsorized (缩尾) 140 处极端值
+  DE: Missing values 0 -> 0
+  DE: Fixed 0 OHLC violations
+  DE: Fixed 0 volume issues
+  DE: Winsorized (缩尾) 34 处极端值
   DGX: Missing values 0 -> 0
   DGX: Fixed 0 OHLC violations
   DGX: Fixed 0 volume issues
-  DGX: Winsorized (缩尾) 16 处极端值
+  DGX: Winsorized (缩尾) 33 处极端值
+  DG: Missing values 0 -> 0
+  DG: Fixed 0 OHLC violations
+  DG: Fixed 0 volume issues
+  DG: Winsorized (缩尾) 36 处极端值
   DHI: Missing values 0 -> 0
   DHI: Fixed 0 OHLC violations
   DHI: Fixed 0 volume issues
-  DHI: Winsorized (缩尾) 9 处极端值
+  DHI: Winsorized (缩尾) 18 处极端值
   DHR: Missing values 0 -> 0
   DHR: Fixed 0 OHLC violations
   DHR: Fixed 0 volume issues
-  DHR: Winsorized (缩尾) 6 处极端值
+  DHR: Winsorized (缩尾) 39 处极端值
   DIS: Missing values 0 -> 0
   DIS: Fixed 0 OHLC violations
   DIS: Fixed 0 volume issues
-  DIS: Winsorized (缩尾) 21 处极端值
+  DIS: Winsorized (缩尾) 57 处极端值
   DLR: Missing values 0 -> 0
   DLR: Fixed 0 OHLC violations
   DLR: Fixed 0 volume issues
-  DLR: Winsorized (缩尾) 18 处极端值
+  DLR: Winsorized (缩尾) 38 处极端值
   DLTR: Missing values 0 -> 0
   DLTR: Fixed 0 OHLC violations
   DLTR: Fixed 0 volume issues
-  DLTR: Winsorized (缩尾) 27 处极端值
+  DLTR: Winsorized (缩尾) 48 处极端值
   DOC: Missing values 0 -> 0
   DOC: Fixed 0 OHLC violations
-  DOC: Fixed 0 volume issues
-  DOC: Winsorized (缩尾) 12 处极端值
+  DOC: Fixed 1 volume issues
+  DOC: Winsorized (缩尾) 24 处极端值
   DOV: Missing values 0 -> 0
   DOV: Fixed 0 OHLC violations
   DOV: Fixed 0 volume issues
-  DOV: Winsorized (缩尾) 11 处极端值
+  DOV: Winsorized (缩尾) 26 处极端值
   DOW: Missing values 0 -> 0
   DOW: Fixed 0 OHLC violations
   DOW: Fixed 0 volume issues
-  DOW: Winsorized (缩尾) 10 处极端值
+  DOW: Winsorized (缩尾) 47 处极端值
   DPZ: Missing values 0 -> 0
   DPZ: Fixed 0 OHLC violations
   DPZ: Fixed 0 volume issues
-  DPZ: Winsorized (缩尾) 20 处极端值
+  DPZ: Winsorized (缩尾) 44 处极端值
   DRI: Missing values 0 -> 0
   DRI: Fixed 0 OHLC violations
   DRI: Fixed 0 volume issues
-  DRI: Winsorized (缩尾) 20 处极端值
+  DRI: Winsorized (缩尾) 73 处极端值
   DTE: Missing values 0 -> 0
   DTE: Fixed 0 OHLC violations
   DTE: Fixed 0 volume issues
-  DTE: Winsorized (缩尾) 8 处极端值
+  DTE: Winsorized (缩尾) 25 处极端值
   DUK: Missing values 0 -> 0
   DUK: Fixed 0 OHLC violations
   DUK: Fixed 0 volume issues
-  DUK: Winsorized (缩尾) 8 处极端值
+  DUK: Winsorized (缩尾) 16 处极端值
   DVA: Missing values 0 -> 0
   DVA: Fixed 0 OHLC violations
   DVA: Fixed 0 volume issues
-  DVA: Winsorized (缩尾) 28 处极端值
+  DVA: Winsorized (缩尾) 69 处极端值
   DVN: Missing values 0 -> 0
   DVN: Fixed 0 OHLC violations
   DVN: Fixed 0 volume issues
-  DVN: Winsorized (缩尾) 17 处极端值
+  DVN: Winsorized (缩尾) 23 处极端值
   DXCM: Missing values 0 -> 0
   DXCM: Fixed 0 OHLC violations
   DXCM: Fixed 0 volume issues
-  DXCM: Winsorized (缩尾) 15 处极端值
+  DXCM: Winsorized (缩尾) 27 处极端值
+  D: Missing values 0 -> 0
+  D: Fixed 0 OHLC violations
+  D: Fixed 0 volume issues
+  D: Winsorized (缩尾) 28 处极端值
   EA: Missing values 0 -> 0
   EA: Fixed 0 OHLC violations
   EA: Fixed 0 volume issues
-  EA: Winsorized (缩尾) 21 处极端值
+  EA: Winsorized (缩尾) 42 处极端值
   EBAY: Missing values 0 -> 0
   EBAY: Fixed 0 OHLC violations
   EBAY: Fixed 0 volume issues
-  EBAY: Winsorized (缩尾) 20 处极端值
+  EBAY: Winsorized (缩尾) 30 处极端值
   ECL: Missing values 0 -> 0
   ECL: Fixed 0 OHLC violations
   ECL: Fixed 0 volume issues
-  ECL: Winsorized (缩尾) 10 处极端值
+  ECL: Winsorized (缩尾) 35 处极端值
   ED: Missing values 0 -> 0
   ED: Fixed 0 OHLC violations
   ED: Fixed 0 volume issues
-  ED: Winsorized (缩尾) 16 处极端值
+  ED: Winsorized (缩尾) 37 处极端值
   EFX: Missing values 0 -> 0
   EFX: Fixed 0 OHLC violations
   EFX: Fixed 0 volume issues
-  EFX: Winsorized (缩尾) 17 处极端值
+  EFX: Winsorized (缩尾) 35 处极端值
   EG: Missing values 0 -> 0
   EG: Fixed 0 OHLC violations
   EG: Fixed 0 volume issues
-  EG: Winsorized (缩尾) 19 处极端值
+  EG: Winsorized (缩尾) 30 处极端值
   EIX: Missing values 0 -> 0
   EIX: Fixed 0 OHLC violations
   EIX: Fixed 0 volume issues
-  EIX: Winsorized (缩尾) 19 处极端值
-  EL: Missing values 0 -> 0
-  EL: Fixed 0 OHLC violations
-  EL: Fixed 0 volume issues
-  EL: Winsorized (缩尾) 18 处极端值
+  EIX: Winsorized (缩尾) 35 处极端值
   ELV: Missing values 0 -> 0
   ELV: Fixed 0 OHLC violations
   ELV: Fixed 0 volume issues
-  ELV: Winsorized (缩尾) 15 处极端值
+  ELV: Winsorized (缩尾) 27 处极端值
+  EL: Missing values 0 -> 0
+  EL: Fixed 0 OHLC violations
+  EL: Fixed 0 volume issues
+  EL: Winsorized (缩尾) 30 处极端值
   EME: Missing values 0 -> 0
   EME: Fixed 0 OHLC violations
   EME: Fixed 0 volume issues
-  EME: Winsorized (缩尾) 22 处极端值
+  EME: Winsorized (缩尾) 42 处极端值
   EMR: Missing values 0 -> 0
   EMR: Fixed 0 OHLC violations
   EMR: Fixed 0 volume issues
-  EMR: Winsorized (缩尾) 18 处极端值
+  EMR: Winsorized (缩尾) 31 处极端值
   EOG: Missing values 0 -> 0
   EOG: Fixed 0 OHLC violations
   EOG: Fixed 0 volume issues
-  EOG: Winsorized (缩尾) 16 处极端值
+  EOG: Winsorized (缩尾) 25 处极端值
   EPAM: Missing values 0 -> 0
   EPAM: Fixed 0 OHLC violations
   EPAM: Fixed 0 volume issues
-  EPAM: Winsorized (缩尾) 15 处极端值
+  EPAM: Winsorized (缩尾) 67 处极端值
   EQIX: Missing values 0 -> 0
   EQIX: Fixed 0 OHLC violations
   EQIX: Fixed 0 volume issues
-  EQIX: Winsorized (缩尾) 16 处极端值
+  EQIX: Winsorized (缩尾) 25 处极端值
   EQR: Missing values 0 -> 0
   EQR: Fixed 0 OHLC violations
   EQR: Fixed 0 volume issues
-  EQR: Winsorized (缩尾) 17 处极端值
+  EQR: Winsorized (缩尾) 26 处极端值
   EQT: Missing values 0 -> 0
   EQT: Fixed 0 OHLC violations
   EQT: Fixed 0 volume issues
-  EQT: Winsorized (缩尾) 15 处极端值
+  EQT: Winsorized (缩尾) 30 处极端值
   ERIE: Missing values 0 -> 0
   ERIE: Fixed 0 OHLC violations
   ERIE: Fixed 0 volume issues
-  ERIE: Winsorized (缩尾) 25 处极端值
-  ES: Missing values 0 -> 0
-  ES: Fixed 0 OHLC violations
-  ES: Fixed 0 volume issues
-  ES: Winsorized (缩尾) 18 处极端值
+  ERIE: Winsorized (缩尾) 47 处极端值
   ESS: Missing values 0 -> 0
   ESS: Fixed 0 OHLC violations
   ESS: Fixed 0 volume issues
-  ESS: Winsorized (缩尾) 13 处极端值
+  ESS: Winsorized (缩尾) 20 处极端值
+  ES: Missing values 0 -> 0
+  ES: Fixed 0 OHLC violations
+  ES: Fixed 0 volume issues
+  ES: Winsorized (缩尾) 33 处极端值
   ETN: Missing values 0 -> 0
   ETN: Fixed 0 OHLC violations
   ETN: Fixed 0 volume issues
-  ETN: Winsorized (缩尾) 13 处极端值
+  ETN: Winsorized (缩尾) 20 处极端值
   ETR: Missing values 0 -> 0
   ETR: Fixed 0 OHLC violations
   ETR: Fixed 0 volume issues
-  ETR: Winsorized (缩尾) 18 处极端值
+  ETR: Winsorized (缩尾) 927 处极端值
   EVRG: Missing values 0 -> 0
   EVRG: Fixed 0 OHLC violations
   EVRG: Fixed 0 volume issues
-  EVRG: Winsorized (缩尾) 10 处极端值
+  EVRG: Winsorized (缩尾) 30 处极端值
   EW: Missing values 0 -> 0
   EW: Fixed 0 OHLC violations
   EW: Fixed 0 volume issues
-  EW: Winsorized (缩尾) 20 处极端值
+  EW: Winsorized (缩尾) 38 处极端值
   EXC: Missing values 0 -> 0
   EXC: Fixed 0 OHLC violations
   EXC: Fixed 0 volume issues
-  EXC: Winsorized (缩尾) 21 处极端值
+  EXC: Winsorized (缩尾) 29 处极端值
   EXE: Missing values 0 -> 0
   EXE: Fixed 0 OHLC violations
   EXE: Fixed 0 volume issues
-  EXE: Winsorized (缩尾) 18 处极端值
+  EXE: Winsorized (缩尾) 21 处极端值
   EXPD: Missing values 0 -> 0
   EXPD: Fixed 0 OHLC violations
   EXPD: Fixed 0 volume issues
-  EXPD: Winsorized (缩尾) 111 处极端值
+  EXPD: Winsorized (缩尾) 45 处极端值
   EXPE: Missing values 0 -> 0
   EXPE: Fixed 0 OHLC violations
   EXPE: Fixed 0 volume issues
-  EXPE: Winsorized (缩尾) 26 处极端值
+  EXPE: Winsorized (缩尾) 51 处极端值
   EXR: Missing values 0 -> 0
   EXR: Fixed 0 OHLC violations
   EXR: Fixed 0 volume issues
-  EXR: Winsorized (缩尾) 17 处极端值
-  F: Missing values 0 -> 0
-  F: Fixed 0 OHLC violations
-  F: Fixed 0 volume issues
-  F: Winsorized (缩尾) 26 处极端值
+  EXR: Winsorized (缩尾) 23 处极端值
   FANG: Missing values 0 -> 0
   FANG: Fixed 0 OHLC violations
   FANG: Fixed 0 volume issues
-  FANG: Winsorized (缩尾) 11 处极端值
+  FANG: Winsorized (缩尾) 35 处极端值
   FAST: Missing values 0 -> 0
   FAST: Fixed 0 OHLC violations
   FAST: Fixed 0 volume issues
-  FAST: Winsorized (缩尾) 23 处极端值
+  FAST: Winsorized (缩尾) 36 处极端值
   FCX: Missing values 0 -> 0
   FCX: Fixed 0 OHLC violations
   FCX: Fixed 0 volume issues
-  FCX: Winsorized (缩尾) 31 处极端值
+  FCX: Winsorized (缩尾) 13 处极端值
   FDS: Missing values 0 -> 0
   FDS: Fixed 0 OHLC violations
   FDS: Fixed 0 volume issues
-  FDS: Winsorized (缩尾) 199 处极端值
+  FDS: Winsorized (缩尾) 111 处极端值
   FDX: Missing values 0 -> 0
   FDX: Fixed 0 OHLC violations
   FDX: Fixed 0 volume issues
-  FDX: Winsorized (缩尾) 46 处极端值
+  FDX: Winsorized (缩尾) 60 处极端值
   FE: Missing values 0 -> 0
   FE: Fixed 0 OHLC violations
   FE: Fixed 0 volume issues
-  FE: Winsorized (缩尾) 12 处极端值
+  FE: Winsorized (缩尾) 34 处极端值
   FFIV: Missing values 0 -> 0
   FFIV: Fixed 0 OHLC violations
   FFIV: Fixed 0 volume issues
-  FFIV: Winsorized (缩尾) 30 处极端值
+  FFIV: Winsorized (缩尾) 53 处极端值
   FICO: Missing values 0 -> 0
   FICO: Fixed 0 OHLC violations
   FICO: Fixed 0 volume issues
-  FICO: Winsorized (缩尾) 19 处极端值
-  FIS: Missing values 0 -> 0
-  FIS: Fixed 0 OHLC violations
-  FIS: Fixed 0 volume issues
-  FIS: Winsorized (缩尾) 16 处极端值
+  FICO: Winsorized (缩尾) 28 处极端值
   FISV: Missing values 0 -> 0
   FISV: Fixed 0 OHLC violations
   FISV: Fixed 0 volume issues
-  FISV: Winsorized (缩尾) 40 处极端值
+  FISV: Winsorized (缩尾) 253 处极端值
+  FIS: Missing values 0 -> 0
+  FIS: Fixed 0 OHLC violations
+  FIS: Fixed 0 volume issues
+  FIS: Winsorized (缩尾) 25 处极端值
   FITB: Missing values 0 -> 0
   FITB: Fixed 0 OHLC violations
   FITB: Fixed 0 volume issues
-  FITB: Winsorized (缩尾) 26 处极端值
+  FITB: Winsorized (缩尾) 32 处极端值
   FIX: Missing values 0 -> 0
   FIX: Fixed 0 OHLC violations
   FIX: Fixed 0 volume issues
-  FIX: Winsorized (缩尾) 52 处极端值
-  FOX: Missing values 0 -> 0
-  FOX: Fixed 0 OHLC violations
-  FOX: Fixed 0 volume issues
-  FOX: Winsorized (缩尾) 27 处极端值
+  FIX: Winsorized (缩尾) 470 处极端值
   FOXA: Missing values 0 -> 0
   FOXA: Fixed 0 OHLC violations
   FOXA: Fixed 0 volume issues
-  FOXA: Winsorized (缩尾) 19 处极端值
+  FOXA: Winsorized (缩尾) 160 处极端值
+  FOX: Missing values 0 -> 0
+  FOX: Fixed 0 OHLC violations
+  FOX: Fixed 0 volume issues
+  FOX: Winsorized (缩尾) 125 处极端值
   FRT: Missing values 0 -> 0
   FRT: Fixed 0 OHLC violations
   FRT: Fixed 0 volume issues
-  FRT: Winsorized (缩尾) 20 处极端值
+  FRT: Winsorized (缩尾) 35 处极端值
   FSLR: Missing values 0 -> 0
   FSLR: Fixed 0 OHLC violations
   FSLR: Fixed 0 volume issues
-  FSLR: Winsorized (缩尾) 28 处极端值
+  FSLR: Winsorized (缩尾) 44 处极端值
   FTNT: Missing values 0 -> 0
   FTNT: Fixed 0 OHLC violations
   FTNT: Fixed 0 volume issues
-  FTNT: Winsorized (缩尾) 41 处极端值
+  FTNT: Winsorized (缩尾) 50 处极端值
   FTV: Missing values 0 -> 0
   FTV: Fixed 0 OHLC violations
   FTV: Fixed 0 volume issues
-  FTV: Winsorized (缩尾) 13 处极端值
-  GD: Missing values 0 -> 0
-  GD: Fixed 0 OHLC violations
-  GD: Fixed 0 volume issues
-  GD: Winsorized (缩尾) 11 处极端值
+  FTV: Winsorized (缩尾) 45 处极端值
+  F: Missing values 0 -> 0
+  F: Fixed 0 OHLC violations
+  F: Fixed 0 volume issues
+  F: Winsorized (缩尾) 38 处极端值
   GDDY: Missing values 0 -> 0
   GDDY: Fixed 0 OHLC violations
   GDDY: Fixed 0 volume issues
-  GDDY: Winsorized (缩尾) 14 处极端值
-  GE: Missing values 0 -> 0
-  GE: Fixed 0 OHLC violations
-  GE: Fixed 0 volume issues
-  GE: Winsorized (缩尾) 11 处极端值
+  GDDY: Winsorized (缩尾) 64 处极端值
+  GD: Missing values 0 -> 0
+  GD: Fixed 0 OHLC violations
+  GD: Fixed 0 volume issues
+  GD: Winsorized (缩尾) 24 处极端值
   GEHC: Missing values 0 -> 0
   GEHC: Fixed 0 OHLC violations
   GEHC: Fixed 0 volume issues
-  GEHC: Winsorized (缩尾) 19 处极端值
+  GEHC: Winsorized (缩尾) 20 处极端值
   GEN: Missing values 0 -> 0
   GEN: Fixed 0 OHLC violations
-  GEN: Fixed 0 volume issues
-  GEN: Winsorized (缩尾) 20 处极端值
+  GEN: Fixed 1 volume issues
+  GEN: Winsorized (缩尾) 48 处极端值
   GEV: Missing values 0 -> 0
   GEV: Fixed 0 OHLC violations
   GEV: Fixed 0 volume issues
   GEV: Winsorized (缩尾) 11 处极端值
+  GE: Missing values 0 -> 0
+  GE: Fixed 0 OHLC violations
+  GE: Fixed 0 volume issues
+  GE: Winsorized (缩尾) 32 处极端值
   GILD: Missing values 0 -> 0
   GILD: Fixed 0 OHLC violations
   GILD: Fixed 0 volume issues
-  GILD: Winsorized (缩尾) 17 处极端值
+  GILD: Winsorized (缩尾) 160 处极端值
   GIS: Missing values 0 -> 0
   GIS: Fixed 0 OHLC violations
   GIS: Fixed 0 volume issues
-  GIS: Winsorized (缩尾) 16 处极端值
-  GL: Missing values 0 -> 0
-  GL: Fixed 0 OHLC violations
-  GL: Fixed 0 volume issues
-  GL: Winsorized (缩尾) 50 处极端值
+  GIS: Winsorized (缩尾) 32 处极端值
   GLW: Missing values 0 -> 0
   GLW: Fixed 0 OHLC violations
   GLW: Fixed 0 volume issues
-  GLW: Winsorized (缩尾) 214 处极端值
+  GLW: Winsorized (缩尾) 860 处极端值
+  GL: Missing values 0 -> 0
+  GL: Fixed 0 OHLC violations
+  GL: Fixed 0 volume issues
+  GL: Winsorized (缩尾) 66 处极端值
   GM: Missing values 0 -> 0
   GM: Fixed 0 OHLC violations
   GM: Fixed 0 volume issues
-  GM: Winsorized (缩尾) 11 处极端值
+  GM: Winsorized (缩尾) 24 处极端值
   GNRC: Missing values 0 -> 0
   GNRC: Fixed 0 OHLC violations
   GNRC: Fixed 0 volume issues
-  GNRC: Winsorized (缩尾) 24 处极端值
-  GOOG: Missing values 0 -> 0
-  GOOG: Fixed 0 OHLC violations
-  GOOG: Fixed 0 volume issues
-  GOOG: Winsorized (缩尾) 17 处极端值
+  GNRC: Winsorized (缩尾) 44 处极端值
   GOOGL: Missing values 0 -> 0
   GOOGL: Fixed 0 OHLC violations
   GOOGL: Fixed 0 volume issues
-  GOOGL: Winsorized (缩尾) 14 处极端值
+  GOOGL: Winsorized (缩尾) 42 处极端值
+  GOOG: Missing values 0 -> 0
+  GOOG: Fixed 0 OHLC violations
+  GOOG: Fixed 0 volume issues
+  GOOG: Winsorized (缩尾) 36 处极端值
   GPC: Missing values 0 -> 0
   GPC: Fixed 0 OHLC violations
   GPC: Fixed 0 volume issues
-  GPC: Winsorized (缩尾) 25 处极端值
+  GPC: Winsorized (缩尾) 46 处极端值
   GPN: Missing values 0 -> 0
   GPN: Fixed 0 OHLC violations
   GPN: Fixed 0 volume issues
-  GPN: Winsorized (缩尾) 16 处极端值
+  GPN: Winsorized (缩尾) 27 处极端值
   GRMN: Missing values 0 -> 0
   GRMN: Fixed 0 OHLC violations
   GRMN: Fixed 0 volume issues
-  GRMN: Winsorized (缩尾) 31 处极端值
+  GRMN: Winsorized (缩尾) 51 处极端值
   GS: Missing values 0 -> 0
   GS: Fixed 0 OHLC violations
   GS: Fixed 0 volume issues
-  GS: Winsorized (缩尾) 18 处极端值
+  GS: Winsorized (缩尾) 32 处极端值
   GWW: Missing values 0 -> 0
   GWW: Fixed 0 OHLC violations
   GWW: Fixed 0 volume issues
-  GWW: Winsorized (缩尾) 13 处极端值
+  GWW: Winsorized (缩尾) 32 处极端值
   HAL: Missing values 0 -> 0
   HAL: Fixed 0 OHLC violations
   HAL: Fixed 0 volume issues
-  HAL: Winsorized (缩尾) 9 处极端值
+  HAL: Winsorized (缩尾) 44 处极端值
   HAS: Missing values 0 -> 0
   HAS: Fixed 0 OHLC violations
   HAS: Fixed 0 volume issues
-  HAS: Winsorized (缩尾) 25 处极端值
+  HAS: Winsorized (缩尾) 38 处极端值
   HBAN: Missing values 0 -> 0
   HBAN: Fixed 0 OHLC violations
   HBAN: Fixed 0 volume issues
-  HBAN: Winsorized (缩尾) 13 处极端值
+  HBAN: Winsorized (缩尾) 26 处极端值
   HCA: Missing values 0 -> 0
   HCA: Fixed 0 OHLC violations
   HCA: Fixed 0 volume issues
-  HCA: Winsorized (缩尾) 19 处极端值
+  HCA: Winsorized (缩尾) 40 处极端值
   HD: Missing values 0 -> 0
   HD: Fixed 0 OHLC violations
   HD: Fixed 0 volume issues
-  HD: Winsorized (缩尾) 21 处极端值
+  HD: Winsorized (缩尾) 52 处极端值
   HIG: Missing values 0 -> 0
   HIG: Fixed 0 OHLC violations
   HIG: Fixed 0 volume issues
-  HIG: Winsorized (缩尾) 21 处极端值
+  HIG: Winsorized (缩尾) 38 处极端值
   HII: Missing values 0 -> 0
   HII: Fixed 0 OHLC violations
   HII: Fixed 0 volume issues
-  HII: Winsorized (缩尾) 44 处极端值
+  HII: Winsorized (缩尾) 280 处极端值
   HLT: Missing values 0 -> 0
   HLT: Fixed 0 OHLC violations
   HLT: Fixed 0 volume issues
-  HLT: Winsorized (缩尾) 13 处极端值
+  HLT: Winsorized (缩尾) 47 处极端值
   HOLX: Missing values 0 -> 0
   HOLX: Fixed 0 OHLC violations
   HOLX: Fixed 0 volume issues
   HOLX: Winsorized (缩尾) 32 处极端值
-  HON: Missing values 0 -> 0
+  HON: Missing values 4 -> 0
   HON: Fixed 0 OHLC violations
   HON: Fixed 0 volume issues
-  HON: Winsorized (缩尾) 10 处极端值
+  HON: Winsorized (缩尾) 19 处极端值
   HOOD: Missing values 0 -> 0
   HOOD: Fixed 0 OHLC violations
   HOOD: Fixed 0 volume issues
-  HOOD: Winsorized (缩尾) 8 处极端值
+  HOOD: Winsorized (缩尾) 12 处极端值
   HPE: Missing values 0 -> 0
   HPE: Fixed 0 OHLC violations
   HPE: Fixed 0 volume issues
-  HPE: Winsorized (缩尾) 23 处极端值
+  HPE: Winsorized (缩尾) 191 处极端值
   HPQ: Missing values 0 -> 0
   HPQ: Fixed 0 OHLC violations
   HPQ: Fixed 0 volume issues
-  HPQ: Winsorized (缩尾) 28 处极端值
+  HPQ: Winsorized (缩尾) 33 处极端值
   HRL: Missing values 0 -> 0
   HRL: Fixed 0 OHLC violations
   HRL: Fixed 0 volume issues
-  HRL: Winsorized (缩尾) 17 处极端值
+  HRL: Winsorized (缩尾) 30 处极端值
   HSIC: Missing values 0 -> 0
   HSIC: Fixed 0 OHLC violations
   HSIC: Fixed 0 volume issues
-  HSIC: Winsorized (缩尾) 17 处极端值
+  HSIC: Winsorized (缩尾) 32 处极端值
   HST: Missing values 0 -> 0
   HST: Fixed 0 OHLC violations
   HST: Fixed 0 volume issues
-  HST: Winsorized (缩尾) 8 处极端值
+  HST: Winsorized (缩尾) 106 处极端值
   HSY: Missing values 0 -> 0
   HSY: Fixed 0 OHLC violations
   HSY: Fixed 0 volume issues
-  HSY: Winsorized (缩尾) 12 处极端值
+  HSY: Winsorized (缩尾) 21 处极端值
   HUBB: Missing values 0 -> 0
-  HUBB: Fixed 0 OHLC violations
+  HUBB: Fixed 1 OHLC violations
   HUBB: Fixed 0 volume issues
-  HUBB: Winsorized (缩尾) 15 处极端值
+  HUBB: Winsorized (缩尾) 25 处极端值
   HUM: Missing values 0 -> 0
   HUM: Fixed 0 OHLC violations
   HUM: Fixed 0 volume issues
-  HUM: Winsorized (缩尾) 29 处极端值
+  HUM: Winsorized (缩尾) 40 处极端值
   HWM: Missing values 0 -> 0
   HWM: Fixed 0 OHLC violations
   HWM: Fixed 0 volume issues
-  HWM: Winsorized (缩尾) 10 处极端值
+  HWM: Winsorized (缩尾) 97 处极端值
   IBKR: Missing values 0 -> 0
   IBKR: Fixed 0 OHLC violations
-  IBKR: Fixed 0 volume issues
-  IBKR: Winsorized (缩尾) 18 处极端值
+  IBKR: Fixed 2 volume issues
+  IBKR: Winsorized (缩尾) 197 处极端值
   IBM: Missing values 0 -> 0
   IBM: Fixed 0 OHLC violations
   IBM: Fixed 0 volume issues
-  IBM: Winsorized (缩尾) 29 处极端值
+  IBM: Winsorized (缩尾) 61 处极端值
   ICE: Missing values 0 -> 0
   ICE: Fixed 0 OHLC violations
   ICE: Fixed 0 volume issues
-  ICE: Winsorized (缩尾) 10 处极端值
+  ICE: Winsorized (缩尾) 27 处极端值
   IDXX: Missing values 0 -> 0
   IDXX: Fixed 0 OHLC violations
   IDXX: Fixed 0 volume issues
-  IDXX: Winsorized (缩尾) 19 处极端值
+  IDXX: Winsorized (缩尾) 38 处极端值
   IEX: Missing values 0 -> 0
   IEX: Fixed 0 OHLC violations
   IEX: Fixed 0 volume issues
-  IEX: Winsorized (缩尾) 16 处极端值
+  IEX: Winsorized (缩尾) 35 处极端值
   IFF: Missing values 0 -> 0
   IFF: Fixed 0 OHLC violations
   IFF: Fixed 0 volume issues
-  IFF: Winsorized (缩尾) 17 处极端值
+  IFF: Winsorized (缩尾) 56 处极端值
   INCY: Missing values 0 -> 0
   INCY: Fixed 0 OHLC violations
   INCY: Fixed 0 volume issues
-  INCY: Winsorized (缩尾) 44 处极端值
+  INCY: Winsorized (缩尾) 52 处极端值
   INTC: Missing values 0 -> 0
   INTC: Fixed 0 OHLC violations
   INTC: Fixed 0 volume issues
-  INTC: Winsorized (缩尾) 19 处极端值
+  INTC: Winsorized (缩尾) 214 处极端值
   INTU: Missing values 0 -> 0
   INTU: Fixed 0 OHLC violations
   INTU: Fixed 0 volume issues
-  INTU: Winsorized (缩尾) 40 处极端值
+  INTU: Winsorized (缩尾) 77 处极端值
   INVH: Missing values 0 -> 0
   INVH: Fixed 0 OHLC violations
   INVH: Fixed 0 volume issues
-  INVH: Winsorized (缩尾) 11 处极端值
+  INVH: Winsorized (缩尾) 26 处极端值
   IP: Missing values 0 -> 0
   IP: Fixed 0 OHLC violations
   IP: Fixed 0 volume issues
-  IP: Winsorized (缩尾) 23 处极端值
+  IP: Winsorized (缩尾) 46 处极端值
   IQV: Missing values 0 -> 0
   IQV: Fixed 0 OHLC violations
   IQV: Fixed 0 volume issues
-  IQV: Winsorized (缩尾) 19 处极端值
-  IR: Missing values 0 -> 0
-  IR: Fixed 0 OHLC violations
-  IR: Fixed 0 volume issues
-  IR: Winsorized (缩尾) 18 处极端值
+  IQV: Winsorized (缩尾) 37 处极端值
   IRM: Missing values 0 -> 0
   IRM: Fixed 0 OHLC violations
   IRM: Fixed 0 volume issues
-  IRM: Winsorized (缩尾) 26 处极端值
+  IRM: Winsorized (缩尾) 36 处极端值
+  IR: Missing values 0 -> 0
+  IR: Fixed 0 OHLC violations
+  IR: Fixed 0 volume issues
+  IR: Winsorized (缩尾) 38 处极端值
   ISRG: Missing values 0 -> 0
   ISRG: Fixed 0 OHLC violations
   ISRG: Fixed 0 volume issues
-  ISRG: Winsorized (缩尾) 19 处极端值
-  IT: Missing values 0 -> 0
-  IT: Fixed 0 OHLC violations
-  IT: Fixed 0 volume issues
-  IT: Winsorized (缩尾) 34 处极端值
+  ISRG: Winsorized (缩尾) 37 处极端值
   ITW: Missing values 0 -> 0
   ITW: Fixed 0 OHLC violations
   ITW: Fixed 0 volume issues
-  ITW: Winsorized (缩尾) 18 处极端值
+  ITW: Winsorized (缩尾) 45 处极端值
+  IT: Missing values 0 -> 0
+  IT: Fixed 0 OHLC violations
+  IT: Fixed 0 volume issues
+  IT: Winsorized (缩尾) 66 处极端值
   IVZ: Missing values 0 -> 0
   IVZ: Fixed 0 OHLC violations
   IVZ: Fixed 0 volume issues
-  IVZ: Winsorized (缩尾) 251 处极端值
-  J: Missing values 0 -> 0
-  J: Fixed 0 OHLC violations
-  J: Fixed 0 volume issues
-  J: Winsorized (缩尾) 14 处极端值
+  IVZ: Winsorized (缩尾) 21 处极端值
   JBHT: Missing values 0 -> 0
   JBHT: Fixed 0 OHLC violations
   JBHT: Fixed 0 volume issues
-  JBHT: Winsorized (缩尾) 11 处极端值
+  JBHT: Winsorized (缩尾) 27 处极端值
   JBL: Missing values 0 -> 0
   JBL: Fixed 0 OHLC violations
   JBL: Fixed 0 volume issues
-  JBL: Winsorized (缩尾) 22 处极端值
+  JBL: Winsorized (缩尾) 48 处极端值
   JCI: Missing values 0 -> 0
   JCI: Fixed 0 OHLC violations
   JCI: Fixed 0 volume issues
-  JCI: Winsorized (缩尾) 18 处极端值
+  JCI: Winsorized (缩尾) 40 处极端值
   JKHY: Missing values 0 -> 0
   JKHY: Fixed 0 OHLC violations
   JKHY: Fixed 0 volume issues
-  JKHY: Winsorized (缩尾) 17 处极端值
+  JKHY: Winsorized (缩尾) 40 处极端值
   JNJ: Missing values 0 -> 0
   JNJ: Fixed 0 OHLC violations
   JNJ: Fixed 0 volume issues
-  JNJ: Winsorized (缩尾) 394 处极端值
+  JNJ: Winsorized (缩尾) 241 处极端值
   JPM: Missing values 0 -> 0
   JPM: Fixed 0 OHLC violations
   JPM: Fixed 0 volume issues
-  JPM: Winsorized (缩尾) 21 处极端值
+  JPM: Winsorized (缩尾) 45 处极端值
+  J: Missing values 0 -> 0
+  J: Fixed 0 OHLC violations
+  J: Fixed 0 volume issues
+  J: Winsorized (缩尾) 28 处极端值
   KDP: Missing values 0 -> 0
   KDP: Fixed 0 OHLC violations
   KDP: Fixed 0 volume issues
-  KDP: Winsorized (缩尾) 25 处极端值
-  KEY: Missing values 0 -> 0
-  KEY: Fixed 0 OHLC violations
-  KEY: Fixed 0 volume issues
-  KEY: Winsorized (缩尾) 19 处极端值
+  KDP: Winsorized (缩尾) 31 处极端值
   KEYS: Missing values 0 -> 0
   KEYS: Fixed 0 OHLC violations
   KEYS: Fixed 0 volume issues
-  KEYS: Winsorized (缩尾) 164 处极端值
+  KEYS: Winsorized (缩尾) 105 处极端值
+  KEY: Missing values 0 -> 0
+  KEY: Fixed 0 OHLC violations
+  KEY: Fixed 0 volume issues
+  KEY: Winsorized (缩尾) 30 处极端值
   KHC: Missing values 0 -> 0
   KHC: Fixed 0 OHLC violations
   KHC: Fixed 0 volume issues
-  KHC: Winsorized (缩尾) 14 处极端值
+  KHC: Winsorized (缩尾) 33 处极端值
   KIM: Missing values 0 -> 0
   KIM: Fixed 0 OHLC violations
   KIM: Fixed 0 volume issues
-  KIM: Winsorized (缩尾) 8 处极端值
+  KIM: Winsorized (缩尾) 24 处极端值
   KKR: Missing values 0 -> 0
   KKR: Fixed 0 OHLC violations
   KKR: Fixed 0 volume issues
-  KKR: Winsorized (缩尾) 25 处极端值
+  KKR: Winsorized (缩尾) 43 处极端值
   KLAC: Missing values 0 -> 0
   KLAC: Fixed 0 OHLC violations
   KLAC: Fixed 0 volume issues
-  KLAC: Winsorized (缩尾) 10 处极端值
+  KLAC: Winsorized (缩尾) 69 处极端值
   KMB: Missing values 0 -> 0
   KMB: Fixed 0 OHLC violations
   KMB: Fixed 0 volume issues
-  KMB: Winsorized (缩尾) 53 处极端值
+  KMB: Winsorized (缩尾) 91 处极端值
   KMI: Missing values 0 -> 0
   KMI: Fixed 0 OHLC violations
   KMI: Fixed 0 volume issues
-  KMI: Winsorized (缩尾) 10 处极端值
+  KMI: Winsorized (缩尾) 19 处极端值
   KO: Missing values 0 -> 0
   KO: Fixed 0 OHLC violations
   KO: Fixed 0 volume issues
-  KO: Winsorized (缩尾) 20 处极端值
+  KO: Winsorized (缩尾) 31 处极端值
   KR: Missing values 0 -> 0
   KR: Fixed 0 OHLC violations
   KR: Fixed 0 volume issues
-  KR: Winsorized (缩尾) 27 处极端值
+  KR: Winsorized (缩尾) 39 处极端值
   KVUE: Missing values 0 -> 0
   KVUE: Fixed 0 OHLC violations
   KVUE: Fixed 0 volume issues
   KVUE: Winsorized (缩尾) 31 处极端值
-  L: Missing values 0 -> 0
-  L: Fixed 0 OHLC violations
-  L: Fixed 0 volume issues
-  L: Winsorized (缩尾) 23 处极端值
   LDOS: Missing values 0 -> 0
   LDOS: Fixed 0 OHLC violations
   LDOS: Fixed 0 volume issues
-  LDOS: Winsorized (缩尾) 21 处极端值
+  LDOS: Winsorized (缩尾) 32 处极端值
   LEN: Missing values 0 -> 0
   LEN: Fixed 0 OHLC violations
   LEN: Fixed 0 volume issues
-  LEN: Winsorized (缩尾) 24 处极端值
-  LH: Missing values 0 -> 0
-  LH: Fixed 0 OHLC violations
-  LH: Fixed 0 volume issues
-  LH: Winsorized (缩尾) 17 处极端值
+  LEN: Winsorized (缩尾) 35 处极端值
   LHX: Missing values 0 -> 0
   LHX: Fixed 0 OHLC violations
   LHX: Fixed 0 volume issues
-  LHX: Winsorized (缩尾) 58 处极端值
+  LHX: Winsorized (缩尾) 59 处极端值
+  LH: Missing values 0 -> 0
+  LH: Fixed 0 OHLC violations
+  LH: Fixed 0 volume issues
+  LH: Winsorized (缩尾) 43 处极端值
   LII: Missing values 0 -> 0
   LII: Fixed 0 OHLC violations
   LII: Fixed 0 volume issues
-  LII: Winsorized (缩尾) 10 处极端值
+  LII: Winsorized (缩尾) 30 处极端值
   LIN: Missing values 0 -> 0
   LIN: Fixed 0 OHLC violations
   LIN: Fixed 0 volume issues
-  LIN: Winsorized (缩尾) 11 处极端值
+  LIN: Winsorized (缩尾) 32 处极端值
   LITE: Missing values 0 -> 0
   LITE: Fixed 0 OHLC violations
   LITE: Fixed 0 volume issues
-  LITE: Winsorized (缩尾) 452 处极端值
+  LITE: Winsorized (缩尾) 785 处极端值
   LLY: Missing values 0 -> 0
   LLY: Fixed 0 OHLC violations
   LLY: Fixed 0 volume issues
-  LLY: Winsorized (缩尾) 22 处极端值
+  LLY: Winsorized (缩尾) 56 处极端值
   LMT: Missing values 0 -> 0
   LMT: Fixed 0 OHLC violations
   LMT: Fixed 0 volume issues
-  LMT: Winsorized (缩尾) 183 处极端值
+  LMT: Winsorized (缩尾) 45 处极端值
   LNT: Missing values 0 -> 0
   LNT: Fixed 0 OHLC violations
   LNT: Fixed 0 volume issues
-  LNT: Winsorized (缩尾) 11 处极端值
+  LNT: Winsorized (缩尾) 23 处极端值
   LOW: Missing values 0 -> 0
   LOW: Fixed 0 OHLC violations
   LOW: Fixed 0 volume issues
-  LOW: Winsorized (缩尾) 15 处极端值
+  LOW: Winsorized (缩尾) 38 处极端值
   LRCX: Missing values 0 -> 0
   LRCX: Fixed 0 OHLC violations
   LRCX: Fixed 0 volume issues
-  LRCX: Winsorized (缩尾) 123 处极端值
+  LRCX: Winsorized (缩尾) 431 处极端值
   LULU: Missing values 0 -> 0
   LULU: Fixed 0 OHLC violations
   LULU: Fixed 0 volume issues
-  LULU: Winsorized (缩尾) 32 处极端值
+  LULU: Winsorized (缩尾) 61 处极端值
   LUV: Missing values 0 -> 0
   LUV: Fixed 0 OHLC violations
   LUV: Fixed 0 volume issues
-  LUV: Winsorized (缩尾) 46 处极端值
+  LUV: Winsorized (缩尾) 38 处极端值
   LVS: Missing values 0 -> 0
   LVS: Fixed 0 OHLC violations
   LVS: Fixed 0 volume issues
-  LVS: Winsorized (缩尾) 17 处极端值
+  LVS: Winsorized (缩尾) 33 处极端值
   LYB: Missing values 0 -> 0
   LYB: Fixed 0 OHLC violations
   LYB: Fixed 0 volume issues
-  LYB: Winsorized (缩尾) 25 处极端值
+  LYB: Winsorized (缩尾) 44 处极端值
   LYV: Missing values 0 -> 0
   LYV: Fixed 0 OHLC violations
   LYV: Fixed 0 volume issues
-  LYV: Winsorized (缩尾) 27 处极端值
-  MA: Missing values 0 -> 0
-  MA: Fixed 0 OHLC violations
-  MA: Fixed 0 volume issues
-  MA: Winsorized (缩尾) 12 处极端值
+  LYV: Winsorized (缩尾) 63 处极端值
+  L: Missing values 0 -> 0
+  L: Fixed 0 OHLC violations
+  L: Fixed 0 volume issues
+  L: Winsorized (缩尾) 52 处极端值
   MAA: Missing values 0 -> 0
   MAA: Fixed 0 OHLC violations
   MAA: Fixed 0 volume issues
-  MAA: Winsorized (缩尾) 10 处极端值
+  MAA: Winsorized (缩尾) 19 处极端值
   MAR: Missing values 0 -> 0
   MAR: Fixed 0 OHLC violations
   MAR: Fixed 0 volume issues
-  MAR: Winsorized (缩尾) 9 处极端值
+  MAR: Winsorized (缩尾) 73 处极端值
   MAS: Missing values 0 -> 0
   MAS: Fixed 0 OHLC violations
   MAS: Fixed 0 volume issues
-  MAS: Winsorized (缩尾) 13 处极端值
+  MAS: Winsorized (缩尾) 23 处极端值
+  MA: Missing values 0 -> 0
+  MA: Fixed 0 OHLC violations
+  MA: Fixed 0 volume issues
+  MA: Winsorized (缩尾) 35 处极端值
   MCD: Missing values 0 -> 0
   MCD: Fixed 0 OHLC violations
   MCD: Fixed 0 volume issues
-  MCD: Winsorized (缩尾) 19 处极端值
+  MCD: Winsorized (缩尾) 41 处极端值
   MCHP: Missing values 0 -> 0
   MCHP: Fixed 0 OHLC violations
   MCHP: Fixed 0 volume issues
-  MCHP: Winsorized (缩尾) 17 处极端值
+  MCHP: Winsorized (缩尾) 34 处极端值
   MCK: Missing values 0 -> 0
   MCK: Fixed 0 OHLC violations
   MCK: Fixed 0 volume issues
-  MCK: Winsorized (缩尾) 20 处极端值
+  MCK: Winsorized (缩尾) 48 处极端值
   MCO: Missing values 0 -> 0
   MCO: Fixed 0 OHLC violations
   MCO: Fixed 0 volume issues
-  MCO: Winsorized (缩尾) 19 处极端值
+  MCO: Winsorized (缩尾) 38 处极端值
   MDLZ: Missing values 0 -> 0
   MDLZ: Fixed 0 OHLC violations
   MDLZ: Fixed 0 volume issues
-  MDLZ: Winsorized (缩尾) 12 处极端值
+  MDLZ: Winsorized (缩尾) 17 处极端值
   MDT: Missing values 0 -> 0
   MDT: Fixed 0 OHLC violations
   MDT: Fixed 0 volume issues
-  MDT: Winsorized (缩尾) 8 处极端值
-  MET: Missing values 0 -> 0
-  MET: Fixed 0 OHLC violations
-  MET: Fixed 0 volume issues
-  MET: Winsorized (缩尾) 14 处极端值
+  MDT: Winsorized (缩尾) 18 处极端值
   META: Missing values 0 -> 0
   META: Fixed 0 OHLC violations
   META: Fixed 0 volume issues
-  META: Winsorized (缩尾) 23 处极端值
+  META: Winsorized (缩尾) 38 处极端值
+  MET: Missing values 0 -> 0
+  MET: Fixed 0 OHLC violations
+  MET: Fixed 0 volume issues
+  MET: Winsorized (缩尾) 16 处极端值
   MGM: Missing values 0 -> 0
   MGM: Fixed 0 OHLC violations
   MGM: Fixed 0 volume issues
-  MGM: Winsorized (缩尾) 20 处极端值
+  MGM: Winsorized (缩尾) 108 处极端值
   MKC: Missing values 0 -> 0
   MKC: Fixed 0 OHLC violations
   MKC: Fixed 0 volume issues
-  MKC: Winsorized (缩尾) 15 处极端值
+  MKC: Winsorized (缩尾) 33 处极端值
   MLM: Missing values 0 -> 0
   MLM: Fixed 0 OHLC violations
   MLM: Fixed 0 volume issues
-  MLM: Winsorized (缩尾) 6 处极端值
+  MLM: Winsorized (缩尾) 24 处极端值
   MMM: Missing values 0 -> 0
   MMM: Fixed 0 OHLC violations
   MMM: Fixed 0 volume issues
-  MMM: Winsorized (缩尾) 39 处极端值
+  MMM: Winsorized (缩尾) 58 处极端值
   MNST: Missing values 0 -> 0
   MNST: Fixed 0 OHLC violations
   MNST: Fixed 0 volume issues
-  MNST: Winsorized (缩尾) 23 处极端值
-  MO: Missing values 0 -> 0
-  MO: Fixed 0 OHLC violations
-  MO: Fixed 0 volume issues
-  MO: Winsorized (缩尾) 35 处极端值
+  MNST: Winsorized (缩尾) 37 处极端值
   MOS: Missing values 0 -> 0
   MOS: Fixed 0 OHLC violations
   MOS: Fixed 0 volume issues
-  MOS: Winsorized (缩尾) 15 处极端值
+  MOS: Winsorized (缩尾) 65 处极端值
+  MO: Missing values 0 -> 0
+  MO: Fixed 0 OHLC violations
+  MO: Fixed 0 volume issues
+  MO: Winsorized (缩尾) 154 处极端值
   MPC: Missing values 0 -> 0
   MPC: Fixed 0 OHLC violations
   MPC: Fixed 0 volume issues
-  MPC: Winsorized (缩尾) 18 处极端值
+  MPC: Winsorized (缩尾) 14 处极端值
   MPWR: Missing values 0 -> 0
   MPWR: Fixed 0 OHLC violations
   MPWR: Fixed 0 volume issues
-  MPWR: Winsorized (缩尾) 26 处极端值
+  MPWR: Winsorized (缩尾) 43 处极端值
   MRK: Missing values 0 -> 0
   MRK: Fixed 0 OHLC violations
   MRK: Fixed 0 volume issues
-  MRK: Winsorized (缩尾) 19 处极端值
+  MRK: Winsorized (缩尾) 38 处极端值
   MRNA: Missing values 0 -> 0
   MRNA: Fixed 0 OHLC violations
   MRNA: Fixed 0 volume issues
-  MRNA: Winsorized (缩尾) 14 处极端值
+  MRNA: Winsorized (缩尾) 60 处极端值
   MRSH: Missing values 0 -> 0
   MRSH: Fixed 0 OHLC violations
   MRSH: Fixed 0 volume issues
-  MRSH: Winsorized (缩尾) 12 处极端值
-  MS: Missing values 0 -> 0
-  MS: Fixed 0 OHLC violations
-  MS: Fixed 0 volume issues
-  MS: Winsorized (缩尾) 21 处极端值
+  MRSH: Winsorized (缩尾) 25 处极端值
   MSCI: Missing values 0 -> 0
   MSCI: Fixed 0 OHLC violations
   MSCI: Fixed 0 volume issues
-  MSCI: Winsorized (缩尾) 13 处极端值
+  MSCI: Winsorized (缩尾) 19 处极端值
   MSFT: Missing values 0 -> 0
   MSFT: Fixed 0 OHLC violations
   MSFT: Fixed 0 volume issues
-  MSFT: Winsorized (缩尾) 14 处极端值
+  MSFT: Winsorized (缩尾) 30 处极端值
   MSI: Missing values 0 -> 0
   MSI: Fixed 0 OHLC violations
   MSI: Fixed 0 volume issues
-  MSI: Winsorized (缩尾) 13 处极端值
+  MSI: Winsorized (缩尾) 32 处极端值
+  MS: Missing values 0 -> 0
+  MS: Fixed 0 OHLC violations
+  MS: Fixed 0 volume issues
+  MS: Winsorized (缩尾) 39 处极端值
   MTB: Missing values 0 -> 0
   MTB: Fixed 0 OHLC violations
   MTB: Fixed 0 volume issues
-  MTB: Winsorized (缩尾) 30 处极端值
+  MTB: Winsorized (缩尾) 46 处极端值
   MTD: Missing values 0 -> 0
   MTD: Fixed 0 OHLC violations
   MTD: Fixed 0 volume issues
-  MTD: Winsorized (缩尾) 16 处极端值
+  MTD: Winsorized (缩尾) 24 处极端值
   MU: Missing values 0 -> 0
   MU: Fixed 0 OHLC violations
   MU: Fixed 0 volume issues
-  MU: Winsorized (缩尾) 299 处极端值
+  MU: Winsorized (缩尾) 674 处极端值
   NCLH: Missing values 0 -> 0
   NCLH: Fixed 0 OHLC violations
   NCLH: Fixed 0 volume issues
-  NCLH: Winsorized (缩尾) 8 处极端值
+  NCLH: Winsorized (缩尾) 46 处极端值
   NDAQ: Missing values 0 -> 0
   NDAQ: Fixed 0 OHLC violations
   NDAQ: Fixed 0 volume issues
-  NDAQ: Winsorized (缩尾) 21 处极端值
+  NDAQ: Winsorized (缩尾) 39 处极端值
   NDSN: Missing values 0 -> 0
   NDSN: Fixed 0 OHLC violations
   NDSN: Fixed 0 volume issues
-  NDSN: Winsorized (缩尾) 21 处极端值
+  NDSN: Winsorized (缩尾) 36 处极端值
   NEE: Missing values 0 -> 0
   NEE: Fixed 0 OHLC violations
   NEE: Fixed 0 volume issues
-  NEE: Winsorized (缩尾) 17 处极端值
+  NEE: Winsorized (缩尾) 35 处极端值
   NEM: Missing values 0 -> 0
   NEM: Fixed 0 OHLC violations
   NEM: Fixed 0 volume issues
-  NEM: Winsorized (缩尾) 196 处极端值
+  NEM: Winsorized (缩尾) 380 处极端值
   NFLX: Missing values 0 -> 0
   NFLX: Fixed 0 OHLC violations
   NFLX: Fixed 0 volume issues
-  NFLX: Winsorized (缩尾) 26 处极端值
+  NFLX: Winsorized (缩尾) 46 处极端值
   NI: Missing values 0 -> 0
   NI: Fixed 0 OHLC violations
   NI: Fixed 0 volume issues
-  NI: Winsorized (缩尾) 5 处极端值
+  NI: Winsorized (缩尾) 122 处极端值
   NKE: Missing values 0 -> 0
   NKE: Fixed 0 OHLC violations
   NKE: Fixed 0 volume issues
-  NKE: Winsorized (缩尾) 31 处极端值
+  NKE: Winsorized (缩尾) 56 处极端值
   NOC: Missing values 0 -> 0
   NOC: Fixed 0 OHLC violations
   NOC: Fixed 0 volume issues
-  NOC: Winsorized (缩尾) 90 处极端值
+  NOC: Winsorized (缩尾) 22 处极端值
   NOW: Missing values 0 -> 0
   NOW: Fixed 0 OHLC violations
   NOW: Fixed 0 volume issues
-  NOW: Winsorized (缩尾) 28 处极端值
+  NOW: Winsorized (缩尾) 66 处极端值
   NRG: Missing values 0 -> 0
   NRG: Fixed 0 OHLC violations
   NRG: Fixed 0 volume issues
-  NRG: Winsorized (缩尾) 24 处极端值
+  NRG: Winsorized (缩尾) 40 处极端值
   NSC: Missing values 0 -> 0
   NSC: Fixed 0 OHLC violations
   NSC: Fixed 0 volume issues
-  NSC: Winsorized (缩尾) 17 处极端值
+  NSC: Winsorized (缩尾) 25 处极端值
   NTAP: Missing values 0 -> 0
   NTAP: Fixed 0 OHLC violations
   NTAP: Fixed 0 volume issues
-  NTAP: Winsorized (缩尾) 28 处极端值
+  NTAP: Winsorized (缩尾) 48 处极端值
   NTRS: Missing values 0 -> 0
   NTRS: Fixed 0 OHLC violations
   NTRS: Fixed 0 volume issues
-  NTRS: Winsorized (缩尾) 24 处极端值
+  NTRS: Winsorized (缩尾) 52 处极端值
   NUE: Missing values 0 -> 0
   NUE: Fixed 0 OHLC violations
   NUE: Fixed 0 volume issues
-  NUE: Winsorized (缩尾) 20 处极端值
+  NUE: Winsorized (缩尾) 17 处极端值
   NVDA: Missing values 0 -> 0
   NVDA: Fixed 0 OHLC violations
   NVDA: Fixed 0 volume issues
-  NVDA: Winsorized (缩尾) 1 处极端值
+  NVDA: Winsorized (缩尾) 7 处极端值
   NVR: Missing values 0 -> 0
   NVR: Fixed 0 OHLC violations
   NVR: Fixed 0 volume issues
-  NVR: Winsorized (缩尾) 22 处极端值
-  NWS: Missing values 0 -> 0
-  NWS: Fixed 0 OHLC violations
-  NWS: Fixed 0 volume issues
-  NWS: Winsorized (缩尾) 25 处极端值
+  NVR: Winsorized (缩尾) 39 处极端值
   NWSA: Missing values 0 -> 0
   NWSA: Fixed 0 OHLC violations
   NWSA: Fixed 0 volume issues
-  NWSA: Winsorized (缩尾) 15 处极端值
+  NWSA: Winsorized (缩尾) 24 处极端值
+  NWS: Missing values 0 -> 0
+  NWS: Fixed 0 OHLC violations
+  NWS: Fixed 0 volume issues
+  NWS: Winsorized (缩尾) 38 处极端值
   NXPI: Missing values 0 -> 0
   NXPI: Fixed 0 OHLC violations
   NXPI: Fixed 0 volume issues
-  NXPI: Winsorized (缩尾) 11 处极端值
-  O: Missing values 0 -> 0
-  O: Fixed 0 OHLC violations
-  O: Fixed 0 volume issues
-  O: Winsorized (缩尾) 15 处极端值
+  NXPI: Winsorized (缩尾) 50 处极端值
   ODFL: Missing values 0 -> 0
   ODFL: Fixed 0 OHLC violations
   ODFL: Fixed 0 volume issues
-  ODFL: Winsorized (缩尾) 12 处极端值
+  ODFL: Winsorized (缩尾) 25 处极端值
   OKE: Missing values 0 -> 0
   OKE: Fixed 0 OHLC violations
   OKE: Fixed 0 volume issues
-  OKE: Winsorized (缩尾) 25 处极端值
+  OKE: Winsorized (缩尾) 54 处极端值
   OMC: Missing values 0 -> 0
   OMC: Fixed 0 OHLC violations
   OMC: Fixed 0 volume issues
-  OMC: Winsorized (缩尾) 23 处极端值
+  OMC: Winsorized (缩尾) 41 处极端值
   ON: Missing values 0 -> 0
   ON: Fixed 0 OHLC violations
   ON: Fixed 0 volume issues
-  ON: Winsorized (缩尾) 14 处极端值
+  ON: Winsorized (缩尾) 25 处极端值
   ORCL: Missing values 0 -> 0
   ORCL: Fixed 0 OHLC violations
   ORCL: Fixed 0 volume issues
-  ORCL: Winsorized (缩尾) 50 处极端值
+  ORCL: Winsorized (缩尾) 47 处极端值
   ORLY: Missing values 0 -> 0
   ORLY: Fixed 0 OHLC violations
   ORLY: Fixed 0 volume issues
-  ORLY: Winsorized (缩尾) 15 处极端值
+  ORLY: Winsorized (缩尾) 30 处极端值
   OTIS: Missing values 0 -> 0
   OTIS: Fixed 0 OHLC violations
   OTIS: Fixed 0 volume issues
-  OTIS: Winsorized (缩尾) 22 处极端值
+  OTIS: Winsorized (缩尾) 38 处极端值
   OXY: Missing values 0 -> 0
   OXY: Fixed 0 OHLC violations
   OXY: Fixed 0 volume issues
-  OXY: Winsorized (缩尾) 18 处极端值
+  OXY: Winsorized (缩尾) 37 处极端值
+  O: Missing values 0 -> 0
+  O: Fixed 0 OHLC violations
+  O: Fixed 0 volume issues
+  O: Winsorized (缩尾) 20 处极端值
   PANW: Missing values 0 -> 0
   PANW: Fixed 0 OHLC violations
   PANW: Fixed 0 volume issues
-  PANW: Winsorized (缩尾) 36 处极端值
+  PANW: Winsorized (缩尾) 62 处极端值
   PAYX: Missing values 0 -> 0
   PAYX: Fixed 0 OHLC violations
   PAYX: Fixed 0 volume issues
-  PAYX: Winsorized (缩尾) 20 处极端值
+  PAYX: Winsorized (缩尾) 39 处极端值
   PCAR: Missing values 0 -> 0
   PCAR: Fixed 0 OHLC violations
   PCAR: Fixed 0 volume issues
-  PCAR: Winsorized (缩尾) 19 处极端值
+  PCAR: Winsorized (缩尾) 27 处极端值
   PCG: Missing values 0 -> 0
   PCG: Fixed 0 OHLC violations
   PCG: Fixed 0 volume issues
-  PCG: Winsorized (缩尾) 12 处极端值
+  PCG: Winsorized (缩尾) 415 处极端值
   PEG: Missing values 0 -> 0
   PEG: Fixed 0 OHLC violations
   PEG: Fixed 0 volume issues
-  PEG: Winsorized (缩尾) 7 处极端值
+  PEG: Winsorized (缩尾) 12 处极端值
   PEP: Missing values 0 -> 0
   PEP: Fixed 0 OHLC violations
   PEP: Fixed 0 volume issues
-  PEP: Winsorized (缩尾) 14 处极端值
+  PEP: Winsorized (缩尾) 32 处极端值
   PFE: Missing values 0 -> 0
   PFE: Fixed 0 OHLC violations
   PFE: Fixed 0 volume issues
-  PFE: Winsorized (缩尾) 19 处极端值
+  PFE: Winsorized (缩尾) 33 处极端值
   PFG: Missing values 0 -> 0
   PFG: Fixed 0 OHLC violations
   PFG: Fixed 0 volume issues
-  PFG: Winsorized (缩尾) 17 处极端值
-  PG: Missing values 0 -> 0
-  PG: Fixed 0 OHLC violations
-  PG: Fixed 0 volume issues
-  PG: Winsorized (缩尾) 17 处极端值
+  PFG: Winsorized (缩尾) 27 处极端值
   PGR: Missing values 0 -> 0
   PGR: Fixed 0 OHLC violations
   PGR: Fixed 0 volume issues
-  PGR: Winsorized (缩尾) 14 处极端值
-  PH: Missing values 0 -> 0
-  PH: Fixed 0 OHLC violations
-  PH: Fixed 0 volume issues
-  PH: Winsorized (缩尾) 11 处极端值
+  PGR: Winsorized (缩尾) 24 处极端值
+  PG: Missing values 0 -> 0
+  PG: Fixed 0 OHLC violations
+  PG: Fixed 0 volume issues
+  PG: Winsorized (缩尾) 35 处极端值
   PHM: Missing values 0 -> 0
   PHM: Fixed 0 OHLC violations
   PHM: Fixed 0 volume issues
-  PHM: Winsorized (缩尾) 18 处极端值
+  PHM: Winsorized (缩尾) 43 处极端值
+  PH: Missing values 0 -> 0
+  PH: Fixed 0 OHLC violations
+  PH: Fixed 0 volume issues
+  PH: Winsorized (缩尾) 27 处极端值
   PKG: Missing values 0 -> 0
   PKG: Fixed 0 OHLC violations
   PKG: Fixed 0 volume issues
-  PKG: Winsorized (缩尾) 16 处极端值
+  PKG: Winsorized (缩尾) 33 处极端值
   PLD: Missing values 0 -> 0
   PLD: Fixed 0 OHLC violations
   PLD: Fixed 0 volume issues
-  PLD: Winsorized (缩尾) 20 处极端值
+  PLD: Winsorized (缩尾) 34 处极端值
   PLTR: Missing values 0 -> 0
   PLTR: Fixed 0 OHLC violations
   PLTR: Fixed 0 volume issues
-  PLTR: Winsorized (缩尾) 18 处极端值
+  PLTR: Winsorized (缩尾) 35 处极端值
   PM: Missing values 0 -> 0
   PM: Fixed 0 OHLC violations
   PM: Fixed 0 volume issues
-  PM: Winsorized (缩尾) 14 处极端值
+  PM: Winsorized (缩尾) 31 处极端值
   PNC: Missing values 0 -> 0
   PNC: Fixed 0 OHLC violations
   PNC: Fixed 0 volume issues
-  PNC: Winsorized (缩尾) 20 处极端值
+  PNC: Winsorized (缩尾) 30 处极端值
   PNR: Missing values 0 -> 0
   PNR: Fixed 0 OHLC violations
   PNR: Fixed 0 volume issues
-  PNR: Winsorized (缩尾) 16 处极端值
+  PNR: Winsorized (缩尾) 31 处极端值
   PNW: Missing values 0 -> 0
   PNW: Fixed 0 OHLC violations
   PNW: Fixed 0 volume issues
-  PNW: Winsorized (缩尾) 10 处极端值
+  PNW: Winsorized (缩尾) 22 处极端值
   PODD: Missing values 0 -> 0
   PODD: Fixed 0 OHLC violations
   PODD: Fixed 0 volume issues
-  PODD: Winsorized (缩尾) 19 处极端值
+  PODD: Winsorized (缩尾) 43 处极端值
   POOL: Missing values 0 -> 0
   POOL: Fixed 0 OHLC violations
   POOL: Fixed 0 volume issues
-  POOL: Winsorized (缩尾) 14 处极端值
+  POOL: Winsorized (缩尾) 29 处极端值
   PPG: Missing values 0 -> 0
   PPG: Fixed 0 OHLC violations
   PPG: Fixed 0 volume issues
-  PPG: Winsorized (缩尾) 11 处极端值
+  PPG: Winsorized (缩尾) 25 处极端值
   PPL: Missing values 0 -> 0
   PPL: Fixed 0 OHLC violations
   PPL: Fixed 0 volume issues
-  PPL: Winsorized (缩尾) 17 处极端值
+  PPL: Winsorized (缩尾) 36 处极端值
   PRU: Missing values 0 -> 0
   PRU: Fixed 0 OHLC violations
   PRU: Fixed 0 volume issues
-  PRU: Winsorized (缩尾) 14 处极端值
+  PRU: Winsorized (缩尾) 39 处极端值
   PSA: Missing values 0 -> 0
   PSA: Fixed 0 OHLC violations
   PSA: Fixed 0 volume issues
-  PSA: Winsorized (缩尾) 15 处极端值
+  PSA: Winsorized (缩尾) 23 处极端值
   PSKY: Missing values 0 -> 0
   PSKY: Fixed 0 OHLC violations
   PSKY: Fixed 0 volume issues
-  PSKY: Winsorized (缩尾) 37 处极端值
+  PSKY: Winsorized (缩尾) 59 处极端值
   PSX: Missing values 0 -> 0
   PSX: Fixed 0 OHLC violations
   PSX: Fixed 0 volume issues
-  PSX: Winsorized (缩尾) 17 处极端值
+  PSX: Winsorized (缩尾) 30 处极端值
   PTC: Missing values 0 -> 0
   PTC: Fixed 0 OHLC violations
   PTC: Fixed 0 volume issues
-  PTC: Winsorized (缩尾) 20 处极端值
+  PTC: Winsorized (缩尾) 39 处极端值
   PWR: Missing values 0 -> 0
   PWR: Fixed 0 OHLC violations
   PWR: Fixed 0 volume issues
-  PWR: Winsorized (缩尾) 16 处极端值
+  PWR: Winsorized (缩尾) 21 处极端值
   PYPL: Missing values 0 -> 0
   PYPL: Fixed 0 OHLC violations
   PYPL: Fixed 0 volume issues
-  PYPL: Winsorized (缩尾) 21 处极端值
+  PYPL: Winsorized (缩尾) 517 处极端值
+  QCOM: Missing values 0 -> 0
+  QCOM: Fixed 0 OHLC violations
+  QCOM: Fixed 0 volume issues
+  QCOM: Winsorized (缩尾) 56 处极端值
   Q: Missing values 0 -> 0
   Q: Fixed 0 OHLC violations
   Q: Fixed 0 volume issues
   Q: Winsorized (缩尾) 4 处极端值
-  QCOM: Missing values 0 -> 0
-  QCOM: Fixed 0 OHLC violations
-  QCOM: Fixed 0 volume issues
-  QCOM: Winsorized (缩尾) 26 处极端值
   RCL: Missing values 0 -> 0
   RCL: Fixed 0 OHLC violations
   RCL: Fixed 0 volume issues
-  RCL: Winsorized (缩尾) 22 处极端值
-  REG: Missing values 0 -> 0
-  REG: Fixed 0 OHLC violations
-  REG: Fixed 0 volume issues
-  REG: Winsorized (缩尾) 11 处极端值
+  RCL: Winsorized (缩尾) 105 处极端值
   REGN: Missing values 0 -> 0
   REGN: Fixed 0 OHLC violations
   REGN: Fixed 0 volume issues
-  REGN: Winsorized (缩尾) 13 处极端值
+  REGN: Winsorized (缩尾) 26 处极端值
+  REG: Missing values 0 -> 0
+  REG: Fixed 0 OHLC violations
+  REG: Fixed 0 volume issues
+  REG: Winsorized (缩尾) 27 处极端值
   RF: Missing values 0 -> 0
   RF: Fixed 0 OHLC violations
   RF: Fixed 0 volume issues
-  RF: Winsorized (缩尾) 27 处极端值
+  RF: Winsorized (缩尾) 36 处极端值
   RJF: Missing values 0 -> 0
   RJF: Fixed 0 OHLC violations
   RJF: Fixed 0 volume issues
-  RJF: Winsorized (缩尾) 20 处极端值
+  RJF: Winsorized (缩尾) 39 处极端值
   RL: Missing values 0 -> 0
   RL: Fixed 0 OHLC violations
   RL: Fixed 0 volume issues
-  RL: Winsorized (缩尾) 19 处极端值
+  RL: Winsorized (缩尾) 70 处极端值
   RMD: Missing values 0 -> 0
   RMD: Fixed 0 OHLC violations
   RMD: Fixed 0 volume issues
-  RMD: Winsorized (缩尾) 15 处极端值
+  RMD: Winsorized (缩尾) 29 处极端值
   ROK: Missing values 0 -> 0
   ROK: Fixed 0 OHLC violations
   ROK: Fixed 0 volume issues
-  ROK: Winsorized (缩尾) 17 处极端值
+  ROK: Winsorized (缩尾) 29 处极端值
   ROL: Missing values 0 -> 0
   ROL: Fixed 0 OHLC violations
   ROL: Fixed 0 volume issues
-  ROL: Winsorized (缩尾) 22 处极端值
+  ROL: Winsorized (缩尾) 56 处极端值
   ROP: Missing values 0 -> 0
   ROP: Fixed 0 OHLC violations
   ROP: Fixed 0 volume issues
-  ROP: Winsorized (缩尾) 29 处极端值
+  ROP: Winsorized (缩尾) 49 处极端值
   ROST: Missing values 0 -> 0
   ROST: Fixed 0 OHLC violations
   ROST: Fixed 0 volume issues
-  ROST: Winsorized (缩尾) 24 处极端值
+  ROST: Winsorized (缩尾) 34 处极端值
   RSG: Missing values 0 -> 0
   RSG: Fixed 0 OHLC violations
   RSG: Fixed 0 volume issues
-  RSG: Winsorized (缩尾) 9 处极端值
+  RSG: Winsorized (缩尾) 15 处极端值
   RTX: Missing values 0 -> 0
   RTX: Fixed 0 OHLC violations
   RTX: Fixed 0 volume issues
-  RTX: Winsorized (缩尾) 22 处极端值
+  RTX: Winsorized (缩尾) 264 处极端值
   RVTY: Missing values 0 -> 0
   RVTY: Fixed 0 OHLC violations
   RVTY: Fixed 0 volume issues
-  RVTY: Winsorized (缩尾) 7 处极端值
+  RVTY: Winsorized (缩尾) 21 处极端值
   SATS: Missing values 0 -> 0
   SATS: Fixed 0 OHLC violations
-  SATS: Fixed 0 volume issues
-  SATS: Winsorized (缩尾) 641 处极端值
+  SATS: Fixed 1 volume issues
+  SATS: Winsorized (缩尾) 755 处极端值
   SBAC: Missing values 0 -> 0
   SBAC: Fixed 0 OHLC violations
   SBAC: Fixed 0 volume issues
-  SBAC: Winsorized (缩尾) 15 处极端值
+  SBAC: Winsorized (缩尾) 25 处极端值
   SBUX: Missing values 0 -> 0
   SBUX: Fixed 0 OHLC violations
   SBUX: Fixed 0 volume issues
-  SBUX: Winsorized (缩尾) 23 处极端值
+  SBUX: Winsorized (缩尾) 42 处极端值
   SCHW: Missing values 0 -> 0
   SCHW: Fixed 0 OHLC violations
   SCHW: Fixed 0 volume issues
-  SCHW: Winsorized (缩尾) 41 处极端值
+  SCHW: Winsorized (缩尾) 62 处极端值
   SHW: Missing values 0 -> 0
   SHW: Fixed 0 OHLC violations
   SHW: Fixed 0 volume issues
-  SHW: Winsorized (缩尾) 16 处极端值
+  SHW: Winsorized (缩尾) 30 处极端值
   SJM: Missing values 0 -> 0
   SJM: Fixed 0 OHLC violations
   SJM: Fixed 0 volume issues
-  SJM: Winsorized (缩尾) 15 处极端值
+  SJM: Winsorized (缩尾) 31 处极端值
   SLB: Missing values 0 -> 0
   SLB: Fixed 0 OHLC violations
   SLB: Fixed 0 volume issues
-  SLB: Winsorized (缩尾) 15 处极端值
+  SLB: Winsorized (缩尾) 25 处极端值
   SMCI: Missing values 0 -> 0
   SMCI: Fixed 0 OHLC violations
   SMCI: Fixed 0 volume issues
-  SMCI: Winsorized (缩尾) 32 处极端值
+  SMCI: Winsorized (缩尾) 56 处极端值
   SNA: Missing values 0 -> 0
   SNA: Fixed 0 OHLC violations
   SNA: Fixed 0 volume issues
-  SNA: Winsorized (缩尾) 24 处极端值
+  SNA: Winsorized (缩尾) 39 处极端值
   SNDK: Missing values 0 -> 0
   SNDK: Fixed 0 OHLC violations
   SNDK: Fixed 0 volume issues
+  SNDK: Winsorized (缩尾) 2 处极端值
   SNPS: Missing values 0 -> 0
   SNPS: Fixed 0 OHLC violations
   SNPS: Fixed 0 volume issues
-  SNPS: Winsorized (缩尾) 33 处极端值
-  SO: Missing values 0 -> 0
-  SO: Fixed 0 OHLC violations
-  SO: Fixed 0 volume issues
-  SO: Winsorized (缩尾) 10 处极端值
+  SNPS: Winsorized (缩尾) 50 处极端值
   SOLV: Missing values 0 -> 0
   SOLV: Fixed 0 OHLC violations
   SOLV: Fixed 0 volume issues
-  SOLV: Winsorized (缩尾) 13 处极端值
-  SPG: Missing values 0 -> 0
-  SPG: Fixed 0 OHLC violations
-  SPG: Fixed 0 volume issues
-  SPG: Winsorized (缩尾) 10 处极端值
+  SOLV: Winsorized (缩尾) 14 处极端值
+  SO: Missing values 0 -> 0
+  SO: Fixed 0 OHLC violations
+  SO: Fixed 0 volume issues
+  SO: Winsorized (缩尾) 16 处极端值
   SPGI: Missing values 0 -> 0
   SPGI: Fixed 0 OHLC violations
   SPGI: Fixed 0 volume issues
-  SPGI: Winsorized (缩尾) 18 处极端值
+  SPGI: Winsorized (缩尾) 29 处极端值
+  SPG: Missing values 0 -> 0
+  SPG: Fixed 0 OHLC violations
+  SPG: Fixed 0 volume issues
+  SPG: Winsorized (缩尾) 118 处极端值
   SRE: Missing values 0 -> 0
   SRE: Fixed 0 OHLC violations
   SRE: Fixed 0 volume issues
-  SRE: Winsorized (缩尾) 22 处极端值
+  SRE: Winsorized (缩尾) 36 处极端值
   STE: Missing values 0 -> 0
   STE: Fixed 0 OHLC violations
   STE: Fixed 0 volume issues
-  STE: Winsorized (缩尾) 12 处极端值
+  STE: Winsorized (缩尾) 25 处极端值
   STLD: Missing values 0 -> 0
   STLD: Fixed 0 OHLC violations
   STLD: Fixed 0 volume issues
-  STLD: Winsorized (缩尾) 21 处极端值
+  STLD: Winsorized (缩尾) 29 处极端值
   STT: Missing values 0 -> 0
   STT: Fixed 0 OHLC violations
   STT: Fixed 0 volume issues
-  STT: Winsorized (缩尾) 22 处极端值
+  STT: Winsorized (缩尾) 208 处极端值
   STX: Missing values 0 -> 0
   STX: Fixed 0 OHLC violations
   STX: Fixed 0 volume issues
-  STX: Winsorized (缩尾) 495 处极端值
+  STX: Winsorized (缩尾) 725 处极端值
   STZ: Missing values 0 -> 0
   STZ: Fixed 0 OHLC violations
   STZ: Fixed 0 volume issues
-  STZ: Winsorized (缩尾) 11 处极端值
-  SW: Missing values 0 -> 0
-  SW: Fixed 0 OHLC violations
-  SW: Fixed 264 volume issues
-  SW: Winsorized (缩尾) 6 处极端值
-  SWK: Missing values 0 -> 0
-  SWK: Fixed 0 OHLC violations
-  SWK: Fixed 0 volume issues
-  SWK: Winsorized (缩尾) 27 处极端值
+  STZ: Winsorized (缩尾) 25 处极端值
   SWKS: Missing values 0 -> 0
   SWKS: Fixed 0 OHLC violations
   SWKS: Fixed 0 volume issues
-  SWKS: Winsorized (缩尾) 29 处极端值
+  SWKS: Winsorized (缩尾) 53 处极端值
+  SWK: Missing values 0 -> 0
+  SWK: Fixed 0 OHLC violations
+  SWK: Fixed 0 volume issues
+  SWK: Winsorized (缩尾) 29 处极端值
+  SW: Missing values 0 -> 0
+  SW: Fixed 0 OHLC violations
+  SW: Fixed 750 volume issues
+  SW: Winsorized (缩尾) 497 处极端值
   SYF: Missing values 0 -> 0
   SYF: Fixed 0 OHLC violations
   SYF: Fixed 0 volume issues
-  SYF: Winsorized (缩尾) 5 处极端值
+  SYF: Winsorized (缩尾) 26 处极端值
   SYK: Missing values 0 -> 0
   SYK: Fixed 0 OHLC violations
   SYK: Fixed 0 volume issues
-  SYK: Winsorized (缩尾) 9 处极端值
+  SYK: Winsorized (缩尾) 23 处极端值
   SYY: Missing values 0 -> 0
   SYY: Fixed 0 OHLC violations
   SYY: Fixed 0 volume issues
-  SYY: Winsorized (缩尾) 21 处极端值
-  T: Missing values 0 -> 0
-  T: Fixed 0 OHLC violations
-  T: Fixed 0 volume issues
-  T: Winsorized (缩尾) 17 处极端值
+  SYY: Winsorized (缩尾) 55 处极端值
   TAP: Missing values 0 -> 0
   TAP: Fixed 0 OHLC violations
   TAP: Fixed 0 volume issues
-  TAP: Winsorized (缩尾) 13 处极端值
+  TAP: Winsorized (缩尾) 22 处极端值
   TDG: Missing values 0 -> 0
   TDG: Fixed 0 OHLC violations
   TDG: Fixed 0 volume issues
-  TDG: Winsorized (缩尾) 11 处极端值
+  TDG: Winsorized (缩尾) 58 处极端值
   TDY: Missing values 0 -> 0
   TDY: Fixed 0 OHLC violations
   TDY: Fixed 0 volume issues
-  TDY: Winsorized (缩尾) 15 处极端值
+  TDY: Winsorized (缩尾) 25 处极端值
   TECH: Missing values 0 -> 0
   TECH: Fixed 0 OHLC violations
   TECH: Fixed 0 volume issues
-  TECH: Winsorized (缩尾) 8 处极端值
+  TECH: Winsorized (缩尾) 38 处极端值
   TEL: Missing values 0 -> 0
   TEL: Fixed 0 OHLC violations
   TEL: Fixed 0 volume issues
-  TEL: Winsorized (缩尾) 43 处极端值
+  TEL: Winsorized (缩尾) 21 处极端值
   TER: Missing values 0 -> 0
   TER: Fixed 0 OHLC violations
   TER: Fixed 0 volume issues
-  TER: Winsorized (缩尾) 243 处极端值
+  TER: Winsorized (缩尾) 441 处极端值
   TFC: Missing values 0 -> 0
   TFC: Fixed 0 OHLC violations
   TFC: Fixed 0 volume issues
-  TFC: Winsorized (缩尾) 17 处极端值
+  TFC: Winsorized (缩尾) 28 处极端值
   TGT: Missing values 0 -> 0
   TGT: Fixed 0 OHLC violations
   TGT: Fixed 0 volume issues
-  TGT: Winsorized (缩尾) 20 处极端值
+  TGT: Winsorized (缩尾) 42 处极端值
   TJX: Missing values 0 -> 0
   TJX: Fixed 0 OHLC violations
   TJX: Fixed 0 volume issues
-  TJX: Winsorized (缩尾) 22 处极端值
+  TJX: Winsorized (缩尾) 35 处极端值
   TKO: Missing values 0 -> 0
   TKO: Fixed 0 OHLC violations
   TKO: Fixed 0 volume issues
-  TKO: Winsorized (缩尾) 27 处极端值
+  TKO: Winsorized (缩尾) 45 处极端值
   TMO: Missing values 0 -> 0
   TMO: Fixed 0 OHLC violations
   TMO: Fixed 0 volume issues
-  TMO: Winsorized (缩尾) 6 处极端值
+  TMO: Winsorized (缩尾) 15 处极端值
   TMUS: Missing values 0 -> 0
   TMUS: Fixed 0 OHLC violations
   TMUS: Fixed 0 volume issues
-  TMUS: Winsorized (缩尾) 15 处极端值
+  TMUS: Winsorized (缩尾) 31 处极端值
   TPL: Missing values 0 -> 0
   TPL: Fixed 0 OHLC violations
   TPL: Fixed 0 volume issues
-  TPL: Winsorized (缩尾) 19 处极端值
+  TPL: Winsorized (缩尾) 33 处极端值
   TPR: Missing values 0 -> 0
   TPR: Fixed 0 OHLC violations
   TPR: Fixed 0 volume issues
-  TPR: Winsorized (缩尾) 26 处极端值
+  TPR: Winsorized (缩尾) 1080 处极端值
   TRGP: Missing values 0 -> 0
   TRGP: Fixed 0 OHLC violations
   TRGP: Fixed 0 volume issues
-  TRGP: Winsorized (缩尾) 16 处极端值
+  TRGP: Winsorized (缩尾) 70 处极端值
   TRMB: Missing values 0 -> 0
   TRMB: Fixed 0 OHLC violations
   TRMB: Fixed 0 volume issues
-  TRMB: Winsorized (缩尾) 17 处极端值
+  TRMB: Winsorized (缩尾) 31 处极端值
   TROW: Missing values 0 -> 0
   TROW: Fixed 0 OHLC violations
   TROW: Fixed 0 volume issues
-  TROW: Winsorized (缩尾) 18 处极端值
+  TROW: Winsorized (缩尾) 519 处极端值
   TRV: Missing values 0 -> 0
   TRV: Fixed 0 OHLC violations
   TRV: Fixed 0 volume issues
-  TRV: Winsorized (缩尾) 12 处极端值
+  TRV: Winsorized (缩尾) 41 处极端值
   TSCO: Missing values 0 -> 0
   TSCO: Fixed 0 OHLC violations
   TSCO: Fixed 0 volume issues
-  TSCO: Winsorized (缩尾) 12 处极端值
+  TSCO: Winsorized (缩尾) 34 处极端值
   TSLA: Missing values 0 -> 0
   TSLA: Fixed 0 OHLC violations
   TSLA: Fixed 0 volume issues
-  TSLA: Winsorized (缩尾) 2 处极端值
+  TSLA: Winsorized (缩尾) 52 处极端值
   TSN: Missing values 0 -> 0
   TSN: Fixed 0 OHLC violations
   TSN: Fixed 0 volume issues
-  TSN: Winsorized (缩尾) 112 处极端值
-  TT: Missing values 0 -> 0
-  TT: Fixed 0 OHLC violations
-  TT: Fixed 0 volume issues
-  TT: Winsorized (缩尾) 13 处极端值
+  TSN: Winsorized (缩尾) 28 处极端值
   TTD: Missing values 0 -> 0
   TTD: Fixed 0 OHLC violations
   TTD: Fixed 0 volume issues
-  TTD: Winsorized (缩尾) 34 处极端值
+  TTD: Winsorized (缩尾) 28 处极端值
   TTWO: Missing values 0 -> 0
   TTWO: Fixed 0 OHLC violations
   TTWO: Fixed 0 volume issues
-  TTWO: Winsorized (缩尾) 32 处极端值
+  TTWO: Winsorized (缩尾) 57 处极端值
+  TT: Missing values 0 -> 0
+  TT: Fixed 0 OHLC violations
+  TT: Fixed 0 volume issues
+  TT: Winsorized (缩尾) 25 处极端值
   TXN: Missing values 0 -> 0
   TXN: Fixed 0 OHLC violations
   TXN: Fixed 0 volume issues
-  TXN: Winsorized (缩尾) 20 处极端值
+  TXN: Winsorized (缩尾) 36 处极端值
   TXT: Missing values 0 -> 0
   TXT: Fixed 0 OHLC violations
   TXT: Fixed 0 volume issues
-  TXT: Winsorized (缩尾) 18 处极端值
+  TXT: Winsorized (缩尾) 38 处极端值
   TYL: Missing values 0 -> 0
   TYL: Fixed 0 OHLC violations
   TYL: Fixed 0 volume issues
-  TYL: Winsorized (缩尾) 33 处极端值
+  TYL: Winsorized (缩尾) 65 处极端值
+  T: Missing values 0 -> 0
+  T: Fixed 0 OHLC violations
+  T: Fixed 0 volume issues
+  T: Winsorized (缩尾) 30 处极端值
   UAL: Missing values 0 -> 0
   UAL: Fixed 0 OHLC violations
   UAL: Fixed 0 volume issues
-  UAL: Winsorized (缩尾) 17 处极端值
+  UAL: Winsorized (缩尾) 96 处极端值
   UBER: Missing values 0 -> 0
   UBER: Fixed 0 OHLC violations
   UBER: Fixed 0 volume issues
-  UBER: Winsorized (缩尾) 23 处极端值
+  UBER: Winsorized (缩尾) 36 处极端值
   UDR: Missing values 0 -> 0
   UDR: Fixed 0 OHLC violations
   UDR: Fixed 0 volume issues
-  UDR: Winsorized (缩尾) 8 处极端值
+  UDR: Winsorized (缩尾) 22 处极端值
   UHS: Missing values 0 -> 0
   UHS: Fixed 0 OHLC violations
   UHS: Fixed 0 volume issues
-  UHS: Winsorized (缩尾) 9 处极端值
+  UHS: Winsorized (缩尾) 20 处极端值
   ULTA: Missing values 0 -> 0
   ULTA: Fixed 0 OHLC violations
   ULTA: Fixed 0 volume issues
-  ULTA: Winsorized (缩尾) 33 处极端值
+  ULTA: Winsorized (缩尾) 77 处极端值
   UNH: Missing values 0 -> 0
   UNH: Fixed 0 OHLC violations
   UNH: Fixed 0 volume issues
-  UNH: Winsorized (缩尾) 33 处极端值
+  UNH: Winsorized (缩尾) 86 处极端值
   UNP: Missing values 0 -> 0
   UNP: Fixed 0 OHLC violations
   UNP: Fixed 0 volume issues
-  UNP: Winsorized (缩尾) 13 处极端值
+  UNP: Winsorized (缩尾) 27 处极端值
   UPS: Missing values 0 -> 0
   UPS: Fixed 0 OHLC violations
   UPS: Fixed 0 volume issues
-  UPS: Winsorized (缩尾) 18 处极端值
+  UPS: Winsorized (缩尾) 38 处极端值
   URI: Missing values 0 -> 0
   URI: Fixed 0 OHLC violations
   URI: Fixed 0 volume issues
-  URI: Winsorized (缩尾) 10 处极端值
+  URI: Winsorized (缩尾) 29 处极端值
   USB: Missing values 0 -> 0
   USB: Fixed 0 OHLC violations
   USB: Fixed 0 volume issues
-  USB: Winsorized (缩尾) 21 处极端值
-  V: Missing values 0 -> 0
-  V: Fixed 0 OHLC violations
-  V: Fixed 0 volume issues
-  V: Winsorized (缩尾) 17 处极端值
+  USB: Winsorized (缩尾) 32 处极端值
   VICI: Missing values 0 -> 0
   VICI: Fixed 0 OHLC violations
   VICI: Fixed 0 volume issues
-  VICI: Winsorized (缩尾) 23 处极端值
+  VICI: Winsorized (缩尾) 34 处极端值
   VLO: Missing values 0 -> 0
   VLO: Fixed 0 OHLC violations
   VLO: Fixed 0 volume issues
-  VLO: Winsorized (缩尾) 88 处极端值
+  VLO: Winsorized (缩尾) 28 处极端值
   VLTO: Missing values 0 -> 0
   VLTO: Fixed 0 OHLC violations
   VLTO: Fixed 0 volume issues
-  VLTO: Winsorized (缩尾) 21 处极端值
+  VLTO: Winsorized (缩尾) 23 处极端值
   VMC: Missing values 0 -> 0
   VMC: Fixed 0 OHLC violations
   VMC: Fixed 0 volume issues
-  VMC: Winsorized (缩尾) 21 处极端值
+  VMC: Winsorized (缩尾) 32 处极端值
   VRSK: Missing values 0 -> 0
   VRSK: Fixed 0 OHLC violations
   VRSK: Fixed 0 volume issues
-  VRSK: Winsorized (缩尾) 23 处极端值
+  VRSK: Winsorized (缩尾) 43 处极端值
   VRSN: Missing values 0 -> 0
   VRSN: Fixed 0 OHLC violations
   VRSN: Fixed 0 volume issues
-  VRSN: Winsorized (缩尾) 18 处极端值
-  VRT: Missing values 0 -> 0
-  VRT: Fixed 0 OHLC violations
-  VRT: Fixed 0 volume issues
-  VRT: Winsorized (缩尾) 21 处极端值
+  VRSN: Winsorized (缩尾) 33 处极端值
   VRTX: Missing values 0 -> 0
   VRTX: Fixed 0 OHLC violations
   VRTX: Fixed 0 volume issues
-  VRTX: Winsorized (缩尾) 25 处极端值
+  VRTX: Winsorized (缩尾) 41 处极端值
+  VRT: Missing values 0 -> 0
+  VRT: Fixed 0 OHLC violations
+  VRT: Fixed 12 volume issues
+  VRT: Winsorized (缩尾) 228 处极端值
   VST: Missing values 0 -> 0
   VST: Fixed 0 OHLC violations
   VST: Fixed 0 volume issues
-  VST: Winsorized (缩尾) 21 处极端值
-  VTR: Missing values 0 -> 0
-  VTR: Fixed 0 OHLC violations
-  VTR: Fixed 0 volume issues
-  VTR: Winsorized (缩尾) 11 处极端值
+  VST: Winsorized (缩尾) 38 处极端值
   VTRS: Missing values 0 -> 0
   VTRS: Fixed 0 OHLC violations
   VTRS: Fixed 0 volume issues
-  VTRS: Winsorized (缩尾) 17 处极端值
+  VTRS: Winsorized (缩尾) 346 处极端值
+  VTR: Missing values 0 -> 0
+  VTR: Fixed 0 OHLC violations
+  VTR: Fixed 0 volume issues
+  VTR: Winsorized (缩尾) 38 处极端值
   VZ: Missing values 0 -> 0
   VZ: Fixed 0 OHLC violations
   VZ: Fixed 0 volume issues
-  VZ: Winsorized (缩尾) 20 处极端值
+  VZ: Winsorized (缩尾) 31 处极端值
+  V: Missing values 0 -> 0
+  V: Fixed 0 OHLC violations
+  V: Fixed 0 volume issues
+  V: Winsorized (缩尾) 32 处极端值
   WAB: Missing values 0 -> 0
   WAB: Fixed 0 OHLC violations
   WAB: Fixed 0 volume issues
-  WAB: Winsorized (缩尾) 9 处极端值
+  WAB: Winsorized (缩尾) 47 处极端值
   WAT: Missing values 0 -> 0
   WAT: Fixed 0 OHLC violations
   WAT: Fixed 0 volume issues
-  WAT: Winsorized (缩尾) 22 处极端值
+  WAT: Winsorized (缩尾) 42 处极端值
   WBD: Missing values 0 -> 0
   WBD: Fixed 0 OHLC violations
   WBD: Fixed 0 volume issues
-  WBD: Winsorized (缩尾) 199 处极端值
+  WBD: Winsorized (缩尾) 24 处极端值
   WDAY: Missing values 0 -> 0
   WDAY: Fixed 0 OHLC violations
   WDAY: Fixed 0 volume issues
-  WDAY: Winsorized (缩尾) 24 处极端值
+  WDAY: Winsorized (缩尾) 49 处极端值
   WDC: Missing values 0 -> 0
   WDC: Fixed 0 OHLC violations
   WDC: Fixed 0 volume issues
-  WDC: Winsorized (缩尾) 486 处极端值
+  WDC: Winsorized (缩尾) 811 处极端值
   WEC: Missing values 0 -> 0
   WEC: Fixed 0 OHLC violations
   WEC: Fixed 0 volume issues
-  WEC: Winsorized (缩尾) 5 处极端值
+  WEC: Winsorized (缩尾) 20 处极端值
   WELL: Missing values 0 -> 0
   WELL: Fixed 0 OHLC violations
   WELL: Fixed 0 volume issues
-  WELL: Winsorized (缩尾) 29 处极端值
+  WELL: Winsorized (缩尾) 91 处极端值
   WFC: Missing values 0 -> 0
   WFC: Fixed 0 OHLC violations
   WFC: Fixed 0 volume issues
-  WFC: Winsorized (缩尾) 21 处极端值
-  WM: Missing values 0 -> 0
-  WM: Fixed 0 OHLC violations
-  WM: Fixed 0 volume issues
-  WM: Winsorized (缩尾) 9 处极端值
+  WFC: Winsorized (缩尾) 27 处极端值
   WMB: Missing values 0 -> 0
   WMB: Fixed 0 OHLC violations
   WMB: Fixed 0 volume issues
-  WMB: Winsorized (缩尾) 11 处极端值
+  WMB: Winsorized (缩尾) 34 处极端值
   WMT: Missing values 0 -> 0
   WMT: Fixed 0 OHLC violations
   WMT: Fixed 0 volume issues
-  WMT: Winsorized (缩尾) 30 处极端值
+  WMT: Winsorized (缩尾) 41 处极端值
+  WM: Missing values 0 -> 0
+  WM: Fixed 0 OHLC violations
+  WM: Fixed 0 volume issues
+  WM: Winsorized (缩尾) 24 处极端值
   WRB: Missing values 0 -> 0
   WRB: Fixed 0 OHLC violations
   WRB: Fixed 0 volume issues
-  WRB: Winsorized (缩尾) 24 处极端值
+  WRB: Winsorized (缩尾) 44 处极端值
   WSM: Missing values 0 -> 0
   WSM: Fixed 0 OHLC violations
   WSM: Fixed 0 volume issues
-  WSM: Winsorized (缩尾) 24 处极端值
+  WSM: Winsorized (缩尾) 45 处极端值
   WST: Missing values 0 -> 0
   WST: Fixed 0 OHLC violations
   WST: Fixed 0 volume issues
-  WST: Winsorized (缩尾) 19 处极端值
+  WST: Winsorized (缩尾) 45 处极端值
   WTW: Missing values 0 -> 0
   WTW: Fixed 0 OHLC violations
   WTW: Fixed 0 volume issues
-  WTW: Winsorized (缩尾) 15 处极端值
-  WY: Missing values 0 -> 0
-  WY: Fixed 0 OHLC violations
-  WY: Fixed 0 volume issues
-  WY: Winsorized (缩尾) 22 处极端值
+  WTW: Winsorized (缩尾) 50 处极端值
   WYNN: Missing values 0 -> 0
   WYNN: Fixed 0 OHLC violations
   WYNN: Fixed 0 volume issues
-  WYNN: Winsorized (缩尾) 23 处极端值
+  WYNN: Winsorized (缩尾) 47 处极端值
+  WY: Missing values 0 -> 0
+  WY: Fixed 0 OHLC violations
+  WY: Fixed 0 volume issues
+  WY: Winsorized (缩尾) 24 处极端值
   XEL: Missing values 0 -> 0
   XEL: Fixed 0 OHLC violations
   XEL: Fixed 0 volume issues
-  XEL: Winsorized (缩尾) 21 处极端值
+  XEL: Winsorized (缩尾) 34 处极端值
   XOM: Missing values 0 -> 0
   XOM: Fixed 0 OHLC violations
   XOM: Fixed 0 volume issues
-  XOM: Winsorized (缩尾) 80 处极端值
+  XOM: Winsorized (缩尾) 24 处极端值
   XYL: Missing values 0 -> 0
   XYL: Fixed 0 OHLC violations
   XYL: Fixed 0 volume issues
-  XYL: Winsorized (缩尾) 12 处极端值
+  XYL: Winsorized (缩尾) 26 处极端值
   XYZ: Missing values 0 -> 0
   XYZ: Fixed 0 OHLC violations
   XYZ: Fixed 0 volume issues
-  XYZ: Winsorized (缩尾) 52 处极端值
+  XYZ: Winsorized (缩尾) 1187 处极端值
   YUM: Missing values 0 -> 0
   YUM: Fixed 0 OHLC violations
   YUM: Fixed 0 volume issues
-  YUM: Winsorized (缩尾) 10 处极端值
+  YUM: Winsorized (缩尾) 28 处极端值
   ZTS: Missing values 0 -> 0
   ZTS: Fixed 0 OHLC violations
   ZTS: Fixed 0 volume issues
-  ZTS: Winsorized (缩尾) 12 处极端值
+  ZTS: Winsorized (缩尾) 45 处极端值
 
 ================================================================================
 Next Step: Cleaner now triggers monitor to compare raw vs cleaned scores automatically

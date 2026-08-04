@@ -60,8 +60,11 @@ class DataQualityMonitor:
             return pd.DataFrame()
 
         try:
-            df = pd.read_csv(file_path, index_col=0, parse_dates=[0])
-            df.index = pd.to_datetime(df.index, utc=True).tz_convert('America/New_York')
+            # NOTE: do NOT use parse_dates=[0] — mixed DST offsets in the saved
+            # index (-04:00/-05:00) make pandas' inference silently blank rows.
+            # Read as plain strings, then parse explicitly with utc=True first.
+            df = pd.read_csv(file_path, index_col=0)
+            df.index = pd.to_datetime(df.index, utc=True, errors='coerce').tz_convert('America/New_York')
             if isinstance(df.columns, pd.MultiIndex):
                 df.columns = df.columns.get_level_values(0)
             return df

@@ -13,10 +13,12 @@ __pycache__/
 # IDE
 .vscode/
 .idea/
+.claude/
 
 # Local research caches and generated validation artifacts
 .superpowers/
 .worktrees/
 data/metadata/
 data/edgar_cache/
+data/fundamental_cache/
 outputs/

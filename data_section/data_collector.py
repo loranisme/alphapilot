@@ -64,7 +64,9 @@ def collect_stock_data(tickers, start_date, end_date, min_days=1000):
     - dict: Dictionary with ticker as key and DataFrame as value
     """
     data = {}
-    for ticker in tickers:
+    for i, ticker in enumerate(tickers, 1):
+        if i % 25 == 1:
+            print(f"  [{i}/{len(tickers)}] downloading {ticker} ...", flush=True)
         try:
             stock_data = yf.download(
                 ticker,
@@ -121,11 +123,28 @@ def collect_realtime_data(tickers):
         return pd.DataFrame()
 
 if __name__ == "__main__":
-    # Collect ~4 years of daily data for up to 500 tickers
-    tickers = load_sp500_tickers(limit=500)
+    # Collect ~8 years of daily data for up to 500 tickers (covers multiple
+    # market regimes: 2018-19 choppy, 2020 COVID crash+recovery, 2021 bull,
+    # 2022 bear, 2023-25 AI bull)
+    #
+    # Reuse the existing 501-ticker universe from data/cleaned/ rather than
+    # re-fetching the S&P 500 constituent list (DataHub/Wikipedia network
+    # calls are unreliable in this environment and fall back to a 100-ticker
+    # list), so the universe stays identical to what's already validated.
+    cleaned_dir = 'data/cleaned'
+    if os.path.isdir(cleaned_dir):
+        existing = sorted(f for f in os.listdir(cleaned_dir) if f.endswith('_cleaned.csv'))
+        tickers = [f.replace('_cleaned.csv', '') for f in existing]
+    else:
+        tickers = []
+    if len(tickers) < 100:
+        print(f"Only found {len(tickers)} existing tickers in {cleaned_dir}; falling back to web list.")
+        tickers = load_sp500_tickers(limit=500)
+
     end_date = pd.Timestamp.now().date().isoformat()
-    start_date = (pd.Timestamp.now() - pd.DateOffset(years=4)).date().isoformat()
-    historical_data = collect_stock_data(tickers, start_date, end_date, min_days=700)
+    start_date = (pd.Timestamp.now() - pd.DateOffset(years=8)).date().isoformat()
+    print(f"Downloading {len(tickers)} tickers from {start_date} to {end_date} ...", flush=True)
+    historical_data = collect_stock_data(tickers, start_date, end_date, min_days=1400)
     save_csv = True
     saved_tickers = []
     if save_csv:

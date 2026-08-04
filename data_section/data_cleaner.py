@@ -10,6 +10,23 @@ except ImportError:
 import warnings
 warnings.filterwarnings('ignore')
 
+
+def read_ticker_csv(path) -> pd.DataFrame:
+    """
+    Read an OHLCV ticker CSV with a tz-aware DatetimeIndex.
+
+    Do NOT use pandas.read_csv(parse_dates=[0]) on these files: the saved
+    index mixes UTC offsets across DST transitions (-04:00 summer / -05:00
+    winter for America/New_York), and pandas' parse_dates dtype inference
+    silently blanks the minority-offset rows (observed: ~1/3 of rows lost).
+    Parsing with utc=True first avoids this by converting every row to a
+    UTC instant before any timezone conversion.
+    """
+    df = pd.read_csv(path, index_col=0)
+    df.index = pd.to_datetime(df.index, utc=True, errors='coerce').tz_convert('America/New_York')
+    return df
+
+
 class DataCleaner:
     """Data cleaning module to improve data quality scores above 90"""
 
@@ -50,12 +67,15 @@ class DataCleaner:
             return pd.DataFrame()
         
         try:
-            df = pd.read_csv(file_path, index_col=0, parse_dates=[0])
-            parsed_index = pd.to_datetime(df.index, errors='coerce')
-            if getattr(parsed_index, "tz", None) is None:
-                parsed_index = parsed_index.tz_localize('America/New_York')
-            else:
-                parsed_index = parsed_index.tz_convert('America/New_York')
+            # NOTE: do NOT use parse_dates=[0] here. The raw CSV mixes UTC
+            # offsets across DST transitions (-04:00 summer / -05:00 winter
+            # for America/New_York); pandas' parse_dates dtype inference
+            # silently fails on the minority offset, blanking ~1/3 of rows.
+            # utc=True sidesteps this by parsing every row to a UTC instant
+            # first, regardless of its original offset string.
+            df = pd.read_csv(file_path, index_col=0)
+            parsed_index = pd.to_datetime(df.index, utc=True, errors='coerce')
+            parsed_index = parsed_index.tz_convert('America/New_York')
             df.index = parsed_index
             if isinstance(df.columns, pd.MultiIndex):
                 df.columns = df.columns.get_level_values(0)

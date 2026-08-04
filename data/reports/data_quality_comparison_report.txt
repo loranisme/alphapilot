@@ -1,777 +1,4017 @@
 Data Quality Before/After Cleaning Comparison Report
-Generated at: 2026-04-04 15:01:03.572070
+Generated at: 2026-06-30 14:18:06.239763
 ================================================================================
 
 RAW vs CLEANED SCORE COMPARISON
 ================================================================================
 
-Ticker: AAPL
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+Ticker: A
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: AAPL
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: ABBV
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: ABNB
+  Overall: 84.34 -> 84.34 (Delta: +0.00)
+  Completeness: 47.78 -> 47.78 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: ABT
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: ACGL
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: ACN
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
 
 Ticker: ADBE
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: ADI
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: ADM
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: ADP
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: ADSK
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: AEE
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: AEP
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: AES
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: AFL
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: AIG
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: AIZ
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: AJG
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: AKAM
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: ALB
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: ALGN
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: ALL
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: ALLE
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: AMAT
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: AMCR
+  Overall: 84.74 -> 86.70 (Delta: +1.96)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 93.48 -> 100.00 (Delta: +6.52)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: AMD
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: AME
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: AMGN
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: AMP
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: AMT
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: AMZN
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: ANET
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: AON
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: AOS
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: APA
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: APD
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: APH
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: APO
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: APP
+  Overall: 84.01 -> 84.01 (Delta: +0.00)
+  Completeness: 46.70 -> 46.70 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: APTV
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: ARE
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: ARES
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: ATO
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: AVB
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: AVGO
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: AVY
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: AWK
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: AXON
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: AXP
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: AZO
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: BA
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: BAC
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: BALL
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: BAX
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: BBY
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: BDX
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: BEN
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: BF-B
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: BG
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: BIIB
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: BK
+  Overall: 66.69 -> 66.69 (Delta: +0.00)
+  Completeness: 55.64 -> 55.64 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
   Timeliness: 0.00 -> 0.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
   Result: Poor -> Poor
 
 Ticker: BKNG
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: BKR
+  Overall: 86.68 -> 86.70 (Delta: +0.01)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 99.95 -> 100.00 (Delta: +0.05)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: BLDR
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: BLK
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
 
 Ticker: BMY
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: BR
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: BRK-B
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: BRO
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: BSX
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: BX
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: BXP
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: C
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: CAG
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CAH
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CARR
+  Overall: 85.04 -> 85.04 (Delta: +0.00)
+  Completeness: 50.15 -> 50.15 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: CAT
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
 
 Ticker: CB
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: CBOE
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CBRE
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CCI
+  Overall: 86.68 -> 86.70 (Delta: +0.01)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 99.95 -> 100.00 (Delta: +0.05)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CCL
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CDNS
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CDW
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CEG
+  Overall: 83.27 -> 83.27 (Delta: +0.00)
+  Completeness: 44.23 -> 44.23 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CF
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CFG
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CHD
+  Overall: 86.68 -> 86.70 (Delta: +0.01)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 99.95 -> 100.00 (Delta: +0.05)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CHRW
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CHTR
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CI
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CIEN
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CINF
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: CL
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: CLX
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: CMCSA
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: CME
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CMG
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CMI
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CMS
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CNC
+  Overall: 86.68 -> 86.70 (Delta: +0.01)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 99.95 -> 100.00 (Delta: +0.05)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CNP
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: COF
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: COHR
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: COIN
+  Overall: 84.01 -> 84.01 (Delta: +0.00)
+  Completeness: 46.71 -> 46.71 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: COO
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: COP
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: COR
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: COST
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: CPAY
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CPB
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CPRT
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CPT
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CRH
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CRL
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: CRM
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: CRWD
+  Overall: 85.79 -> 85.79 (Delta: +0.00)
+  Completeness: 52.63 -> 52.63 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: CSCO
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: CSGP
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: CSX
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CTAS
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CTRA
+  Overall: 66.53 -> 66.56 (Delta: +0.03)
+  Completeness: 55.21 -> 55.21 (Delta: +0.00)
+  Validity: 99.90 -> 100.00 (Delta: +0.10)
   Timeliness: 0.00 -> 0.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
   Result: Poor -> Poor
+
+Ticker: CTSH
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CTVA
+  Overall: 85.83 -> 85.83 (Delta: +0.00)
+  Completeness: 52.78 -> 52.78 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CVNA
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: CVS
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: CVX
-  Overall: 62.84 -> 62.42 (Delta: -0.42)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
-  Validity: 100.00 -> 98.60 (Delta: -1.40)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: D
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: DAL
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: DASH
+  Overall: 84.34 -> 84.34 (Delta: +0.00)
+  Completeness: 47.80 -> 47.80 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: DD
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: DDOG
+  Overall: 85.52 -> 85.52 (Delta: +0.00)
+  Completeness: 51.74 -> 51.74 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: DE
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: DECK
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: DELL
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: DG
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: DGX
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: DHI
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: DHR
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
 
 Ticker: DIS
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: DLR
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: DLTR
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: DOC
+  Overall: 86.68 -> 86.70 (Delta: +0.01)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 99.95 -> 100.00 (Delta: +0.05)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: DOV
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: DOW
+  Overall: 86.01 -> 86.01 (Delta: +0.00)
+  Completeness: 53.37 -> 53.37 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: DPZ
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: DRI
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: DTE
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: DUK
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: DVA
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: DVN
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: DXCM
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: EA
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: EBAY
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: ECL
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: ED
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: EFX
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: EG
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: EIX
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: EL
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: ELV
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: EME
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: EMR
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: EOG
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: EPAM
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: EQIX
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: EQR
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: EQT
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: ERIE
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: ES
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: ESS
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: ETN
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: ETR
+  Overall: 86.70 -> 83.32 (Delta: -3.38)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 88.75 (Delta: -11.25)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: EVRG
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: EW
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: EXC
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: EXE
+  Overall: 84.18 -> 84.18 (Delta: +0.00)
+  Completeness: 47.26 -> 47.26 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: EXPD
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: EXPE
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: EXR
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: F
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: FANG
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: FAST
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: FCX
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: FDS
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: FDX
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: FE
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: FFIV
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: FICO
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: FIS
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: FISV
+  Overall: 86.69 -> 85.95 (Delta: -0.75)
+  Completeness: 55.64 -> 55.64 (Delta: +0.00)
+  Validity: 100.00 -> 97.51 (Delta: -2.49)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: FITB
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: FIX
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: FOX
+  Overall: 86.03 -> 86.03 (Delta: +0.00)
+  Completeness: 53.43 -> 53.43 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: FOXA
+  Overall: 86.03 -> 86.03 (Delta: +0.00)
+  Completeness: 53.44 -> 53.44 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: FRT
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: FSLR
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: FTNT
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: FTV
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: GD
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: GDDY
+  Overall: 86.70 -> 86.59 (Delta: -0.10)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 99.65 (Delta: -0.35)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: GE
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: GEHC
+  Overall: 82.39 -> 82.39 (Delta: +0.00)
+  Completeness: 41.31 -> 41.31 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: GEN
+  Overall: 86.68 -> 86.70 (Delta: +0.01)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 99.95 -> 100.00 (Delta: +0.05)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: GEV
+  Overall: 81.17 -> 81.17 (Delta: +0.00)
+  Completeness: 37.22 -> 37.22 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: GILD
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: GIS
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: GL
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: GLW
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: GM
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: GNRC
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: GOOG
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
 
 Ticker: GOOGL
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: GPC
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: GPN
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: GRMN
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: GS
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: GWW
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: HAL
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: HAS
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: HBAN
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: HCA
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: HD
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: HIG
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: HII
+  Overall: 86.70 -> 85.87 (Delta: -0.82)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 97.26 (Delta: -2.74)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: HLT
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: HOLX
   Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Completeness: 42.79 -> 42.79 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
   Timeliness: 0.00 -> 0.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
   Result: Poor -> Poor
 
 Ticker: HON
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.69 -> 86.70 (Delta: +0.00)
+  Completeness: 55.64 -> 55.65 (Delta: +0.01)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: HOOD
+  Overall: 83.73 -> 83.73 (Delta: +0.00)
+  Completeness: 45.77 -> 45.77 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: HPE
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: HPQ
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: HRL
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: HSIC
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: HST
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: HSY
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: HUBB
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: HUM
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: HWM
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: IBKR
+  Overall: 86.67 -> 86.70 (Delta: +0.03)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 99.90 -> 100.00 (Delta: +0.10)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: IBM
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: ICE
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: IDXX
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: IEX
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: IFF
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: INCY
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: INTC
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
 
 Ticker: INTU
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: INVH
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: IP
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: IQV
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: IR
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: IRM
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: ISRG
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: IT
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: ITW
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: IVZ
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: J
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: JBHT
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: JBL
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: JCI
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: JKHY
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: JNJ
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
 
 Ticker: JPM
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: KDP
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: KEY
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: KEYS
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: KHC
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: KIM
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: KKR
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: KLAC
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: KMB
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: KMI
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: KO
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: KR
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: KVUE
+  Overall: 82.03 -> 82.03 (Delta: +0.00)
+  Completeness: 40.09 -> 40.09 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: L
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: LDOS
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: LEN
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: LH
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: LHX
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: LII
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: LIN
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: LITE
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: LLY
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
 
 Ticker: LMT
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: LNT
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: LOW
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: LRCX
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: LULU
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: LUV
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: LVS
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: LYB
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: LYV
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: MA
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: MAA
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: MAR
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: MAS
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: MCD
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: MCHP
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: MCK
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: MCO
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: MDLZ
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: MDT
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: MET
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: META
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: MGM
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: MKC
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: MLM
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: MMM
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: MNST
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: MO
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: MOS
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: MPC
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: MPWR
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: MRK
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: MRNA
+  Overall: 86.27 -> 86.27 (Delta: +0.00)
+  Completeness: 54.25 -> 54.25 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: MRSH
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: MS
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: MSCI
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: MSFT
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: MSI
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: MTB
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: MTD
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: MU
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: NCLH
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: NDAQ
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: NDSN
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: NEE
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: NEM
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: NFLX
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: NI
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: NKE
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: NOC
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: NOW
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: NRG
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: NSC
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: NTAP
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: NTRS
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: NUE
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: NVDA
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: NVR
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: NWS
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: NWSA
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: NXPI
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: O
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: ODFL
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: OKE
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: OMC
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: ON
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: ORCL
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: ORLY
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: OTIS
+  Overall: 85.04 -> 85.04 (Delta: +0.00)
+  Completeness: 50.15 -> 50.15 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: OXY
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: PANW
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: PAYX
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: PCAR
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: PCG
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: PEG
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: PEP
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: PFE
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: PFG
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: PG
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
 
 Ticker: PGR
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: PH
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: PHM
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: PKG
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: PLD
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: PLTR
+  Overall: 84.53 -> 84.53 (Delta: +0.00)
+  Completeness: 48.42 -> 48.42 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: PM
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: PNC
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: PNR
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: PNW
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: PODD
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: POOL
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: PPG
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: PPL
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: PRU
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: PSA
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: PSKY
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: PSX
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: PTC
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: PWR
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: PYPL
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: Q
+  Overall: 79.64 -> 79.64 (Delta: +0.00)
+  Completeness: 32.15 -> 32.15 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Fair -> Fair
 
 Ticker: QCOM
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: RCL
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: REG
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: REGN
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: RF
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: RJF
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: RL
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: RMD
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: ROK
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: ROL
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: ROP
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: ROST
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: RSG
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: RTX
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: RVTY
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: SATS
+  Overall: 86.68 -> 86.70 (Delta: +0.01)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 99.95 -> 100.00 (Delta: +0.05)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: SBAC
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: SBUX
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: SCHW
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: SHW
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: SJM
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: SLB
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: SMCI
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: SNA
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: SNDK
+  Overall: 80.32 -> 80.32 (Delta: +0.00)
+  Completeness: 34.39 -> 34.39 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: SNPS
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: SO
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: SOLV
+  Overall: 81.17 -> 81.17 (Delta: +0.00)
+  Completeness: 37.23 -> 37.23 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: SPG
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: SPGI
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: SRE
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: STE
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: STLD
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: STT
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: STX
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: STZ
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: SW
+  Overall: 75.49 -> 86.70 (Delta: +11.21)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 62.65 -> 100.00 (Delta: +37.35)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Fair -> Good
+
+Ticker: SWK
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: SWKS
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: SYF
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: SYK
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: SYY
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: T
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: TAP
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: TDG
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: TDY
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: TECH
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: TEL
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: TER
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: TFC
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: TGT
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: TJX
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: TKO
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: TMO
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: TMUS
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: TPL
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: TPR
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: TRGP
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: TRMB
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: TROW
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: TRV
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: TSCO
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: TSLA
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: TSN
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: TT
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: TTD
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: TTWO
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: TXN
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: TXT
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: TYL
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: UAL
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: UBER
+  Overall: 85.87 -> 85.87 (Delta: +0.00)
+  Completeness: 52.91 -> 52.91 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: UDR
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: UHS
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: ULTA
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: UNH
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
 
 Ticker: UNP
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: UPS
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: URI
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: USB
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: V
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: VICI
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: VLO
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: VLTO
+  Overall: 81.63 -> 81.63 (Delta: +0.00)
+  Completeness: 38.75 -> 38.75 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: VMC
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: VRSK
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: VRSN
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: VRT
+  Overall: 86.43 -> 86.61 (Delta: +0.18)
+  Completeness: 55.37 -> 55.37 (Delta: +0.00)
+  Validity: 99.40 -> 100.00 (Delta: +0.60)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: VRTX
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: VST
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: VTR
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: VTRS
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: VZ
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: WAB
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: WAT
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: WBD
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: WDAY
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: WDC
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: WEC
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: WELL
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: WFC
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: WM
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: WMB
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: WMT
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: WRB
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: WSM
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: WST
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: WTW
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: WY
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: WYNN
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: XEL
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: XOM
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
+
+Ticker: XYL
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: XYZ
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
+
+Ticker: YUM
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
+  Validity: 100.00 -> 100.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
+  Consistency: 100.00 -> 100.00 (Delta: +0.00)
+  Result: Good -> Good
 
 Ticker: ZTS
-  Overall: 62.84 -> 62.84 (Delta: +0.00)
-  Completeness: 42.80 -> 42.80 (Delta: +0.00)
+  Overall: 86.70 -> 86.70 (Delta: +0.00)
+  Completeness: 55.65 -> 55.65 (Delta: +0.00)
   Validity: 100.00 -> 100.00 (Delta: +0.00)
-  Timeliness: 0.00 -> 0.00 (Delta: +0.00)
+  Timeliness: 100.00 -> 100.00 (Delta: +0.00)
   Consistency: 100.00 -> 100.00 (Delta: +0.00)
-  Result: Poor -> Poor
+  Result: Good -> Good
 
 ================================================================================
 SCORE INTERPRETATION
