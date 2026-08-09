@@ -6,6 +6,7 @@ import pandas as pd
 from research_platform.evaluation import (
     evaluate_ic,
     generate_purged_folds,
+    group_stratification_table,
     run_quantile_backtest,
 )
 
@@ -62,3 +63,31 @@ def test_quantile_backtest_is_monotonic_for_known_signal():
     result = run_quantile_backtest(factor, forward, n_groups=5, min_names=10)
     assert result.group_returns.mean().is_monotonic_increasing
     assert (result.spread > 0).all()
+
+
+def test_group_stratification_flags_monotone_and_tail_only_signals():
+    dates = pd.bdate_range("2024-01-02", periods=6)
+    tickers = [f"T{i}" for i in range(10)]
+    score = pd.DataFrame(
+        np.tile(np.arange(10, dtype=float), (6, 1)), index=dates, columns=tickers
+    )
+    # Monotone: forward return rises with score across the whole cross-section.
+    monotone_ret = score * 0.001
+    # Tail-only: only the very top names pay off; middle groups are flat.
+    tail_ret = pd.DataFrame(0.0, index=dates, columns=tickers)
+    tail_ret[[f"T{i}" for i in (8, 9)]] = 0.01
+
+    mono = group_stratification_table(
+        {"raw": score}, monotone_ret, n_groups=5, min_names=10
+    ).set_index("path")
+    assert mono.loc["raw", "monotonicity"] > 0.999  # perfectly increasing
+    assert mono.loc["raw", "top_bottom_mean"] > 0
+    assert mono.loc["raw", "group_5"] > mono.loc["raw", "group_1"]
+
+    tail = group_stratification_table(
+        {"raw": score}, tail_ret, n_groups=5, min_names=10
+    ).set_index("path")
+    # Tail-only still has a positive spread but is NOT perfectly monotone across
+    # the middle groups — exactly the fragility this table is meant to surface.
+    assert tail.loc["raw", "top_bottom_mean"] > 0
+    assert tail.loc["raw", "monotonicity"] < 1.0

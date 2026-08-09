@@ -11,8 +11,9 @@ import numpy as np
 import pandas as pd
 
 from .contracts import ExperimentResult
-from .evaluation import evaluate_ic
-from .portfolio import simulate_portfolio
+from .evaluation import evaluate_ic, group_stratification_table
+from .portfolio import capacity_curve, simulate_portfolio
+from .regime import calendar_year_labels, group_daily_ic, ic_stability_summary
 
 
 def _json_default(value):
@@ -160,8 +161,18 @@ def build_oos_report_tables(
     baseline_annual_cost: float,
     cost_stress_bps=(0.0, 5.0, 10.0, 20.0),
     min_names: int = 30,
+    adv_dollar: pd.DataFrame | None = None,
+    aum_grid: tuple[float, ...] = (1e6, 1e7, 1e8, 1e9),
+    n_groups: int = 5,
 ) -> tuple[dict[str, pd.DataFrame], dict]:
-    """Build comparable OOS performance, cost, and exposure diagnostics."""
+    """Build comparable OOS performance, cost, and exposure diagnostics.
+
+    When ``adv_dollar`` (per-name dollar ADV) is supplied, a ``capacity`` table
+    sweeps each path's net Sharpe across ``aum_grid`` using the square-root
+    liquidity-impact model, exposing where scaling capital erodes the signal.
+    A ``regime_stability`` table always summarizes each path's IC sign
+    consistency across calendar-year subperiods.
+    """
     ic_by_path = {
         path: evaluate_ic(panel, forward_returns, min_names=min_names)
         for path, panel in result.scores.items()
@@ -234,12 +245,29 @@ def build_oos_report_tables(
         soft_ic=soft_ic,
         label_overlap_count=int(result.quality["label_overlap_count"]),
     )
+    year_labels = calendar_year_labels(result.scores["raw"].index)
+    regime_rows = []
+    for path in result.scores:
+        subperiod_ic = group_daily_ic(ic_by_path[path], year_labels)
+        regime_rows.append({"path": path, **ic_stability_summary(subperiod_ic)})
+
     tables = {
         "fold_metrics": pd.DataFrame(fold_rows),
         "year_metrics": pd.DataFrame(year_rows),
         "cost_stress": pd.DataFrame(cost_rows),
         "industry_exposure": pd.concat(exposure_parts, ignore_index=True),
+        "regime_stability": pd.DataFrame(regime_rows),
+        "group_stratification": group_stratification_table(
+            result.scores, forward_returns, n_groups=n_groups, min_names=min_names
+        ),
     }
+    if adv_dollar is not None:
+        capacity_parts = []
+        for path, targets in result.portfolio_targets.items():
+            curve = capacity_curve(targets, aligned_returns, adv_dollar, aum_grid=aum_grid)
+            curve.insert(0, "path", path)
+            capacity_parts.append(curve)
+        tables["capacity"] = pd.concat(capacity_parts, ignore_index=True)
     quality = {
         **result.quality,
         "raw_ic": raw_ic,
@@ -278,9 +306,9 @@ def write_oos_report(
     output = Path(output_dir)
     output.mkdir(parents=True, exist_ok=True)
     paths = []
-    for name in ("fold_metrics", "year_metrics", "cost_stress", "industry_exposure"):
+    for name in sorted(tables):
         path = output / f"{name}.csv"
-        _atomic_text(path, tables.get(name, pd.DataFrame()).to_csv(index=False))
+        _atomic_text(path, tables[name].to_csv(index=False))
         paths.append(path)
     quality_path = output / "quality_report.json"
     metadata_path = output / "metadata.json"
