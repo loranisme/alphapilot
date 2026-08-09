@@ -163,6 +163,14 @@ def build_group_backtest(
     Group returns are daily-sampled h-period forward returns, so annualization
     uses ``periods_per_year / horizon`` and cumulative compounding uses a
     non-overlapping ``::horizon`` subsample to avoid double counting.
+
+    ``run_quantile_backtest`` drops dates outright when a cross-section fails
+    ``min_names`` (no NaN row is kept), so positional ``::horizon`` striding on
+    its output can drift off calendar-horizon spacing once the universe has
+    gaps. ``mean``/``std`` are unaffected by this (overlap doesn't bias them),
+    but the non-overlapping ``cumulative_return`` sample is reindexed onto the
+    dense ``forward_returns`` date grid before striding so the stride lands on
+    true calendar-horizon boundaries.
     """
     scale = np.sqrt(periods_per_year / horizon)
     rows = []
@@ -172,7 +180,8 @@ def build_group_backtest(
             block = pd.to_numeric(result.group_returns[col], errors="coerce").dropna()
             mean = float(block.mean()) if len(block) else np.nan
             std = float(block.std(ddof=1)) if len(block) >= 2 else np.nan
-            nonoverlap = block.iloc[::horizon]
+            dense = pd.to_numeric(result.group_returns[col], errors="coerce").reindex(forward_returns.index)
+            nonoverlap = dense.iloc[::horizon].dropna()
             rows.append(
                 {
                     "series": name,
