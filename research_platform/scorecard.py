@@ -45,6 +45,11 @@ from .correlation import factor_rank_turnover
 from .evaluation import evaluate_ic, group_stratification_table
 
 
+def _sign_direction(mean_ic: float) -> int:
+    """+1/-1 orientation from a mean IC; defaults to +1 when undefined (NaN)."""
+    return 1 if not np.isfinite(mean_ic) or mean_ic >= 0 else -1
+
+
 def _ic_stats(ic: pd.Series) -> dict:
     clean = pd.to_numeric(ic, errors="coerce").dropna()
     n = int(clean.count())
@@ -73,7 +78,7 @@ def build_factor_scorecard(
     for name, panel in factors.items():
         spear = _ic_stats(evaluate_ic(panel, forward_returns, method="spearman", min_names=min_names))
         pear = _ic_stats(evaluate_ic(panel, forward_returns, method="pearson", min_names=min_names))
-        direction = 1 if not np.isfinite(spear["mean"]) or spear["mean"] >= 0 else -1
+        direction = _sign_direction(spear["mean"])
         turnover = factor_rank_turnover(
             panel * direction, dates, rebalance_interval=horizon, min_names=min_names
         )
@@ -226,7 +231,7 @@ def build_correlation_views(
         ic = evaluate_ic(panel, forward_returns, method="spearman", min_names=min_names)
         ic_columns[name] = ic
         mean = float(pd.to_numeric(ic, errors="coerce").mean())
-        directions[name] = 1 if not np.isfinite(mean) or mean >= 0 else -1
+        directions[name] = _sign_direction(mean)
     value_estimate = factor_value_correlation(
         factors, dates, directions, min_names=min_names, min_dates=min_pair_dates
     )
