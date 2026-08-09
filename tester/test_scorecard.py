@@ -56,3 +56,52 @@ def test_factor_scorecard_has_expected_columns_and_positive_ic():
     assert table.loc["good", "rank_ic"] > 0
     assert table.loc["good", "monotonicity"] > 0.5
     assert 0.0 <= table.loc["good", "ic_hit_rate"] <= 1.0
+
+
+# append to tester/test_scorecard.py
+from research_platform.scorecard import build_portfolio_scorecard
+
+
+class _FakePortfolio:
+    def __init__(self, net, weights):
+        self.net_returns = net
+        self.weights = weights
+        clean = net.dropna()
+        ann = float(clean.mean() * 252)
+        vol = float(clean.std(ddof=1) * np.sqrt(252))
+        curve = (1 + clean).cumprod()
+        dd = float((curve / curve.cummax() - 1).min())
+        self.metrics = {
+            "annualized_return": ann,
+            "annualized_volatility": vol,
+            "sharpe": ann / vol if vol else np.nan,
+            "max_drawdown": dd,
+            "average_turnover": 0.1,
+            "total_cost": 0.02,
+        }
+
+
+class _FakeExperiment:
+    def __init__(self, scores, portfolios):
+        self.scores = scores
+        self.portfolios = portfolios
+
+
+def test_portfolio_scorecard_adds_sortino_calmar_winrate():
+    dates = pd.bdate_range("2021-01-01", periods=80)
+    tickers = ["A", "B", "C"]
+    rng = np.random.default_rng(1)
+    score = pd.DataFrame(rng.standard_normal((len(dates), 3)), index=dates, columns=tickers)
+    forward = pd.DataFrame(rng.standard_normal((len(dates), 3)) * 0.01, index=dates, columns=tickers)
+    weights = pd.DataFrame(1 / 3, index=dates, columns=tickers)
+    net = pd.Series(rng.standard_normal(len(dates)) * 0.01 + 0.0005, index=dates)
+    experiment = _FakeExperiment({"raw": score}, {"raw": _FakePortfolio(net, weights)})
+    industry = pd.DataFrame("Tech", index=dates, columns=tickers)
+    table = build_portfolio_scorecard(
+        experiment, forward, industry, min_names=2, periods_per_year=252
+    ).set_index("path")
+    for col in ["annualized_return", "sharpe", "sortino", "max_drawdown", "calmar",
+                "win_rate", "average_turnover", "total_cost", "regime_consistency",
+                "industry_exposure"]:
+        assert col in table.columns
+    assert 0.0 <= table.loc["raw", "win_rate"] <= 1.0

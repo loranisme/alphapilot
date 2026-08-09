@@ -98,3 +98,48 @@ def build_factor_scorecard(
             }
         )
     return pd.DataFrame(rows)
+
+
+# append to research_platform/scorecard.py
+from .regime import calendar_year_labels, group_daily_ic, ic_stability_summary
+from .reporting import industry_exposure_table
+
+
+def build_portfolio_scorecard(
+    experiment,
+    forward_returns: pd.DataFrame,
+    industry: pd.DataFrame,
+    min_names: int = 30,
+    periods_per_year: int = 252,
+) -> pd.DataFrame:
+    """One row per portfolio path: performance, risk-adjusted, regime, exposure."""
+    rows = []
+    for path, portfolio in experiment.portfolios.items():
+        metrics = dict(portfolio.metrics)
+        net = portfolio.net_returns
+        ic = evaluate_ic(experiment.scores[path], forward_returns, min_names=min_names)
+        labels = calendar_year_labels(pd.DatetimeIndex(experiment.scores[path].index))
+        summary = ic_stability_summary(group_daily_ic(ic, labels))
+        exposure = industry_exposure_table(portfolio.weights, industry)
+        rows.append(
+            {
+                "path": path,
+                "annualized_return": metrics.get("annualized_return", np.nan),
+                "annualized_volatility": metrics.get("annualized_volatility", np.nan),
+                "sharpe": metrics.get("sharpe", np.nan),
+                "sortino": sortino_ratio(net, periods_per_year),
+                "max_drawdown": metrics.get("max_drawdown", np.nan),
+                "calmar": calmar_ratio(
+                    metrics.get("annualized_return", np.nan), metrics.get("max_drawdown", np.nan)
+                ),
+                "win_rate": win_rate(net),
+                "average_turnover": metrics.get("average_turnover", np.nan),
+                "total_cost": metrics.get("total_cost", np.nan),
+                "regime_consistency": summary["sign_consistency"],
+                "n_subperiods": summary["n_subperiods"],
+                "industry_exposure": float(exposure["max_abs_industry"].mean())
+                if "max_abs_industry" in exposure.columns and len(exposure)
+                else np.nan,
+            }
+        )
+    return pd.DataFrame(rows)
