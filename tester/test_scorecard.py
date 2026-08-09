@@ -107,6 +107,9 @@ def test_portfolio_scorecard_adds_sortino_calmar_winrate():
                 "industry_exposure"]:
         assert col in table.columns
     assert 0.0 <= table.loc["raw", "win_rate"] <= 1.0
+    # fixture holds every ticker in a single constant "Tech" industry at equal
+    # weight, so net industry exposure is deterministically full (1.0)
+    assert table.loc["raw", "industry_exposure"] == pytest.approx(1.0)
 
 
 # append to tester/test_scorecard.py
