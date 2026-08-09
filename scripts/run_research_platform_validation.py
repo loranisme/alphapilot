@@ -21,6 +21,11 @@ from research_platform.contracts import dataframe_fingerprint
 from research_platform.evaluation import generate_purged_folds
 from research_platform.experiment import ExperimentInputs, run_experiment
 from research_platform.preprocessing import neutralize_panel, standardize_panel, winsorize_panel
+from research_platform.providers import (
+    build_pit_universe,
+    parse_constituents_snapshot,
+    pit_industry_panel,
+)
 from research_platform.reporting import write_result
 
 
@@ -59,6 +64,49 @@ def _load_classification_snapshot(
         raise ValueError(f"classification snapshot missing columns: {sorted(required)}")
     table["Symbol"] = table["Symbol"].astype(str).str.replace(".", "-", regex=False)
     return table.drop_duplicates("Symbol").set_index("Symbol")["GICS Sector"]
+
+
+def _load_membership_changes(project_root: Path) -> pd.DataFrame | None:
+    """Load an effective-dated S&P membership changes file if one is cached.
+
+    Expected columns: ``effective_date, added, removed``. Absent by default (the
+    free Wikipedia snapshot ships only current members); when present it upgrades
+    point-in-time membership from additions-only to full, survivorship-free
+    reconstruction via :func:`research_platform.providers.rebuild_membership`.
+    """
+    path = project_root / "data" / "metadata" / "sp500_changes.csv"
+    return pd.read_csv(path) if path.exists() else None
+
+
+def load_pit_context(
+    project_root: Path,
+    dates: pd.DatetimeIndex,
+    columns,
+    allow_network: bool,
+) -> tuple[pd.DataFrame, pd.DataFrame, dict]:
+    """Build the point-in-time industry panel and membership mask for a run.
+
+    Returns ``(industry, member_mask, pit_meta)`` where ``industry`` is a
+    ``dates x columns`` sector frame with ``NaN`` for non-member cells,
+    ``member_mask`` is the aligned boolean membership matrix, and ``pit_meta``
+    records the achieved PIT level plus the member-cell classification coverage.
+    """
+    constituents_path = project_root / "data" / "metadata" / "sp500_constituents.csv"
+    # Ensures the snapshot exists (fetching once when network is allowed) and
+    # validates the required columns before we parse it for PIT membership.
+    _load_classification_snapshot(constituents_path, allow_network=allow_network)
+    constituents = parse_constituents_snapshot(pd.read_csv(constituents_path))
+    changes = _load_membership_changes(project_root)
+    universe, classification_panel, pit_meta = build_pit_universe(
+        constituents, pd.DatetimeIndex(dates), changes=changes
+    )
+    industry, coverage = pit_industry_panel(
+        classification_panel, universe, pd.DatetimeIndex(dates), columns
+    )
+    member_mask = universe.membership.reindex(
+        index=pd.DatetimeIndex(dates), columns=list(columns), fill_value=False
+    ).astype(bool)
+    return industry, member_mask, {**pit_meta, "classification_coverage": coverage}
 
 
 def _normalized_index(values) -> pd.DatetimeIndex:
@@ -129,17 +177,10 @@ def build_real_inputs(
     raw_path = project_root / "data" / "reports" / "composite_alpha_latest.csv"
     raw, invalid_factor_dates = _load_factor_report(raw_path)
 
-    classification = _load_classification_snapshot(
-        project_root / "data" / "metadata" / "sp500_constituents.csv",
-        allow_network=allow_network,
+    industries, member_mask, pit_meta = load_pit_context(
+        project_root, raw.index, raw.columns, allow_network=allow_network
     )
-    industry_row = classification.reindex(raw.columns)
-    industries = pd.DataFrame(
-        np.tile(industry_row.to_numpy(), (len(raw), 1)),
-        index=raw.index,
-        columns=raw.columns,
-    )
-    coverage = float(industry_row.notna().mean())
+    coverage = pit_meta["classification_coverage"]
     if coverage < config.classification_coverage:
         raise ValueError(
             f"classification coverage {coverage:.3f} is below required {config.classification_coverage:.3f}"
@@ -148,7 +189,9 @@ def build_real_inputs(
     close = _load_close_matrix(project_root / "data" / "cleaned", list(raw.columns), raw.index)
     forward_returns = close.pct_change(config.horizon, fill_method=None).shift(-config.horizon)
     asset_returns = close.pct_change(1, fill_method=None)
-    standardized = standardize_panel(winsorize_panel(raw))
+    # Point-in-time universe: exclude names on dates before they joined the index
+    # so cross-sectional standardization and neutralization never see them.
+    standardized = standardize_panel(winsorize_panel(raw.where(member_mask)))
     neutralized_result = neutralize_panel(
         standardized,
         industries,
@@ -178,11 +221,11 @@ def build_real_inputs(
     quality = {
         "classification_coverage": coverage,
         "classification_taxonomy": "current GICS snapshot",
-        "classification_point_in_time": False,
         "max_abs_industry_exposure": _max_industry_exposure(neutralized, industries),
         "label_overlap_count": overlap_count,
         "fold_count": len(folds),
         "invalid_factor_date_rows": invalid_factor_dates,
+        **pit_meta,
         **neutralization_quality,
     }
     inputs = ExperimentInputs(

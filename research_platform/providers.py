@@ -11,9 +11,10 @@ from tempfile import NamedTemporaryFile
 from typing import Iterable
 from urllib.request import Request, urlopen
 
+import numpy as np
 import pandas as pd
 
-from .contracts import ClassificationPanel
+from .contracts import ClassificationPanel, UniversePanel
 
 
 def rebuild_membership(
@@ -136,3 +137,126 @@ def classification_from_records(
     panel.index.name = None
     panel.columns.name = None
     return ClassificationPanel(panel, taxonomy=taxonomy, source=source, quality=quality)
+
+
+def parse_constituents_snapshot(table: pd.DataFrame) -> pd.DataFrame:
+    """Normalize a Wikipedia-style S&P constituents table.
+
+    Returns a frame indexed by ticker with columns ``sector`` (object) and
+    ``date_added`` (tz-naive ``Timestamp``; ``NaT`` when the source omits or
+    cannot parse it). Ticker dots are converted to dashes to match the
+    price/factor column convention used elsewhere in the platform.
+    """
+    required = {"Symbol", "GICS Sector"}
+    missing = required.difference(table.columns)
+    if missing:
+        raise ValueError(f"constituents snapshot missing columns: {sorted(required)}")
+    frame = table.copy()
+    frame["Symbol"] = frame["Symbol"].astype(str).str.replace(".", "-", regex=False)
+    frame = frame.drop_duplicates("Symbol").set_index("Symbol")
+    if "Date added" in frame.columns:
+        date_added = pd.to_datetime(frame["Date added"], errors="coerce")
+    else:
+        date_added = pd.Series(pd.NaT, index=frame.index)
+    return pd.DataFrame(
+        {"sector": frame["GICS Sector"].astype(object), "date_added": date_added}
+    )
+
+
+def membership_from_date_added(
+    date_added: pd.Series, dates: pd.DatetimeIndex
+) -> pd.DataFrame:
+    """Additions-only point-in-time membership from a ``date_added`` column.
+
+    A ticker is a member on every date on or after its ``date_added``. Tickers
+    with a missing ``date_added`` are treated as members throughout: the source
+    snapshot lists only *current* members, so this path cannot reconstruct
+    historical removals (that requires an effective-dated changes file — see
+    :func:`rebuild_membership`). It still removes forward look-ahead on
+    additions, which is the dominant bias when applying a current index to the
+    past.
+    """
+    ordered = pd.DatetimeIndex(sorted(pd.DatetimeIndex(dates).unique()))
+    columns = list(date_added.index)
+    if not columns:
+        return pd.DataFrame(index=ordered, dtype=bool)
+    filled = pd.to_datetime(date_added).fillna(ordered.min())
+    matrix = ordered.values[:, None] >= filled.values[None, :]
+    return pd.DataFrame(matrix, index=ordered, columns=columns, dtype=bool)
+
+
+def build_pit_universe(
+    constituents: pd.DataFrame,
+    dates: pd.DatetimeIndex,
+    changes: pd.DataFrame | None = None,
+    source: str = "wikipedia_snapshot",
+) -> tuple[UniversePanel, ClassificationPanel, dict]:
+    """Assemble a point-in-time :class:`UniversePanel` plus a current-snapshot
+    :class:`ClassificationPanel` from a parsed constituents table.
+
+    When an effective-dated ``changes`` frame is supplied (columns
+    ``effective_date, added, removed``), membership is reconstructed with full
+    add/remove history via :func:`rebuild_membership` (survivorship-free).
+    Otherwise membership is additions-only from ``date_added``. GICS sector is
+    only ever available as a current snapshot here, so ``classification`` is that
+    snapshot; the returned metadata records the honest PIT level achieved.
+    """
+    ordered = pd.DatetimeIndex(sorted(pd.DatetimeIndex(dates).unique()))
+    current = set(constituents.index)
+    if changes is not None and len(changes):
+        membership = (
+            rebuild_membership(current, changes, ordered)
+            .reindex(index=ordered, fill_value=False)
+            .astype(bool)
+        )
+        basis = "changes_reversed"
+    else:
+        membership = membership_from_date_added(constituents["date_added"], ordered)
+        basis = "date_added_additions_only"
+    universe = UniversePanel(membership=membership, source=source, quality=basis)
+    classification = ClassificationPanel(
+        classification=pd.DataFrame(
+            [constituents["sector"].to_dict()],
+            index=pd.DatetimeIndex([ordered.min()]),
+        ),
+        taxonomy="GICS",
+        source=source,
+        quality="current_snapshot",
+    )
+    metadata = {
+        "universe_membership_basis": basis,
+        "membership_point_in_time": basis == "changes_reversed",
+        "classification_point_in_time": False,
+        "universe_size_start": int(membership.iloc[0].sum()) if len(membership) else 0,
+        "universe_size_end": int(membership.iloc[-1].sum()) if len(membership) else 0,
+    }
+    return universe, classification, metadata
+
+
+def pit_industry_panel(
+    classification: ClassificationPanel,
+    universe: UniversePanel,
+    dates: pd.DatetimeIndex,
+    columns: Iterable[str],
+) -> tuple[pd.DataFrame, float]:
+    """Broadcast the classification snapshot over ``dates`` and mask non-members.
+
+    Returns ``(industry, coverage)`` where ``industry`` is a ``dates x columns``
+    object frame carrying ``NaN`` wherever the name was not an index member
+    as-of the date, and ``coverage`` is the fraction of *member* cells with a
+    known sector — the honest denominator for the classification-coverage gate
+    once membership is point-in-time.
+    """
+    ordered = pd.DatetimeIndex(dates)
+    cols = list(columns)
+    sectors = classification.asof(ordered.max()).reindex(cols)
+    broadcast = pd.DataFrame(
+        np.tile(sectors.to_numpy(), (len(ordered), 1)), index=ordered, columns=cols
+    )
+    member = universe.membership.reindex(
+        index=ordered, columns=cols, fill_value=False
+    ).astype(bool)
+    member_cells = int(member.to_numpy().sum())
+    known = broadcast.notna() & member
+    coverage = float(known.to_numpy().sum() / member_cells) if member_cells else 0.0
+    return broadcast.where(member), coverage
