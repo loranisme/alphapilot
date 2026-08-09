@@ -105,3 +105,19 @@ def test_portfolio_scorecard_adds_sortino_calmar_winrate():
                 "industry_exposure"]:
         assert col in table.columns
     assert 0.0 <= table.loc["raw", "win_rate"] <= 1.0
+
+
+# append to tester/test_scorecard.py
+from research_platform.scorecard import build_group_backtest
+
+
+def test_group_backtest_is_monotone_for_a_monotone_signal():
+    factors, forward = _monotone_factor_inputs()
+    table = build_group_backtest(
+        factors, forward, n_groups=5, min_names=10, horizon=5, periods_per_year=252
+    )
+    good = table[table["series"] == "good"].set_index("group")
+    for col in ["mean_forward_return", "annualized_return", "sharpe", "cumulative_return", "avg_count"]:
+        assert col in table.columns
+    # top group out-returns bottom group
+    assert good.loc["group_5", "annualized_return"] > good.loc["group_1", "annualized_return"]

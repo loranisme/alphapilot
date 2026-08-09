@@ -143,3 +143,51 @@ def build_portfolio_scorecard(
             }
         )
     return pd.DataFrame(rows)
+
+
+# append to research_platform/scorecard.py
+from .evaluation import run_quantile_backtest
+
+
+def build_group_backtest(
+    series: dict[str, pd.DataFrame],
+    forward_returns: pd.DataFrame,
+    n_groups: int = 5,
+    min_names: int = 30,
+    horizon: int = 5,
+    periods_per_year: int = 252,
+) -> pd.DataFrame:
+    """Per series x quantile group: annualized/sharpe on overlapping h-period
+    forward returns, plus a non-overlapping compounded cumulative return.
+
+    Group returns are daily-sampled h-period forward returns, so annualization
+    uses ``periods_per_year / horizon`` and cumulative compounding uses a
+    non-overlapping ``::horizon`` subsample to avoid double counting.
+    """
+    scale = np.sqrt(periods_per_year / horizon)
+    rows = []
+    for name, panel in series.items():
+        result = run_quantile_backtest(panel, forward_returns, n_groups=n_groups, min_names=min_names)
+        for col in result.group_returns.columns:
+            block = pd.to_numeric(result.group_returns[col], errors="coerce").dropna()
+            mean = float(block.mean()) if len(block) else np.nan
+            std = float(block.std(ddof=1)) if len(block) >= 2 else np.nan
+            nonoverlap = block.iloc[::horizon]
+            rows.append(
+                {
+                    "series": name,
+                    "group": col,
+                    "mean_forward_return": mean,
+                    "annualized_return": mean * periods_per_year / horizon
+                    if np.isfinite(mean)
+                    else np.nan,
+                    "sharpe": (mean / std) * scale if std and std > 0 else np.nan,
+                    "cumulative_return": float((1 + nonoverlap).prod() - 1)
+                    if len(nonoverlap)
+                    else np.nan,
+                    "avg_count": float(result.group_counts[col].mean())
+                    if col in result.group_counts.columns
+                    else np.nan,
+                }
+            )
+    return pd.DataFrame(rows)
