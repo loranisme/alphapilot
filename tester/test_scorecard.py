@@ -170,3 +170,96 @@ def test_render_and_write_scorecard(tmp_path):
     # deterministic: same inputs -> identical bytes
     md2 = render_scorecard_markdown(tables, matrix_tables=("value_matrix",))
     assert md2 == markdown
+
+
+# append to tester/test_scorecard.py -- degenerate-input coverage (spec §7)
+def _degenerate_factor_inputs():
+    dates = pd.bdate_range("2021-01-01", periods=60)
+    tickers = [f"T{i}" for i in range(20)]
+    rng = np.random.default_rng(3)
+    good = pd.DataFrame(rng.standard_normal((len(dates), len(tickers))), index=dates, columns=tickers)
+    nan_panel = pd.DataFrame(np.nan, index=dates, columns=tickers)
+    forward = pd.DataFrame(rng.standard_normal((len(dates), len(tickers))) * 0.01, index=dates, columns=tickers)
+    return dates, good, nan_panel, forward
+
+
+def test_factor_scorecard_degenerate_inputs_do_not_crash():
+    dates, good, nan_panel, forward = _degenerate_factor_inputs()
+    # all-NaN factor panel -> no date ever has enough non-NaN names
+    all_nan = build_factor_scorecard(
+        {"nanfac": nan_panel}, forward, dates, n_groups=5, min_names=10, horizon=5
+    ).set_index("factor")
+    assert len(all_nan) == 1
+    assert np.isnan(all_nan.loc["nanfac", "rank_ic"])
+    assert all_nan.loc["nanfac", "n_obs"] == 0
+
+    # min_names larger than the whole cross-section -> every date fails the filter
+    starved = build_factor_scorecard(
+        {"good": good}, forward, dates, n_groups=5, min_names=1000, horizon=5
+    ).set_index("factor")
+    assert len(starved) == 1
+    assert np.isnan(starved.loc["good", "rank_ic"])
+    assert starved.loc["good", "n_obs"] == 0
+
+
+def test_portfolio_scorecard_degenerate_inputs_do_not_crash():
+    dates = pd.bdate_range("2021-01-01", periods=60)
+    tickers = ["A", "B", "C"]
+    rng = np.random.default_rng(4)
+    forward = pd.DataFrame(rng.standard_normal((len(dates), 3)) * 0.01, index=dates, columns=tickers)
+    industry = pd.DataFrame("Tech", index=dates, columns=tickers)
+    weights = pd.DataFrame(1 / 3, index=dates, columns=tickers)
+
+    # all-NaN score and all-NaN net returns
+    nan_score = pd.DataFrame(np.nan, index=dates, columns=tickers)
+    nan_net = pd.Series(np.nan, index=dates)
+    experiment = _FakeExperiment({"raw": nan_score}, {"raw": _FakePortfolio(nan_net, weights)})
+    all_nan = build_portfolio_scorecard(experiment, forward, industry, min_names=2).set_index("path")
+    assert len(all_nan) == 1
+    assert np.isnan(all_nan.loc["raw", "sortino"])
+    assert np.isnan(all_nan.loc["raw", "win_rate"])
+    assert all_nan.loc["raw", "n_subperiods"] == 0
+
+    # min_names larger than the whole cross-section -> IC/regime series go empty
+    score = pd.DataFrame(rng.standard_normal((len(dates), 3)), index=dates, columns=tickers)
+    net = pd.Series(rng.standard_normal(len(dates)) * 0.01, index=dates)
+    experiment2 = _FakeExperiment({"raw": score}, {"raw": _FakePortfolio(net, weights)})
+    starved = build_portfolio_scorecard(experiment2, forward, industry, min_names=1000).set_index("path")
+    assert len(starved) == 1
+    assert starved.loc["raw", "n_subperiods"] == 0
+    # portfolio-level metrics (not IC-derived) still come through untouched
+    assert np.isfinite(starved.loc["raw", "annualized_return"])
+
+
+def test_group_backtest_degenerate_inputs_do_not_crash():
+    dates, good, nan_panel, forward = _degenerate_factor_inputs()
+
+    all_nan = build_group_backtest({"nanfac": nan_panel}, forward, n_groups=5, min_names=10, horizon=5)
+    assert len(all_nan) == 5  # one row per group, even with no observations
+    assert all_nan["annualized_return"].isna().all()
+    assert all_nan["cumulative_return"].isna().all()
+
+    starved = build_group_backtest({"good": good}, forward, n_groups=5, min_names=1000, horizon=5)
+    assert len(starved) == 5
+    assert starved["annualized_return"].isna().all()
+    assert starved["cumulative_return"].isna().all()
+
+
+def test_correlation_views_degenerate_inputs_do_not_crash():
+    dates, good, nan_panel, forward = _degenerate_factor_inputs()
+
+    views = build_correlation_views(
+        {"good": good, "nanfac": nan_panel}, forward, dates, min_names=10, min_pair_dates=20
+    )
+    value_matrix = views["value_matrix"]
+    assert list(value_matrix.index) == list(value_matrix.columns)  # still square
+    assert value_matrix.loc["good", "good"] == pytest.approx(1.0, abs=1e-9)
+    assert np.isnan(value_matrix.loc["nanfac", "good"])
+    assert {"cluster", "members"} <= set(views["clusters"].columns)
+
+    starved = build_correlation_views(
+        {"a": good, "b": good.copy()}, forward, dates, min_names=1000, min_pair_dates=20
+    )
+    starved_matrix = starved["value_matrix"]
+    assert list(starved_matrix.index) == list(starved_matrix.columns)
+    assert starved_matrix.isna().all().all()  # nothing ever cleared min_names
