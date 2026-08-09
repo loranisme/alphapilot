@@ -241,12 +241,9 @@ def build_correlation_views(
         value_estimate.values, value_estimate.verified, threshold=hard_threshold
     )
     clusters = (
-        cluster_rows.groupby("cluster")["factor"]
-        .apply(lambda names: " | ".join(sorted(names)))
-        .reset_index()
-        .rename(columns={"factor": "members"})
+        cluster_rows.drop_duplicates(subset="cluster")[["cluster", "cluster_size", "members"]]
+        .reset_index(drop=True)
     )
-    clusters["cluster_size"] = clusters["members"].str.split(" | ", regex=False).apply(len)
     return {
         "value_matrix": value_estimate.values,
         "ic_matrix": ic_estimate.values,
