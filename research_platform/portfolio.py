@@ -139,6 +139,177 @@ def build_long_short_weights(
     return weights
 
 
+@dataclass(frozen=True)
+class LiquidityCostModel:
+    """Per-name trading-cost model: flat half-spread plus square-root impact.
+
+    ``half_spread_bps`` is a fixed cost proportional to traded weight. Market
+    impact follows the standard square-root law: the cost of trading a name on a
+    date scales with ``participation ** impact_exponent``, where participation is
+    the traded notional divided by the name's dollar ADV. ``participation_cap``
+    bounds the modelled participation (trades above it are clipped for the cost
+    estimate, and reported separately as a capacity breach). Names with missing
+    or non-positive ADV are treated as fully illiquid — their participation is
+    the cap whenever they are traded.
+    """
+
+    half_spread_bps: float = 5.0
+    impact_coef_bps: float = 100.0
+    impact_exponent: float = 0.5
+    participation_cap: float = 0.20
+
+    def __post_init__(self) -> None:
+        if self.half_spread_bps < 0 or self.impact_coef_bps < 0:
+            raise ValueError("cost coefficients must be non-negative")
+        if not 0 < self.impact_exponent <= 1:
+            raise ValueError("impact_exponent must be within (0, 1]")
+        if not 0 < self.participation_cap <= 1:
+            raise ValueError("participation_cap must be within (0, 1]")
+
+
+def participation_rates(
+    weight_changes: pd.DataFrame,
+    adv_dollar: pd.DataFrame,
+    aum: float,
+) -> pd.DataFrame:
+    """Traded notional divided by dollar ADV, per name per date.
+
+    Non-positive or missing ADV maps to ``inf`` on traded cells (fully illiquid)
+    and to ``0`` where nothing is traded.
+    """
+    if aum <= 0:
+        raise ValueError("aum must be positive")
+    dw = weight_changes.abs()
+    adv = adv_dollar.reindex(index=dw.index, columns=dw.columns)
+    adv = adv.where(adv > 0)
+    traded_notional = dw * aum
+    participation = traded_notional.div(adv)
+    participation = participation.where(dw > 0, 0.0)
+    # Traded names with missing/zero ADV are fully illiquid: infinite participation
+    # (clipped to the cap when costed, and counted as a capacity breach).
+    illiquid = (dw > 0) & adv.isna()
+    participation = participation.mask(illiquid, np.inf)
+    return participation
+
+
+def liquidity_trade_costs(
+    weight_changes: pd.DataFrame,
+    adv_dollar: pd.DataFrame,
+    aum: float,
+    model: LiquidityCostModel,
+) -> pd.DataFrame:
+    """Per-name, per-date trading cost as a fraction of portfolio NAV."""
+    dw = weight_changes.abs()
+    participation = participation_rates(dw, adv_dollar, aum)
+    capped = participation.clip(upper=model.participation_cap)
+    spread = (model.half_spread_bps / 10_000.0) * dw
+    impact = (model.impact_coef_bps / 10_000.0) * capped.pow(model.impact_exponent) * dw
+    return spread.add(impact, fill_value=0.0).fillna(0.0)
+
+
+def _executed_and_turnover(
+    target_weights: pd.DataFrame, asset_returns: pd.DataFrame
+) -> tuple[pd.DataFrame, pd.DataFrame, pd.Series]:
+    targets = target_weights.reindex(
+        index=asset_returns.index, columns=asset_returns.columns
+    ).fillna(0.0)
+    executed = targets.shift(1).fillna(0.0)
+    weight_changes = executed.diff()
+    weight_changes.iloc[0] = executed.iloc[0]
+    turnover = weight_changes.abs().sum(axis=1)
+    return executed, weight_changes, turnover
+
+
+def _performance_metrics(net: pd.Series) -> dict[str, float]:
+    wealth = (1.0 + net).cumprod()
+    drawdown = wealth.div(wealth.cummax()).sub(1.0)
+    annualized_return = float(net.mean() * 252)
+    annualized_volatility = float(net.std(ddof=1) * np.sqrt(252)) if len(net) > 1 else 0.0
+    return {
+        "annualized_return": annualized_return,
+        "annualized_volatility": annualized_volatility,
+        "sharpe": annualized_return / annualized_volatility
+        if annualized_volatility > 0
+        else np.nan,
+        "max_drawdown": float(drawdown.min()) if len(drawdown) else np.nan,
+    }
+
+
+def simulate_portfolio_liquidity_aware(
+    target_weights: pd.DataFrame,
+    asset_returns: pd.DataFrame,
+    adv_dollar: pd.DataFrame,
+    aum: float,
+    model: LiquidityCostModel | None = None,
+) -> PortfolioResult:
+    """Simulate net returns with per-name spread + square-root impact costs.
+
+    Unlike :func:`simulate_portfolio`'s flat ``cost_bps``, the cost of each
+    trade depends on how large it is relative to the name's dollar ADV at the
+    modelled ``aum``, so the same signal gets progressively more expensive as
+    capital scales — the mechanism a flat bps model cannot express.
+    """
+    model = LiquidityCostModel() if model is None else model
+    executed, weight_changes, turnover = _executed_and_turnover(
+        target_weights, asset_returns
+    )
+    returns = asset_returns.fillna(0.0)
+    gross = (executed * returns).sum(axis=1)
+    costs = liquidity_trade_costs(weight_changes, adv_dollar, aum, model)
+    date_cost = costs.sum(axis=1)
+    net = gross - date_cost
+
+    metrics = _performance_metrics(net)
+    participation = participation_rates(weight_changes, adv_dollar, aum)
+    traded = weight_changes.abs() > 0
+    breaches = int(((participation > model.participation_cap) & traded).to_numpy().sum())
+    metrics.update(
+        {
+            "average_turnover": float(turnover.mean()),
+            "total_cost": float(date_cost.sum()),
+            "average_daily_cost": float(date_cost.mean()),
+            "aum": float(aum),
+            "max_participation": float(
+                participation.where(traded).replace([np.inf], np.nan).max().max()
+            ),
+            "capacity_breach_trades": breaches,
+        }
+    )
+    return PortfolioResult(executed, gross, net, turnover, metrics)
+
+
+def capacity_curve(
+    target_weights: pd.DataFrame,
+    asset_returns: pd.DataFrame,
+    adv_dollar: pd.DataFrame,
+    aum_grid: tuple[float, ...],
+    model: LiquidityCostModel | None = None,
+) -> pd.DataFrame:
+    """Net Sharpe and cost drag across a grid of AUM levels.
+
+    The capacity of a signal is where scaling AUM erodes its net Sharpe; this
+    table makes that visible instead of assuming cost is AUM-invariant.
+    """
+    if not aum_grid:
+        raise ValueError("aum_grid must contain at least one level")
+    rows = []
+    for aum in aum_grid:
+        result = simulate_portfolio_liquidity_aware(
+            target_weights, asset_returns, adv_dollar, aum, model
+        )
+        rows.append(
+            {
+                "aum": float(aum),
+                "net_sharpe": result.metrics["sharpe"],
+                "annualized_return": result.metrics["annualized_return"],
+                "average_daily_cost": result.metrics["average_daily_cost"],
+                "max_participation": result.metrics["max_participation"],
+                "capacity_breach_trades": result.metrics["capacity_breach_trades"],
+            }
+        )
+    return pd.DataFrame(rows)
+
+
 def simulate_portfolio(
     target_weights: pd.DataFrame,
     asset_returns: pd.DataFrame,
