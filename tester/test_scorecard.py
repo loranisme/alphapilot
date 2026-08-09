@@ -28,3 +28,31 @@ def test_sortino_is_nan_without_downside():
 def test_calmar_is_annual_return_over_abs_drawdown():
     assert calmar_ratio(annualized_return=0.12, max_drawdown=-0.10) == pytest.approx(1.2)
     assert np.isnan(calmar_ratio(0.12, 0.0))
+
+
+# append to tester/test_scorecard.py
+from research_platform.scorecard import build_factor_scorecard
+
+
+def _monotone_factor_inputs():
+    dates = pd.bdate_range("2021-01-01", periods=120)
+    tickers = [f"T{i}" for i in range(40)]
+    rng = np.random.default_rng(0)
+    base = pd.DataFrame(rng.standard_normal((len(dates), len(tickers))), index=dates, columns=tickers)
+    # forward return increases with the factor rank -> positive IC, monotone groups
+    forward = base.rank(axis=1) / len(tickers) * 0.02 + rng.standard_normal((len(dates), len(tickers))) * 0.001
+    return {"good": base}, forward
+
+
+def test_factor_scorecard_has_expected_columns_and_positive_ic():
+    factors, forward = _monotone_factor_inputs()
+    table = build_factor_scorecard(
+        factors, forward, forward.index, n_groups=5, min_names=10, horizon=5
+    ).set_index("factor")
+    for col in ["rank_ic", "rank_ic_t", "pearson_ic", "icir", "icir_annualized",
+                "ic_hit_rate", "monotonicity", "long_short_t", "rank_turnover",
+                "coverage", "n_obs"]:
+        assert col in table.columns
+    assert table.loc["good", "rank_ic"] > 0
+    assert table.loc["good", "monotonicity"] > 0.5
+    assert 0.0 <= table.loc["good", "ic_hit_rate"] <= 1.0
