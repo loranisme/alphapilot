@@ -243,8 +243,8 @@ def build_correlation_views(
     )
     clusters["cluster_size"] = clusters["members"].str.split(" | ", regex=False).apply(len)
     return {
-        "value_matrix": value_estimate.values.round(4),
-        "ic_matrix": ic_estimate.values.round(4),
+        "value_matrix": value_estimate.values,
+        "ic_matrix": ic_estimate.values,
         "clusters": clusters,
     }
 
