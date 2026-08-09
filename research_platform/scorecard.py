@@ -191,3 +191,50 @@ def build_group_backtest(
                 }
             )
     return pd.DataFrame(rows)
+
+
+# append to research_platform/scorecard.py
+from .correlation import (
+    connected_correlation_clusters,
+    factor_value_correlation,
+    ic_correlation,
+)
+
+
+def build_correlation_views(
+    factors: dict[str, pd.DataFrame],
+    forward_returns: pd.DataFrame,
+    dates: pd.Index,
+    min_names: int = 30,
+    min_pair_dates: int = 60,
+    hard_threshold: float = 0.75,
+    ic_shrinkage: float = 0.5,
+) -> dict[str, pd.DataFrame]:
+    """Square value-correlation and IC-correlation matrices plus readable clusters."""
+    directions = {}
+    ic_columns = {}
+    for name, panel in factors.items():
+        ic = evaluate_ic(panel, forward_returns, method="spearman", min_names=min_names)
+        ic_columns[name] = ic
+        mean = float(pd.to_numeric(ic, errors="coerce").mean())
+        directions[name] = 1 if not np.isfinite(mean) or mean >= 0 else -1
+    value_estimate = factor_value_correlation(
+        factors, dates, directions, min_names=min_names, min_dates=min_pair_dates
+    )
+    ic_frame = pd.DataFrame(ic_columns).reindex(index=pd.Index(dates))
+    ic_estimate = ic_correlation(ic_frame, directions, shrinkage=ic_shrinkage)
+    cluster_rows = connected_correlation_clusters(
+        value_estimate.values, value_estimate.verified, threshold=hard_threshold
+    )
+    clusters = (
+        cluster_rows.groupby("cluster")["factor"]
+        .apply(lambda names: " | ".join(sorted(names)))
+        .reset_index()
+        .rename(columns={"factor": "members"})
+    )
+    clusters["cluster_size"] = clusters["members"].str.split(" | ", regex=False).apply(len)
+    return {
+        "value_matrix": value_estimate.values.round(4),
+        "ic_matrix": ic_estimate.values.round(4),
+        "clusters": clusters,
+    }

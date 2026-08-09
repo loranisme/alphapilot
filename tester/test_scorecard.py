@@ -121,3 +121,23 @@ def test_group_backtest_is_monotone_for_a_monotone_signal():
         assert col in table.columns
     # top group out-returns bottom group
     assert good.loc["group_5", "annualized_return"] > good.loc["group_1", "annualized_return"]
+
+
+# append to tester/test_scorecard.py
+from research_platform.scorecard import build_correlation_views
+
+
+def test_correlation_views_return_square_matrix_and_clusters():
+    dates = pd.bdate_range("2021-01-01", periods=120)
+    tickers = [f"T{i}" for i in range(40)]
+    rng = np.random.default_rng(2)
+    a = pd.DataFrame(rng.standard_normal((len(dates), len(tickers))), index=dates, columns=tickers)
+    b = a + rng.standard_normal((len(dates), len(tickers))) * 0.01  # near-duplicate of a
+    c = pd.DataFrame(rng.standard_normal((len(dates), len(tickers))), index=dates, columns=tickers)
+    forward = pd.DataFrame(rng.standard_normal((len(dates), len(tickers))) * 0.01, index=dates, columns=tickers)
+    views = build_correlation_views({"a": a, "b": b, "c": c}, forward, dates, min_names=10, min_pair_dates=20)
+    value_matrix = views["value_matrix"]
+    assert list(value_matrix.index) == list(value_matrix.columns)  # square
+    assert value_matrix.loc["a", "a"] == pytest.approx(1.0, abs=1e-9)
+    assert value_matrix.loc["a", "b"] > 0.9  # near-duplicates highly correlated
+    assert set(views["clusters"].columns) >= {"cluster", "members"}
