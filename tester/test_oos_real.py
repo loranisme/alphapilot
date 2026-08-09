@@ -23,3 +23,16 @@ def test_real_oos_pipeline_has_no_leakage_and_reproduces(tmp_path):
     assert first.metadata["data_fingerprint"] == second.metadata["data_fingerprint"]
     assert hash_outputs(tmp_path / "first") == hash_outputs(tmp_path / "second")
     assert (tmp_path / "first" / "fold_metrics.csv").exists()
+
+
+@pytest.mark.skipif(not HAS_REAL_DATA, reason="real factor universe is unavailable")
+def test_real_oos_emits_readable_scorecard(tmp_path):
+    result = run_real_oos_validation(output_dir=tmp_path, allow_network=False)
+    scorecard = tmp_path / "scorecard.md"
+    assert scorecard.exists()
+    text = scorecard.read_text(encoding="utf-8")
+    assert "因子验证记分卡" in text
+    assert "相关性矩阵" in text
+    assert (tmp_path / "factor_scorecard.csv").exists()
+    assert (tmp_path / "value_matrix.csv").exists()
+    assert (tmp_path / "group_summary.csv").exists()

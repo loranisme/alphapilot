@@ -28,6 +28,7 @@ _TITLES = {
     "factor_scorecard": "板块① 因子层",
     "portfolio_scorecard": "板块② 组合层",
     "group_backtest": "分组回测",
+    "group_summary": "分组回测 · 汇总(单调性/多空)",
     "value_matrix": "相关性矩阵 · 因子值",
     "ic_matrix": "相关性矩阵 · IC",
     "clusters": "相关性聚类 (@0.75)",
