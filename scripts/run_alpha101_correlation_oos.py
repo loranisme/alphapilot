@@ -299,7 +299,6 @@ def run_alpha101_correlation_validation(
         "usage": "personal research",
         "rights_notice": "Appendix A formulae and code rights are retained by their owner.",
         "classification_taxonomy": "current GICS snapshot",
-        "classification_point_in_time": False,
         "price_adjustment_semantics": "source prices used as stored",
         "formula_volume_semantics": "reported shares multiplied by OHLC4 price; adv20 is its rolling mean",
         "factor_winsorization": "disabled to avoid full-sample leakage",

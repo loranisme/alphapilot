@@ -170,6 +170,33 @@ def hash_outputs(output_dir: str | Path) -> str:
     return digest.hexdigest()
 
 
+def _check_universe_feasibility(
+    factors: dict[str, pd.DataFrame], config: OOSConfig, universe
+) -> None:
+    """Fail early with an actionable message when a (size-bucketed) universe is
+    too thin for the configured position caps.
+
+    The long book holds about ``entry_quantile`` of the cross-section, and equal
+    active weights capped at ``name_weight_cap`` can only reach full gross when
+    that book has at least ``1 / (entry_quantile * name_weight_cap)`` names. A
+    small universe under caps tuned for the full index would otherwise raise a
+    cryptic 'name cap is infeasible' deep inside portfolio construction.
+    """
+    if not factors:
+        return
+    sample = next(iter(factors.values()))
+    effective = int(sample.notna().sum(axis=1).median()) if len(sample) else 0
+    required = int(np.ceil(1.0 / (config.entry_quantile * config.name_weight_cap)))
+    if effective < required:
+        label = "sp500_all" if universe is None else str(universe)
+        raise ValueError(
+            f"universe {label!r} has ~{effective} names per date but this config "
+            f"needs >= {required} (entry_quantile={config.entry_quantile}, "
+            f"name_weight_cap={config.name_weight_cap}); raise name_weight_cap or "
+            f"entry_quantile, or choose a larger universe."
+        )
+
+
 def run_real_oos_validation(
     output_dir: str | Path,
     config_path: str | Path = PROJECT_ROOT / "configs" / "oos_alpha_improvement.yaml",
@@ -181,6 +208,7 @@ def run_real_oos_validation(
     factors, close, industry, fingerprint, pit_meta, adv_dollar = _load_real_inputs(
         project_root, allow_network=allow_network, universe=universe
     )
+    _check_universe_feasibility(factors, config, universe)
     experiment = run_oos_experiment(factors, close, industry, config=config)
     raw_daily = build_buffered_targets(
         experiment.scores["raw"],

@@ -200,7 +200,7 @@ def liquidity_trade_costs(
 ) -> pd.DataFrame:
     """Per-name, per-date trading cost as a fraction of portfolio NAV."""
     dw = weight_changes.abs()
-    participation = participation_rates(dw, adv_dollar, aum)
+    participation = participation_rates(weight_changes, adv_dollar, aum)
     capped = participation.clip(upper=model.participation_cap)
     spread = (model.half_spread_bps / 10_000.0) * dw
     impact = (model.impact_coef_bps / 10_000.0) * capped.pow(model.impact_exponent) * dw

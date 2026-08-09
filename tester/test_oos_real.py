@@ -36,3 +36,15 @@ def test_real_oos_emits_readable_scorecard(tmp_path):
     assert (tmp_path / "factor_scorecard.csv").exists()
     assert (tmp_path / "value_matrix.csv").exists()
     assert (tmp_path / "group_summary.csv").exists()
+
+
+@pytest.mark.skipif(not HAS_REAL_DATA, reason="real factor universe is unavailable")
+def test_real_oos_small_universe_fails_with_actionable_message(tmp_path):
+    # Exercises the wired size-bucket universe axis end-to-end: the smaller half
+    # of the index is too thin for the default position caps, so the runner must
+    # fail early with a message naming the knob to adjust (not a cryptic error
+    # deep in portfolio construction).
+    with pytest.raises(ValueError, match="name_weight_cap"):
+        run_real_oos_validation(
+            output_dir=tmp_path, allow_network=False, universe="smaller_half"
+        )
