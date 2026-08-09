@@ -1,4 +1,3 @@
-# research_platform/scorecard.py
 """Human-readable factor-validation scorecard (pure summarization, no verdicts).
 
 Rolls the platform's already-computed evidence — per-date IC, quantile backtests,
@@ -10,8 +9,29 @@ computes and presents metrics so the researcher can judge.
 
 from __future__ import annotations
 
+from pathlib import Path
+
 import numpy as np
 import pandas as pd
+
+from .correlation import (
+    connected_correlation_clusters,
+    factor_rank_turnover,
+    factor_value_correlation,
+    ic_correlation,
+)
+from .evaluation import evaluate_ic, group_stratification_table, run_quantile_backtest
+from .regime import calendar_year_labels, group_daily_ic, ic_stability_summary
+from .reporting import _atomic_text, industry_exposure_table
+
+_TITLES = {
+    "factor_scorecard": "板块① 因子层",
+    "portfolio_scorecard": "板块② 组合层",
+    "group_backtest": "分组回测",
+    "value_matrix": "相关性矩阵 · 因子值",
+    "ic_matrix": "相关性矩阵 · IC",
+    "clusters": "相关性聚类 (@0.75)",
+}
 
 
 def win_rate(net_returns: pd.Series) -> float:
@@ -38,11 +58,6 @@ def calmar_ratio(annualized_return: float, max_drawdown: float) -> float:
     if not max_drawdown or not np.isfinite(max_drawdown) or max_drawdown == 0:
         return np.nan
     return float(annualized_return) / abs(float(max_drawdown))
-
-
-# append to research_platform/scorecard.py
-from .correlation import factor_rank_turnover
-from .evaluation import evaluate_ic, group_stratification_table
 
 
 def _sign_direction(mean_ic: float) -> int:
@@ -105,11 +120,6 @@ def build_factor_scorecard(
     return pd.DataFrame(rows)
 
 
-# append to research_platform/scorecard.py
-from .regime import calendar_year_labels, group_daily_ic, ic_stability_summary
-from .reporting import industry_exposure_table
-
-
 def build_portfolio_scorecard(
     experiment,
     forward_returns: pd.DataFrame,
@@ -148,10 +158,6 @@ def build_portfolio_scorecard(
             }
         )
     return pd.DataFrame(rows)
-
-
-# append to research_platform/scorecard.py
-from .evaluation import run_quantile_backtest
 
 
 def build_group_backtest(
@@ -207,14 +213,6 @@ def build_group_backtest(
     return pd.DataFrame(rows)
 
 
-# append to research_platform/scorecard.py
-from .correlation import (
-    connected_correlation_clusters,
-    factor_value_correlation,
-    ic_correlation,
-)
-
-
 def build_correlation_views(
     factors: dict[str, pd.DataFrame],
     forward_returns: pd.DataFrame,
@@ -249,21 +247,6 @@ def build_correlation_views(
         "ic_matrix": ic_estimate.values,
         "clusters": clusters,
     }
-
-
-# append to research_platform/scorecard.py
-from pathlib import Path
-
-from .reporting import _atomic_text
-
-_TITLES = {
-    "factor_scorecard": "板块① 因子层",
-    "portfolio_scorecard": "板块② 组合层",
-    "group_backtest": "分组回测",
-    "value_matrix": "相关性矩阵 · 因子值",
-    "ic_matrix": "相关性矩阵 · IC",
-    "clusters": "相关性聚类 (@0.75)",
-}
 
 
 def render_scorecard_markdown(
