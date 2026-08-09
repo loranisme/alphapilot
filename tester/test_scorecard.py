@@ -1,6 +1,8 @@
 # tester/test_scorecard.py
 from __future__ import annotations
 
+import re
+
 import numpy as np
 import pandas as pd
 import pytest
@@ -141,3 +143,30 @@ def test_correlation_views_return_square_matrix_and_clusters():
     assert value_matrix.loc["a", "a"] == pytest.approx(1.0, abs=1e-9)
     assert value_matrix.loc["a", "b"] > 0.9  # near-duplicates highly correlated
     assert set(views["clusters"].columns) >= {"cluster", "members"}
+
+
+# append to tester/test_scorecard.py
+from research_platform.scorecard import render_scorecard_markdown, write_scorecard
+
+
+def test_render_and_write_scorecard(tmp_path):
+    factor_tbl = pd.DataFrame({"factor": ["x"], "rank_ic": [0.0312345], "n_obs": [100]})
+    corr = pd.DataFrame([[1.0, 0.6123], [0.6123, 1.0]], index=["x", "y"], columns=["x", "y"])
+    tables = {
+        "factor_scorecard": factor_tbl,
+        "value_matrix": corr,
+    }
+    markdown = render_scorecard_markdown(tables, matrix_tables=("value_matrix",))
+    assert "no verdict" in markdown.lower() or "无判决" in markdown
+    assert "0.0312" in markdown  # rounded
+    # matrix keeps row index label; tabulate pads single-char index cells to
+    # the separator's minimum width (":---" needs >= 3 dashes), so the exact
+    # rendering is "| x  |" rather than "| x |" -- match loosely on whitespace.
+    assert re.search(r"\|\s*x\s*\|", markdown)
+    paths = write_scorecard(tables, markdown, tmp_path)
+    assert (tmp_path / "scorecard.md").exists()
+    assert (tmp_path / "factor_scorecard.csv").exists()
+    assert (tmp_path / "value_matrix.csv").exists()
+    # deterministic: same inputs -> identical bytes
+    md2 = render_scorecard_markdown(tables, matrix_tables=("value_matrix",))
+    assert md2 == markdown

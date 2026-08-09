@@ -238,3 +238,65 @@ def build_correlation_views(
         "ic_matrix": ic_estimate.values.round(4),
         "clusters": clusters,
     }
+
+
+# append to research_platform/scorecard.py
+from pathlib import Path
+
+from .reporting import _atomic_text
+
+_TITLES = {
+    "factor_scorecard": "板块① 因子层",
+    "portfolio_scorecard": "板块② 组合层",
+    "group_backtest": "分组回测",
+    "value_matrix": "相关性矩阵 · 因子值",
+    "ic_matrix": "相关性矩阵 · IC",
+    "clusters": "相关性聚类 (@0.75)",
+}
+
+
+def render_scorecard_markdown(
+    tables: dict[str, pd.DataFrame],
+    matrix_tables: tuple[str, ...] = ("value_matrix", "ic_matrix"),
+    round_to: int = 4,
+) -> str:
+    """Render tables as readable markdown; matrices keep their row index."""
+    lines = [
+        "# 因子验证记分卡",
+        "",
+        "> 纯指标汇总，**无判决 (no verdict)**；阈值判断由使用者依据下列指标自行下。",
+        "",
+    ]
+    for name, table in tables.items():
+        title = _TITLES.get(name, name)
+        lines.extend([f"## {title}", ""])
+        if table is None or table.empty:
+            lines.extend(["_无数据_", ""])
+            continue
+        keep_index = name in matrix_tables
+        rounded = table.round(round_to)
+        lines.append(rounded.to_markdown(index=keep_index))
+        lines.append("")
+    return "\n".join(lines) + "\n"
+
+
+def write_scorecard(
+    tables: dict[str, pd.DataFrame],
+    markdown: str,
+    output_dir: str | Path,
+    matrix_tables: tuple[str, ...] = ("value_matrix", "ic_matrix"),
+) -> list[Path]:
+    """Write scorecard.md (primary) then a CSV copy of each table (deterministic)."""
+    output = Path(output_dir)
+    output.mkdir(parents=True, exist_ok=True)
+    report_path = output / "scorecard.md"
+    _atomic_text(report_path, markdown)
+    paths = [report_path]
+    for name in sorted(tables):
+        table = tables[name]
+        if table is None:
+            continue
+        csv_path = output / f"{name}.csv"
+        _atomic_text(csv_path, table.to_csv(index=name in matrix_tables))
+        paths.append(csv_path)
+    return paths
