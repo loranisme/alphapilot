@@ -19,7 +19,8 @@ def _diverging(value: float) -> str:
     if v >= 0:
         r, g, b = 255 - 155*v, 255 - 90*v, 255 - 40*v
     else:
-        r, g, b = 255 + 40*v, 255 + 90*v, 255 - 40*v
+        # mirror of the positive branch so -1 is red/warm-dominant (r high, b low)
+        r, g, b = 255 + 40*v, 255 + 90*v, 255 + 155*v
     clamp = lambda c: max(0, min(255, int(c)))
     return f"rgb({clamp(r)},{clamp(g)},{clamp(b)})"
 

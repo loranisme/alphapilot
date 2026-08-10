@@ -1,7 +1,19 @@
 from __future__ import annotations
 import re
 import pandas as pd
-from research_platform.scorecard_html import render_scorecard_html
+from research_platform.scorecard_html import render_scorecard_html, _diverging
+
+
+def _rgb(s):
+    return [int(x) for x in re.match(r"rgb\((\d+),(\d+),(\d+)\)", s).groups()]
+
+
+def test_diverging_scale_distinguishes_sign():
+    r_pos, g_pos, b_pos = _rgb(_diverging(1.0))   # positive -> blue-dominant
+    r_neg, g_neg, b_neg = _rgb(_diverging(-1.0))  # negative -> red/warm-dominant
+    assert b_pos > r_pos, "positive correlation should be blue-dominant"
+    assert r_neg > b_neg, "negative correlation should be red-dominant"
+    assert _diverging(0.0) == "rgb(255,255,255)"  # zero -> white
 
 def _inputs():
     factor_tbl = pd.DataFrame({
