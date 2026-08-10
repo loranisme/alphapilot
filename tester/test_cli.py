@@ -59,3 +59,15 @@ def test_cli_ledger_record_then_summarize(tmp_path):
     payload = json.loads(summarize.stdout)
     assert payload["n_experiments"] == 2
     assert payload["n_pass_program"] == 1  # only phase_b survives across the program
+
+
+def test_validate_factor_cli_parses():
+    from research_platform.cli import build_parser
+    # formulas often start with '-' (reversal factors); argparse needs the
+    # --formula=... form for a leading-dash value, which is the documented usage.
+    args = build_parser().parse_args(
+        ["validate-factor", "--formula=-(close/delay(close,5)-1)", "--name", "myrev"]
+    )
+    assert args.command == "validate-factor"
+    assert args.formula == "-(close/delay(close,5)-1)"
+    assert args.name == "myrev"

@@ -41,6 +41,16 @@ def build_parser() -> argparse.ArgumentParser:
     record.add_argument("--n-hypotheses", type=int, required=True)
     record.add_argument("--family", default="default")
     record.add_argument("--passed", action="store_true", help="passed the local gate")
+
+    vf = commands.add_parser(
+        "validate-factor", help="validate one DSL factor formula end-to-end"
+    )
+    vf.add_argument(
+        "--formula", required=True,
+        help="a DSL factor formula string; for formulas starting with '-' use --formula=...",
+    )
+    vf.add_argument("--name", default="candidate")
+    vf.add_argument("--output-dir", default="outputs/factor_validation")
     return parser
 
 
@@ -76,6 +86,15 @@ def main(argv: list[str] | None = None) -> int:
             ),
         )
         print(json.dumps({"recorded": args.name, "ledger": args.ledger}))
+        return 0
+    if args.command == "validate-factor":
+        from scripts.validate_factor import validate_factor
+
+        res = validate_factor(args.formula, name=args.name, output_dir=args.output_dir)
+        print(json.dumps(
+            {"slug": res.slug, "summary": res.summary, "output_dir": str(res.output_dir)},
+            ensure_ascii=False,
+        ))
         return 0
     result_dir = Path(args.result_dir)
     required = {
