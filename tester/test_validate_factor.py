@@ -50,8 +50,23 @@ def test_auto_summary_picks_best_horizon():
     grid = pd.DataFrame({"factor":["candidate"]*3, "horizon":[1,5,10],
                          "ic_bar":[0.005,0.03,0.01], "z_stat":[0.5,3.1,1.0],
                          "p_global":[1.0,0.02,0.9], "verdict":["REJECT","REJECT","REJECT"]})
-    s = auto_summary("candidate", grid, best_sharpe=-0.4, monotonicity=0.8, capacity_aum=4e7)
+    s = auto_summary("candidate", grid, gross_sharpe=0.2, net_sharpe=-0.4, monotonicity=0.8, capacity_aum=4e7)
     assert "h=5" in s and "0.03" in s
+    assert "扣成本前" in s and "0.20" in s and "-0.40" in s
+
+
+def test_factor_portfolio_row_fits_direction_and_reports_gross_net():
+    from scripts.validate_factor import _factor_portfolio_row
+    dates = pd.bdate_range("2021-01-01", periods=80)
+    cols = [f"T{i}" for i in range(120)]  # enough names for the 0.05 name cap to be feasible
+    rng = np.random.default_rng(11)
+    fwd = pd.DataFrame(rng.standard_normal((len(dates), len(cols))), index=dates, columns=cols)
+    score = -fwd + rng.standard_normal((len(dates), len(cols))) * 0.1  # score predicts fwd negatively -> IC<0
+    row, _ = _factor_portfolio_row("x", score, fwd, fwd, primary_horizon=5, min_names=10)
+    for k in ["direction", "gross_sharpe", "net_sharpe", "cost_drag"]:
+        assert k in row
+    assert row["direction"] == -1              # negative IC -> traded flipped
+    assert row["cost_drag"] >= -1e-9           # cost only ever reduces return
 
 def test_validate_factor_rejects_name_collision_with_benchmark():
     from scripts.validate_factor import validate_factor
@@ -72,5 +87,10 @@ def test_validate_factor_end_to_end(tmp_path):
     assert (tmp_path / "ledger.jsonl").exists()
     # custom --name must produce a populated summary, not the empty-grid fallback
     assert "无有效 IC 网格" not in res.summary and "h=" in res.summary
+    # gross/net cost story is surfaced in the summary and portfolio table
+    assert "扣成本前" in res.summary and "扣成本后" in res.summary
+    port = res.tables["portfolio"]
+    for col in ["direction", "gross_sharpe", "net_sharpe", "cost_drag"]:
+        assert col in port.columns
     html = (res.output_dir / "scorecard.html").read_text()
     assert "http://" not in html and "https://" not in html  # self-contained

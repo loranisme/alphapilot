@@ -71,6 +71,7 @@ formula(+name) [+ benchmarks + config]
 
 - **变体**：`raw`（标准化）+ `neutral`（行业中性，复用 `build_industry_score_variants` 的 strict/`neutralize_panel`）。因子层与显著性对两变体各出一份；组合/容量默认用 `raw`（可配置）。
 - **组合表**：新增一个编排内的小装配 `build_factor_portfolio_table(factor_panels, close, asset_returns, industry, adv_dollar, config)`，逐因子构缓冲组合 + 模拟，复用 `scorecard.sortino_ratio/calmar_ratio/win_rate` 拼指标（`build_portfolio_scorecard` 绑 OOS experiment 形状，这里不套用它）。
+- **组合表口径修订（gross/net + 方向拟合）**：为把"信号质量"与"可交易性"、"符号反了"与"没 alpha"分开，逐因子组合改为：① 按该因子 IC 符号**拟合方向**再交易（`direction = sign(mean IC)`，score×direction 后建仓），列出 `direction`；② 同时用 `cost_bps=0` 与 `cost_bps=10` 各模拟一次，报 `gross_sharpe` / `net_sharpe` / `cost_drag`(=gross 年化 − net 年化)。自动摘要同时给"方向拟合后 扣成本前/后 Sharpe"。容量沿用方向拟合后的目标权重。这样 reversal 这类"gross 正、net 负"的因子一眼看出是被换手成本吃掉，而非无信号；反号因子（如 alpha101_101）不再因符号被双重惩罚。
 - **slug** = 公式串的 sha256 前 12 位（确定性、无时间戳）；输出目录 `outputs/factor_validation/<slug>/`。
 
 ## 7. 指标定义
