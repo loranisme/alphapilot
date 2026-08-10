@@ -52,17 +52,30 @@ def validate_ast(tree: ast.AST) -> None:
                 f"unknown name '{node.id}'. allowed inputs: {sorted(ALLOWED_INPUTS)}; "
                 f"allowed operators: {sorted(ALLOWED_OPERATORS)}"
             )
-        if isinstance(node, ast.Constant) and not isinstance(node.value, (int, float)):
+        if isinstance(node, ast.Constant) and (
+            not isinstance(node.value, (int, float)) or isinstance(node.value, bool)
+        ):
+            # bool is a subclass of int in Python; reject it so True/False can't
+            # slip past the "numeric constants only" rule.
             raise FormulaError(f"only numeric constants allowed, got {node.value!r}")
 
+_MAX_FORMULA_LEN = 2000
+
 def evaluate_formula(expr: str, panels: dict[str, pd.DataFrame]) -> pd.DataFrame:
+    # This is a boundary over user-supplied strings; every failure mode must
+    # surface as FormulaError, never a raw parser/eval exception.
+    if len(expr) > _MAX_FORMULA_LEN:
+        raise FormulaError(f"formula too long ({len(expr)} > {_MAX_FORMULA_LEN} chars)")
     try:
         tree = ast.parse(expr, mode="eval")
-    except SyntaxError as exc:
+    except (SyntaxError, ValueError, RecursionError, MemoryError) as exc:
         raise FormulaError(f"could not parse formula: {exc}") from exc
     validate_ast(tree)
     namespace = {**ALLOWED_OPERATORS, **{k: panels[k] for k in ALLOWED_INPUTS if k in panels}}
-    result = eval(compile(tree, "<formula>", "eval"), {"__builtins__": {}}, namespace)
+    try:
+        result = eval(compile(tree, "<formula>", "eval"), {"__builtins__": {}}, namespace)
+    except NameError as exc:
+        raise FormulaError(f"formula uses an input not provided by the caller: {exc}") from exc
     if not isinstance(result, pd.DataFrame):
         raise FormulaError("formula must evaluate to a panel (DataFrame), got a scalar/other")
     return _finite(result)

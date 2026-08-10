@@ -12,6 +12,19 @@ def _panels():
     mk = lambda: pd.DataFrame(rng.random((len(dates), len(cols))) + 1.0, index=dates, columns=cols)
     return {k: mk() for k in ALLOWED_INPUTS}
 
+def test_bool_constant_is_rejected():
+    with pytest.raises(FormulaError):
+        evaluate_formula("close + True", _panels())
+
+def test_missing_input_fails_cleanly_as_formula_error():
+    p = _panels(); p.pop("vwap")
+    with pytest.raises(FormulaError):
+        evaluate_formula("vwap + close", p)
+
+def test_overlong_formula_rejected_without_recursionerror():
+    with pytest.raises(FormulaError):
+        evaluate_formula("close" + "+close" * 5000, _panels())
+
 def test_evaluate_simple_reversal_returns_panel():
     p = _panels()
     out = evaluate_formula("-(close / delay(close,5) - 1)", p)
