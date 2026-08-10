@@ -17,7 +17,7 @@ from factor_section.alpha101 import _input_panels
 from research_platform.evaluation import evaluate_ic
 from research_platform.formula_dsl import FormulaError, evaluate_formula
 from research_platform.market_data import load_research_ohlcv
-from research_platform.preprocessing import standardize_panel
+from research_platform.preprocessing import neutralize_panel, standardize_panel
 from research_platform.regime import calendar_year_labels, group_daily_ic, ic_stability_summary
 from research_platform.registry import ExperimentRecord, append_record
 from research_platform.reporting import _atomic_text
@@ -28,6 +28,7 @@ from research_platform.scorecard import (
 from research_platform.scorecard_html import render_scorecard_html
 from research_platform.significance import evaluate_factor_grid
 from research_platform.portfolio import build_buffered_targets, capacity_curve, simulate_portfolio
+from scripts.run_research_platform_validation import load_pit_context
 
 DEFAULT_BENCHMARKS = {
     "alpha101_012": "sign(delta(volume,1)) * (-delta(close,1))",
@@ -72,7 +73,8 @@ def _factor_portfolio_row(name, score, close, asset_returns, primary_horizon, en
     }, buffered.targets
 
 def auto_summary(name, grid, best_sharpe, monotonicity, capacity_aum) -> str:
-    g = grid[grid["factor"] == name].sort_values(["p_global", "z_stat"], ascending=[True, False])
+    g = grid[grid["factor"] == name].assign(_abs_z=lambda d: d["z_stat"].abs())
+    g = g.sort_values(["p_global", "_abs_z"], ascending=[True, False])
     if g.empty:
         return "无有效 IC 网格。"
     best = g.iloc[0]
@@ -120,6 +122,8 @@ def validate_factor(formula: str, name: str = NEW_NAME, benchmarks: dict | None 
                     project_root: Path = PROJECT_ROOT, bundle=None, primary_horizon: int = 5,
                     min_names: int = 30) -> FactorValidationResult:
     benchmarks = DEFAULT_BENCHMARKS if benchmarks is None else benchmarks
+    if name in benchmarks:
+        raise ValueError(f"factor name {name!r} collides with a benchmark name; choose another --name")
     if bundle is None:
         bundle = _load_default_bundle(project_root)
     panels = build_panels(bundle)
@@ -128,12 +132,18 @@ def validate_factor(formula: str, name: str = NEW_NAME, benchmarks: dict | None 
 
     factor_panels = {name: evaluate_formula(formula, panels)}
     for bname, bformula in benchmarks.items():
-        if bname == name:
-            continue
         try:
             factor_panels[bname] = evaluate_formula(bformula, panels)
         except FormulaError as exc:
             warnings.warn(f"benchmark {bname} skipped: {exc}")
+
+    # Point-in-time universe: exclude names on dates before they joined the
+    # index so cross-sectional standardization never sees them (matches
+    # scripts.run_research_platform_validation.build_real_inputs's pattern).
+    industry, member_mask, pit_meta = load_pit_context(
+        project_root, close.index, close.columns, allow_network=False
+    )
+    factor_panels = {k: v.where(member_mask) for k, v in factor_panels.items()}
     std = {k: standardize_panel(v) for k, v in factor_panels.items()}
 
     forward = close.shift(-primary_horizon).div(close).sub(1.0)
@@ -142,6 +152,12 @@ def validate_factor(formula: str, name: str = NEW_NAME, benchmarks: dict | None 
     factor_tbl = build_factor_scorecard(std, forward, close.index, n_groups=5, min_names=min_names, horizon=primary_horizon)
     group_tbl = build_group_backtest(std, forward, n_groups=5, min_names=min_names, horizon=primary_horizon)
     corr = build_correlation_views(std, forward, close.index, min_names=min_names)
+
+    # Industry-neutral variant: factor layer + significance each get a raw and
+    # a neutral cut; portfolio/capacity stay on raw only (spec §6/§7).
+    neutral = {k: neutralize_panel(v, industry, min_names=min_names).values for k, v in std.items()}
+    factor_tbl_neutral = build_factor_scorecard(neutral, forward, close.index, n_groups=5, min_names=min_names, horizon=primary_horizon)
+    grid_neutral = evaluate_factor_grid(new_factor_ic_grid(neutral[name], close, min_names=min_names)).reset_index(drop=True)
 
     port_rows, targets_by_factor = [], {}
     for fname, score in std.items():
@@ -164,6 +180,7 @@ def validate_factor(formula: str, name: str = NEW_NAME, benchmarks: dict | None 
     summary = auto_summary(name, grid, best_sharpe, monotonicity, cap_aum)
 
     tables = {"factor_scorecard": factor_tbl, "significance_grid": grid.reset_index(drop=True),
+              "factor_scorecard_neutral": factor_tbl_neutral, "significance_grid_neutral": grid_neutral,
               "group_backtest": group_tbl, "portfolio": portfolio_tbl, "capacity": cap,
               "regime": regime_tbl, "value_matrix": corr["value_matrix"], "ic_matrix": corr["ic_matrix"],
               "clusters": corr["clusters"]}
@@ -174,10 +191,10 @@ def validate_factor(formula: str, name: str = NEW_NAME, benchmarks: dict | None 
     out = Path(output_dir) / slug
     write_scorecard(tables, markdown, out)
     _atomic_text(out / "scorecard.html", html)
-    _atomic_text(out / "formula.txt", f"name={name}\nformula={formula}\nbenchmarks={benchmarks}\nprimary_horizon={primary_horizon}\n")
+    _atomic_text(out / "formula.txt", f"name={name}\nformula={formula}\nbenchmarks={benchmarks}\nprimary_horizon={primary_horizon}\npit_meta={pit_meta}\n")
     best = grid.sort_values("p_global").iloc[0]
     append_record(Path(output_dir) / "ledger.jsonl", ExperimentRecord(
         name=name, family_wise_p=float(best["p_global"]), n_hypotheses=len(HORIZONS),
         passed_local=bool(best["p_global"] < 0.05), family="single_factor_dsl",
-        metadata={"formula": formula, "slug": slug, "best_horizon": int(best["horizon"]), "portfolio_sharpe": best_sharpe}))
+        metadata={"formula": formula, "slug": slug, "best_horizon": int(best["horizon"]), "portfolio_sharpe": best_sharpe, "pit_meta": pit_meta}))
     return FactorValidationResult(slug=slug, output_dir=out, summary=summary, tables=tables)

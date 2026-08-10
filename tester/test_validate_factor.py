@@ -43,6 +43,12 @@ def test_auto_summary_picks_best_horizon():
     s = auto_summary("candidate", grid, best_sharpe=-0.4, monotonicity=0.8, capacity_aum=4e7)
     assert "h=5" in s and "0.03" in s
 
+def test_validate_factor_rejects_name_collision_with_benchmark():
+    from scripts.validate_factor import validate_factor
+    bundle = _bundle()
+    with pytest.raises(ValueError):
+        validate_factor("-(close/delay(close,5)-1)", name="reversal_5d", bundle=bundle)
+
 import pathlib
 HAS_REAL = (pathlib.Path("data/reports/composite_alpha_latest.csv").exists())
 
