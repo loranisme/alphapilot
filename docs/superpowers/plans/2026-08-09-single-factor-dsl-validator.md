@@ -270,7 +270,7 @@ def _diverging(value: float) -> str:
     if v >= 0:
         r, g, b = 255 - 155*v, 255 - 90*v, 255 - 40*v
     else:
-        r, g, b = 255 + 40*v, 255 + 90*v, 255 - 40*v
+        r, g, b = 255 + 40*v, 255 + 90*v, 255 + 155*v  # -1 -> red/warm-dominant
     clamp = lambda c: max(0, min(255, int(c)))
     return f"rgb({clamp(r)},{clamp(g)},{clamp(b)})"
 
@@ -370,6 +370,11 @@ def render_scorecard_html(summary: str, factor_tbl: pd.DataFrame, corr: pd.DataF
 **Files:** Create `scripts/validate_factor.py`, `tester/test_validate_factor.py`.
 
 Responsibilities: default benchmark set; build OHLCV panels (incl. `vwap`); evaluate new + benchmark formulas; PIT mask + standardize; multi-horizon IC grid **for the new factor only** → `evaluate_factor_grid`; per-factor IC-by-horizon (all factors, for display); scorecard tables at primary horizon; per-factor portfolio + capacity; regime; auto-summary; write `scorecard.md`+`scorecard.html`+CSV+`formula.txt`; append ledger row.
+
+> **Post-review amendments (spec §5/§6/§7 — the code block below predates these; apply them):**
+> 1. **PIT masking (Critical).** Import `load_pit_context` from `scripts.run_research_platform_validation`. After building `factor_panels`, do `industry, member_mask, pit_meta = load_pit_context(project_root, close.index, close.columns, allow_network=False)`, then mask every factor panel before standardizing: `factor_panels = {k: v.where(member_mask) for k, v in factor_panels.items()}`. Fold `pit_meta` into `formula.txt` + ledger metadata. Mirrors `run_research_platform_validation.py`'s `raw.where(member_mask)` pattern; without it the validator has survivorship/look-ahead bias.
+> 2. **Neutral variant.** Import `neutralize_panel` from `research_platform.preprocessing`. Compute `neutral = {k: neutralize_panel(v, industry, min_names=min_names).values for k, v in std.items()}` and emit `factor_scorecard_neutral` + `significance_grid_neutral` (via `new_factor_ic_grid(neutral[name], ...)`) tables. Portfolio/capacity/HTML stay raw-only.
+> 3. **Name collision errors.** Before the benchmark loop: `if name in benchmarks: raise ValueError(...)`. Do NOT silently `continue`.
 
 - [ ] **Step 1: Write the failing test** (synthetic bundle, no network)
 
