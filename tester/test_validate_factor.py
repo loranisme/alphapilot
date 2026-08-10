@@ -36,6 +36,16 @@ def test_new_factor_ic_grid_family_is_new_factor_only():
     fams = {f for (f, h) in ic_panel.columns}
     assert fams == {"candidate"}  # benchmarks excluded from the family
 
+def test_new_factor_ic_grid_labels_with_custom_name():
+    # the grid's factor label must follow --name, else auto_summary's
+    # grid[factor==name] filter comes up empty for a custom-named factor.
+    panels = build_panels(_bundle())
+    from research_platform.formula_dsl import evaluate_formula
+    from research_platform.preprocessing import standardize_panel
+    factor = standardize_panel(evaluate_formula("-(close/delay(close,5)-1)", panels))
+    ic_panel = new_factor_ic_grid(factor, panels["close"], horizons=(1,5), min_names=10, name="rev5")
+    assert {f for (f, h) in ic_panel.columns} == {"rev5"}
+
 def test_auto_summary_picks_best_horizon():
     grid = pd.DataFrame({"factor":["candidate"]*3, "horizon":[1,5,10],
                          "ic_bar":[0.005,0.03,0.01], "z_stat":[0.5,3.1,1.0],
@@ -55,10 +65,12 @@ HAS_REAL = (pathlib.Path("data/reports/composite_alpha_latest.csv").exists())
 @pytest.mark.skipif(not HAS_REAL, reason="real data unavailable")
 def test_validate_factor_end_to_end(tmp_path):
     from scripts.validate_factor import validate_factor
-    res = validate_factor("-(close/delay(close,5)-1)", output_dir=tmp_path)
+    res = validate_factor("-(close/delay(close,5)-1)", name="rev5", output_dir=tmp_path)
     assert (res.output_dir / "scorecard.md").exists()
     assert (res.output_dir / "scorecard.html").exists()
     assert (res.output_dir / "formula.txt").exists()
     assert (tmp_path / "ledger.jsonl").exists()
+    # custom --name must produce a populated summary, not the empty-grid fallback
+    assert "无有效 IC 网格" not in res.summary and "h=" in res.summary
     html = (res.output_dir / "scorecard.html").read_text()
     assert "http://" not in html and "https://" not in html  # self-contained

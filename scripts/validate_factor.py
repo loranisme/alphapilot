@@ -45,11 +45,11 @@ def build_panels(bundle) -> dict[str, pd.DataFrame]:
     panels["vwap"] = (panels["open"] + panels["high"] + panels["low"] + panels["close"]) / 4.0
     return panels
 
-def new_factor_ic_grid(factor: pd.DataFrame, close: pd.DataFrame, horizons=HORIZONS, min_names=30) -> pd.DataFrame:
+def new_factor_ic_grid(factor: pd.DataFrame, close: pd.DataFrame, horizons=HORIZONS, min_names=30, name: str = NEW_NAME) -> pd.DataFrame:
     cols = {}
     for h in horizons:
         fwd = close.shift(-h).div(close).sub(1.0)
-        cols[(NEW_NAME, h)] = evaluate_ic(factor, fwd, min_names=min_names)
+        cols[(name, h)] = evaluate_ic(factor, fwd, min_names=min_names)
     frame = pd.DataFrame(cols)
     frame.columns = pd.MultiIndex.from_tuples(frame.columns, names=["factor", "horizon"])
     return frame.sort_index()
@@ -147,7 +147,7 @@ def validate_factor(formula: str, name: str = NEW_NAME, benchmarks: dict | None 
     std = {k: standardize_panel(v) for k, v in factor_panels.items()}
 
     forward = close.shift(-primary_horizon).div(close).sub(1.0)
-    grid = evaluate_factor_grid(new_factor_ic_grid(std[name], close, min_names=min_names))
+    grid = evaluate_factor_grid(new_factor_ic_grid(std[name], close, min_names=min_names, name=name))
     ic_h = ic_by_horizon(std, close, min_names=min_names)
     factor_tbl = build_factor_scorecard(std, forward, close.index, n_groups=5, min_names=min_names, horizon=primary_horizon)
     group_tbl = build_group_backtest(std, forward, n_groups=5, min_names=min_names, horizon=primary_horizon)
@@ -157,7 +157,7 @@ def validate_factor(formula: str, name: str = NEW_NAME, benchmarks: dict | None 
     # a neutral cut; portfolio/capacity stay on raw only (spec §6/§7).
     neutral = {k: neutralize_panel(v, industry, min_names=min_names).values for k, v in std.items()}
     factor_tbl_neutral = build_factor_scorecard(neutral, forward, close.index, n_groups=5, min_names=min_names, horizon=primary_horizon)
-    grid_neutral = evaluate_factor_grid(new_factor_ic_grid(neutral[name], close, min_names=min_names)).reset_index(drop=True)
+    grid_neutral = evaluate_factor_grid(new_factor_ic_grid(neutral[name], close, min_names=min_names, name=name)).reset_index(drop=True)
 
     port_rows, targets_by_factor = [], {}
     for fname, score in std.items():
