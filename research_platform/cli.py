@@ -22,6 +22,25 @@ def build_parser() -> argparse.ArgumentParser:
 
     report = commands.add_parser("generate-report", help="inspect an existing result directory")
     report.add_argument("--result-dir", required=True)
+
+    ledger = commands.add_parser(
+        "ledger", help="re-correct logged experiments across the whole program"
+    )
+    ledger.add_argument("--ledger", required=True, help="path to the JSONL ledger")
+    ledger.add_argument("--alpha", type=float, default=0.05)
+    ledger.add_argument(
+        "--method", choices=["bonferroni", "benjamini_hochberg"], default="bonferroni"
+    )
+
+    record = commands.add_parser(
+        "ledger-record", help="append one experiment result to the ledger"
+    )
+    record.add_argument("--ledger", required=True)
+    record.add_argument("--name", required=True)
+    record.add_argument("--p", type=float, required=True, help="family-wise global p-value")
+    record.add_argument("--n-hypotheses", type=int, required=True)
+    record.add_argument("--family", default="default")
+    record.add_argument("--passed", action="store_true", help="passed the local gate")
     return parser
 
 
@@ -35,6 +54,29 @@ def main(argv: list[str] | None = None) -> int:
         from scripts.run_research_platform_validation import run_validation
 
         return run_validation(Path(args.config), Path(args.output_dir))
+    if args.command == "ledger":
+        from .registry import load_records, summarize_ledger
+
+        summary = summarize_ledger(
+            load_records(args.ledger), alpha=args.alpha, method=args.method
+        )
+        print(json.dumps(summary, indent=2))
+        return 0
+    if args.command == "ledger-record":
+        from .registry import ExperimentRecord, append_record
+
+        append_record(
+            args.ledger,
+            ExperimentRecord(
+                name=args.name,
+                family_wise_p=args.p,
+                n_hypotheses=args.n_hypotheses,
+                passed_local=args.passed,
+                family=args.family,
+            ),
+        )
+        print(json.dumps({"recorded": args.name, "ledger": args.ledger}))
+        return 0
     result_dir = Path(args.result_dir)
     required = {
         "experiment_summary.json",

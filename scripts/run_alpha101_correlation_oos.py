@@ -36,6 +36,7 @@ from research_platform.market_data import ResearchOHLCVBundle, load_research_ohl
 from scripts.run_research_platform_validation import (
     _load_classification_snapshot,
     _load_factor_report,
+    load_pit_context,
 )
 
 
@@ -113,6 +114,27 @@ def _input_fingerprint(
     return digest.hexdigest()
 
 
+def _apply_pit_universe(
+    project_root: Path,
+    close: pd.DataFrame,
+    existing: dict[str, pd.DataFrame],
+    alpha101: dict[str, pd.DataFrame],
+    allow_network: bool,
+) -> tuple[pd.DataFrame, dict[str, pd.DataFrame], dict[str, pd.DataFrame], dict]:
+    """Return the PIT industry panel and member-masked factor pools.
+
+    Names are masked to ``NaN`` on dates before they joined the index so IC,
+    correlation-aware selection, scoring, and portfolio construction across all
+    A/B/C arms operate only on the point-in-time cross-section.
+    """
+    industry, member_mask, pit_meta = load_pit_context(
+        project_root, close.index, close.columns, allow_network=allow_network
+    )
+    existing = {name: panel.where(member_mask) for name, panel in existing.items()}
+    alpha101 = {name: panel.where(member_mask) for name, panel in alpha101.items()}
+    return industry, existing, alpha101, pit_meta
+
+
 def _load_real_inputs(
     project_root: Path,
     allow_network: bool,
@@ -153,11 +175,8 @@ def _load_real_inputs(
         end=dates.max(),
     )
     existing, alpha101, close = _build_factor_inputs(bundle, dates)
-    industry_row = classification.reindex(close.columns)
-    industry = pd.DataFrame(
-        np.tile(industry_row.to_numpy(), (len(dates), 1)),
-        index=dates,
-        columns=close.columns,
+    industry, existing, alpha101, pit_meta = _apply_pit_universe(
+        project_root, close, existing, alpha101, allow_network
     )
     metadata = {
         "data_fingerprint": _input_fingerprint(close, existing, alpha101, industry),
@@ -167,6 +186,7 @@ def _load_real_inputs(
         "missing_tickers": bundle.metadata["missing_tickers"],
         "date_start": dates.min(),
         "date_end": dates.max(),
+        **pit_meta,
     }
     payload = (existing, alpha101, close, industry, metadata)
     _INPUT_CACHE[cache_key] = payload
@@ -215,11 +235,8 @@ def _load_extended_inputs(
     dates = pd.DatetimeIndex(dates).sort_values()
 
     existing, alpha101, close = _build_factor_inputs(bundle, dates)
-    industry_row = classification.reindex(close.columns)
-    industry = pd.DataFrame(
-        np.tile(industry_row.to_numpy(), (len(dates), 1)),
-        index=dates,
-        columns=close.columns,
+    industry, existing, alpha101, pit_meta = _apply_pit_universe(
+        project_root, close, existing, alpha101, allow_network
     )
     metadata = {
         "data_fingerprint": _input_fingerprint(close, existing, alpha101, industry),
@@ -230,6 +247,7 @@ def _load_extended_inputs(
         "date_start": dates.min(),
         "date_end": dates.max(),
         "window": "extended_price_calendar",
+        **pit_meta,
     }
     return existing, alpha101, close, industry, metadata
 
@@ -281,7 +299,6 @@ def run_alpha101_correlation_validation(
         "usage": "personal research",
         "rights_notice": "Appendix A formulae and code rights are retained by their owner.",
         "classification_taxonomy": "current GICS snapshot",
-        "classification_point_in_time": False,
         "price_adjustment_semantics": "source prices used as stored",
         "formula_volume_semantics": "reported shares multiplied by OHLC4 price; adv20 is its rolling mean",
         "factor_winsorization": "disabled to avoid full-sample leakage",

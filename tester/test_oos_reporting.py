@@ -57,7 +57,10 @@ def test_report_builder_produces_fold_year_cost_and_exposure_tables():
         "year_metrics",
         "cost_stress",
         "industry_exposure",
+        "regime_stability",
+        "group_stratification",
     }
+    assert set(tables["regime_stability"]["path"]) == {"raw", "soft", "strict"}
     assert set(tables["fold_metrics"]["path"]) == {"raw", "soft", "strict"}
     assert set(tables["cost_stress"]["cost_bps"]) == {0.0, 10.0}
     assert "zero_label_overlap" in quality["gates"]
