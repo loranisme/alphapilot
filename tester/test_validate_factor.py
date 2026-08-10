@@ -68,6 +68,19 @@ def test_factor_portfolio_row_fits_direction_and_reports_gross_net():
     assert row["direction"] == -1              # negative IC -> traded flipped
     assert row["cost_drag"] >= -1e-9           # cost only ever reduces return
 
+
+def test_build_rebalance_tradeoff_columns_and_turnover_monotone():
+    from scripts.validate_factor import build_rebalance_tradeoff
+    dates = pd.bdate_range("2021-01-01", periods=90)
+    cols = [f"T{i}" for i in range(120)]
+    rng = np.random.default_rng(5)
+    ar = pd.DataFrame(rng.standard_normal((len(dates), len(cols))) * 0.01, index=dates, columns=cols)
+    score = pd.DataFrame(rng.standard_normal((len(dates), len(cols))), index=dates, columns=cols)
+    tbl = build_rebalance_tradeoff(score, direction=1, asset_returns=ar, rebalance_grid=(5, 21)).set_index("rebalance_days")
+    for c in ["avg_turnover", "gross_sharpe", "net_sharpe"]:
+        assert c in tbl.columns
+    assert tbl.loc[21, "avg_turnover"] <= tbl.loc[5, "avg_turnover"] + 1e-9  # slower -> less turnover
+
 def test_validate_factor_rejects_name_collision_with_benchmark():
     from scripts.validate_factor import validate_factor
     bundle = _bundle()
@@ -92,5 +105,7 @@ def test_validate_factor_end_to_end(tmp_path):
     port = res.tables["portfolio"]
     for col in ["direction", "gross_sharpe", "net_sharpe", "cost_drag"]:
         assert col in port.columns
+    assert "rebalance_tradeoff" in res.tables
     html = (res.output_dir / "scorecard.html").read_text()
     assert "http://" not in html and "https://" not in html  # self-contained
+    assert "调仓频率权衡" in html  # rebalance tradeoff chart rendered

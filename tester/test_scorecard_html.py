@@ -46,3 +46,14 @@ def test_html_is_self_contained_and_contains_names():
 def test_html_is_deterministic():
     args = _inputs()
     assert render_scorecard_html("s", *args) == render_scorecard_html("s", *args)
+
+
+def test_html_includes_rebalance_tradeoff_when_provided():
+    factor_tbl, corr, ic_by_h = _inputs()
+    rb = pd.DataFrame({"rebalance_days": [5, 10, 21], "avg_turnover": [0.5, 0.3, 0.1],
+                       "gross_sharpe": [0.2, 0.0, 0.05], "net_sharpe": [-0.6, -0.4, -0.2]})
+    html = render_scorecard_html("s", factor_tbl, corr, ic_by_h, rebalance_tradeoff=rb)
+    assert "调仓频率权衡" in html and "rb=" in html
+    assert "http://" not in html and "https://" not in html and "<script" not in html
+    # backward compatible: omitting the tradeoff still renders (no extra section)
+    assert "调仓频率权衡" not in render_scorecard_html("s", factor_tbl, corr, ic_by_h)

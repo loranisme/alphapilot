@@ -39,6 +39,7 @@ DEFAULT_BENCHMARKS = {
 NEW_NAME = "candidate"
 HORIZONS = (1, 5, 10, 21, 42)
 AUM_GRID = (1e6, 1e7, 1e8, 1e9)
+REBALANCE_GRID = (5, 10, 21, 42)
 
 def build_panels(bundle) -> dict[str, pd.DataFrame]:
     panels = _input_panels(bundle)
@@ -81,6 +82,21 @@ def _factor_portfolio_row(name, score, forward, asset_returns, primary_horizon, 
         "win_rate": win_rate(net.net_returns), "average_turnover": nm.get("average_turnover"),
         "total_cost": nm.get("total_cost"),
     }, buffered.targets
+
+def build_rebalance_tradeoff(score, direction, asset_returns, rebalance_grid=REBALANCE_GRID,
+                             entry_q=0.2, exit_q=0.3, name_cap=0.05, cost_bps=10.0) -> pd.DataFrame:
+    """Turnover vs gross/net Sharpe across rebalance intervals for one (direction-fitted)
+    factor — exposes the tradability sweet spot (where net crosses 0), or its absence."""
+    fitted = score * direction
+    ar = asset_returns.reindex(index=score.index, columns=score.columns)
+    rows = []
+    for rb in rebalance_grid:
+        buffered = build_buffered_targets(fitted, rebalance_interval=rb, entry_quantile=entry_q, exit_quantile=exit_q, max_weight=name_cap)
+        gross = simulate_portfolio(buffered.targets, ar, cost_bps=0.0)
+        net = simulate_portfolio(buffered.targets, ar, cost_bps=cost_bps)
+        rows.append({"rebalance_days": rb, "avg_turnover": net.metrics["average_turnover"],
+                     "gross_sharpe": gross.metrics["sharpe"], "net_sharpe": net.metrics["sharpe"]})
+    return pd.DataFrame(rows)
 
 def auto_summary(name, grid, gross_sharpe, net_sharpe, monotonicity, capacity_aum) -> str:
     g = grid[grid["factor"] == name].assign(_abs_z=lambda d: d["z_stat"].abs())
@@ -191,14 +207,16 @@ def validate_factor(formula: str, name: str = NEW_NAME, benchmarks: dict | None 
     monotonicity = float(factor_tbl.loc[factor_tbl["factor"] == name, "monotonicity"].iloc[0])
     cap_aum = float(cap.loc[cap["net_sharpe"] >= 0, "aum"].max()) if (cap["net_sharpe"] >= 0).any() else np.nan
     summary = auto_summary(name, grid, gross_sharpe, net_sharpe, monotonicity, cap_aum)
+    rebalance_tbl = build_rebalance_tradeoff(std[name], int(new_port["direction"]), asset_returns)
 
     tables = {"factor_scorecard": factor_tbl, "significance_grid": grid.reset_index(drop=True),
               "factor_scorecard_neutral": factor_tbl_neutral, "significance_grid_neutral": grid_neutral,
               "group_backtest": group_tbl, "portfolio": portfolio_tbl, "capacity": cap,
+              "rebalance_tradeoff": rebalance_tbl,
               "regime": regime_tbl, "value_matrix": corr["value_matrix"], "ic_matrix": corr["ic_matrix"],
               "clusters": corr["clusters"]}
     markdown = f"# 因子验证记分卡\n\n> {summary}\n\n" + render_scorecard_markdown(tables).split("\n", 1)[1]
-    html = render_scorecard_html(summary, factor_tbl, corr["value_matrix"], ic_h)
+    html = render_scorecard_html(summary, factor_tbl, corr["value_matrix"], ic_h, rebalance_tradeoff=rebalance_tbl)
 
     slug = sha256(formula.encode("utf-8")).hexdigest()[:12]
     out = Path(output_dir) / slug

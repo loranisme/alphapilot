@@ -69,7 +69,7 @@ def _heatmap(corr: pd.DataFrame, cell=54) -> str:
     parts.append("</svg>")
     return "".join(parts)
 
-def _line_chart(ic_by_h: pd.DataFrame, width=680, height=260) -> str:
+def _line_chart(ic_by_h: pd.DataFrame, width=680, height=260, x_label="h=") -> str:
     horizons = [float(h) for h in ic_by_h.index]
     if not horizons:
         return ""
@@ -82,7 +82,7 @@ def _line_chart(ic_by_h: pd.DataFrame, width=680, height=260) -> str:
     parts = [f'<svg width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img">']
     parts.append(f'<line x1="{left}" y1="{py(0):.1f}" x2="{right}" y2="{py(0):.1f}" stroke="#999" stroke-width="0.5"/>')
     for h in horizons:
-        parts.append(f'<text x="{xs[h]:.1f}" y="{height-12}" font-size="10" fill="#555" text-anchor="middle">h={int(h)}</text>')
+        parts.append(f'<text x="{xs[h]:.1f}" y="{height-12}" font-size="10" fill="#555" text-anchor="middle">{x_label}{int(h)}</text>')
     for ci, col in enumerate(ic_by_h.columns):
         color = _PALETTE[ci%len(_PALETTE)]
         pts = " ".join(f"{xs[h]:.1f},{py(float(ic_by_h.loc[h,col])):.1f}" for h in horizons if np.isfinite(ic_by_h.loc[h,col]))
@@ -93,7 +93,8 @@ def _line_chart(ic_by_h: pd.DataFrame, width=680, height=260) -> str:
     return "".join(parts)
 
 def render_scorecard_html(summary: str, factor_tbl: pd.DataFrame, corr: pd.DataFrame,
-                          ic_by_horizon: pd.DataFrame, title: str = "因子验证记分卡") -> str:
+                          ic_by_horizon: pd.DataFrame, rebalance_tradeoff: pd.DataFrame | None = None,
+                          title: str = "因子验证记分卡") -> str:
     css = ("body{font-family:-apple-system,Segoe UI,Roboto,sans-serif;background:#fafafa;color:#222;margin:24px}"
            "h1{font-size:20px}h2{font-size:15px;margin-top:28px;border-bottom:1px solid #ddd;padding-bottom:4px}"
            ".note{color:#666;font-size:13px}.summary{background:#f0f4f8;border-left:3px solid #2f6f9f;padding:10px 14px;font-size:14px}")
@@ -106,4 +107,11 @@ def render_scorecard_html(summary: str, factor_tbl: pd.DataFrame, corr: pd.DataF
         "<h2>相关性热力图</h2>", _heatmap(corr),
         "<h2>IC by horizon</h2>", _line_chart(ic_by_horizon),
     ]
+    if rebalance_tradeoff is not None and not rebalance_tradeoff.empty:
+        curve = rebalance_tradeoff.set_index("rebalance_days")[["gross_sharpe", "net_sharpe"]]
+        body += [
+            "<h2>调仓频率权衡 (被验因子 · 换手 vs gross/net Sharpe)</h2>",
+            '<p class="note">x 轴 rb = 调仓间隔(日)；net 线穿过 0 的地方就是可交易甜点，全程在 0 以下 = 成本吃光。</p>',
+            _line_chart(curve, x_label="rb="),
+        ]
     return "<!doctype html><meta charset='utf-8'>" + "".join(body) + "\n"
