@@ -13,6 +13,7 @@ dependencies = [
   "scipy>=1.11",
   "PyYAML>=6.0",
   "tabulate>=0.9",
+  "pydantic>=2",
 ]
 
 [project.scripts]
@@ -20,6 +21,7 @@ factor-research = "research_platform.cli:main"
 
 [project.optional-dependencies]
 test = ["pytest>=8.0"]
+llm = ["anthropic>=0.40"]
 
 [tool.setuptools.packages.find]
 include = ["research_platform*"]
