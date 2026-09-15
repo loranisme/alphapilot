@@ -35,10 +35,12 @@
 | DSL 公式求值与 AST 白名单校验 (`formula_dsl.py`) | ✅ 已实现 |
 | 单因子全流程验证 + Alpha101 基准对比 (`validate_factor.py`) | ✅ 已实现 |
 | 记分卡 md / 自包含 HTML / CSV / 台账 | ✅ 已实现 |
-| 能力卡 `describe_vocabulary()` | ⏳ 已设计，待实现 |
-| LLM 翻译器 `nl_translator.py` + `validate-idea` 子命令 | ⏳ 已设计，待实现 |
+| 能力卡 `describe_vocabulary()` | ✅ 已实现 |
+| LLM 翻译器 `nl_translator.py` + `validate-idea` 子命令 | ✅ 已实现 |
 
-翻译层当前**只有设计文档，尚无代码**。在它落地之前，工作流的入口是直接给公式的 `validate-factor`。
+翻译层需要 `pip install -e '.[llm]'` 并配置 `ANTHROPIC_API_KEY`（模型 `claude-opus-5`）。
+**没有配置时不会报错退出**：`validate-idea` 会打印能力卡和手工流程指引，你照样可以把卡片
+连同想法交给任意 LLM，拿到公式后走 `validate-factor`。
 
 ## 可用的数据字段与算子
 
@@ -65,7 +67,22 @@ python -m pip install -e '.[test]'
 python -m pytest -q -k 'not RealDataIntegration and not IntegrationRealData'
 ```
 
-验证一个因子公式（以 5 日反转为例；**以 `-` 开头的公式必须用 `--formula=` 等号形式**，否则 argparse 会当成参数名）：
+从一句话开始（需要 `[llm]` 依赖与 API key）：
+
+```bash
+python -m research_platform.cli validate-idea --idea "5 日反转，按 20 日均量加权"
+```
+
+它会翻译成公式、展示公式与解释、等你确认，然后跑完整验证；如果这个想法需要本仓没有的数据，
+它会列出缺什么并**停下不跑**，绝不用相近字段顶替。
+
+想先看能用哪些字段和算子：
+
+```bash
+python -m research_platform.cli vocabulary
+```
+
+也可以直接给公式（以 `-` 开头的公式必须用 `--formula=` 等号形式，否则 argparse 会当成参数名）：
 
 ```bash
 python -m research_platform.cli validate-factor --formula='-(close / delay(close,5) - 1)' --name rev5

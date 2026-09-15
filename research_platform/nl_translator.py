@@ -216,7 +216,10 @@ class ClaudeTranslator:
                 output_format=TranslationPayload,
             )
         except Exception as exc:   # noqa: BLE001 - re-raised after classification
-            raise classify_exception(exc) from exc
+            classified = classify_exception(exc)
+            if classified is exc:
+                raise
+            raise classified from exc
         return response.parsed_output
 
 
