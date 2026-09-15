@@ -68,3 +68,103 @@ def test_valid_nearest_formula_is_kept():
                        nearest_caveat="用价格反转近似情绪反转")
     result = translate_idea("新闻情绪反转", StubTranslator([payload]))
     assert result.nearest_formula == "-(close / delay(close,5) - 1)"
+
+
+class _FakeMessages:
+    def __init__(self, payload, recorder):
+        self._payload = payload
+        self._recorder = recorder
+
+    def parse(self, **kwargs):
+        self._recorder.append(kwargs)
+        payload = self._payload
+
+        class _Resp:
+            parsed_output = payload
+        return _Resp()
+
+
+class _FakeClient:
+    def __init__(self, payload, recorder):
+        self.messages = _FakeMessages(payload, recorder)
+
+
+def test_claude_translator_passes_card_and_model_and_returns_parsed_output():
+    # duck-typed fake client: this test must run with anthropic absent
+    from research_platform.nl_translator import ClaudeTranslator, MODEL
+    calls = []
+    translator = ClaudeTranslator(client=_FakeClient(_payload(), calls))
+    out = translator("5 日反转", "CARD-TEXT", feedback=None)
+    assert out.formula == "-(close / delay(close,5) - 1)"
+    assert translator.name == "claude"
+    assert translator.model == MODEL
+    sent = calls[0]
+    assert sent["model"] == MODEL
+    assert sent["output_format"] is TranslationPayload
+    assert "CARD-TEXT" in sent["system"]
+    assert "5 日反转" in sent["messages"][0]["content"]
+
+
+def test_claude_translator_forwards_feedback_into_the_user_message():
+    from research_platform.nl_translator import ClaudeTranslator
+    calls = []
+    translator = ClaudeTranslator(client=_FakeClient(_payload(), calls))
+    translator("想法", "CARD", feedback="公式非法：unknown name 'foo'")
+    assert "unknown name 'foo'" in calls[0]["messages"][0]["content"]
+
+
+def test_module_imports_without_anthropic_installed():
+    # the whole graceful-degradation story rests on this
+    import importlib
+    mod = importlib.import_module("research_platform.nl_translator")
+    assert hasattr(mod, "ClaudeTranslator")
+
+
+def test_resolve_translator_returns_none_when_anthropic_is_missing(monkeypatch):
+    import builtins
+    from research_platform import nl_translator
+    real_import = builtins.__import__
+
+    def fake_import(name, *args, **kwargs):
+        if name == "anthropic":
+            raise ImportError("no anthropic")
+        return real_import(name, *args, **kwargs)
+
+    monkeypatch.setattr(builtins, "__import__", fake_import)
+    assert nl_translator.resolve_translator() is None
+
+
+def test_resolve_translator_returns_none_when_client_construction_fails(monkeypatch):
+    import sys, types
+    from research_platform import nl_translator
+    fake = types.ModuleType("anthropic")
+
+    def boom(*a, **k):
+        raise RuntimeError("could not resolve authentication method")
+
+    fake.Anthropic = boom
+    monkeypatch.setitem(sys.modules, "anthropic", fake)
+    assert nl_translator.resolve_translator() is None
+
+
+def test_resolve_translator_returns_claude_when_configured(monkeypatch):
+    import sys, types
+    from research_platform import nl_translator
+    fake = types.ModuleType("anthropic")
+    fake.Anthropic = lambda *a, **k: object()
+    monkeypatch.setitem(sys.modules, "anthropic", fake)
+    translator = nl_translator.resolve_translator()
+    assert translator is not None and translator.name == "claude"
+
+
+def test_auth_error_is_classified_unavailable_and_ratelimit_runtime():
+    anthropic = pytest.importorskip("anthropic")
+    import httpx
+    from research_platform.nl_translator import TranslatorUnavailable, classify_exception
+    req = httpx.Request("POST", "https://api.anthropic.com")
+    auth = anthropic.AuthenticationError(
+        "bad key", response=httpx.Response(401, request=req), body=None)
+    assert isinstance(classify_exception(auth), TranslatorUnavailable)
+    rate = anthropic.RateLimitError(
+        "slow down", response=httpx.Response(429, request=req), body=None)
+    assert not isinstance(classify_exception(rate), TranslatorUnavailable)

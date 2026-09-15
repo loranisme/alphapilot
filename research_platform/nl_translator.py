@@ -143,3 +143,95 @@ def translate_idea(idea: str, translator: Translator,
         formula=None,
         explanation=(f"翻译器连续 {max_retries + 1} 次生成非法公式，最后一次的错误：{feedback}"),
     )
+
+
+MODEL = "claude-opus-5"
+MAX_TOKENS = 8000
+
+SYSTEM_TEMPLATE = """你是一个量化因子公式翻译器。把用户用自然语言描述的因子想法，翻译成本平台 DSL 的单个表达式。
+
+{vocabulary}
+
+## 铁律
+
+1. 只准使用上面 INPUTS 里列出的字段和 OPERATORS 里列出的算子。表里没有的名字一律不许出现。
+2. 如果这个想法需要表里没有的数据（分析师预期、期权隐含波动率、情绪分、新闻、
+   库存、现金流、基本面科目、指数或 ETF 价格等），必须 feasible=false，
+   并在 missing_data 里用业务语言列出缺的数据字段。
+3. **绝对禁止发明字段，也禁止用相近字段顶替。** 例如不许用 volume 冒充“机构成交额”，
+   不许用 returns 冒充“超额收益”。宁可拒绝，也不要悄悄换一个近似的东西。
+4. 如果要给 nearest_formula，它同样只能用表内元素，并且必须在 nearest_caveat 里
+   如实说明它和原想法差在哪里。
+5. explanation 用中文，说明你怎么翻的，或者为什么表达不了。
+"""
+
+
+class TranslatorUnavailable(RuntimeError):
+    """Translator cannot be used at all (missing package, missing or bad credentials)."""
+
+
+def classify_exception(exc: BaseException) -> BaseException:
+    """Map an SDK exception onto our two-bucket model, importing ``anthropic``
+    lazily so this works when the package is absent."""
+    try:
+        import anthropic
+    except ImportError:
+        return exc
+    unavailable = tuple(
+        t for t in (getattr(anthropic, "AuthenticationError", None),
+                    getattr(anthropic, "PermissionDeniedError", None))
+        if isinstance(t, type)
+    )
+    if unavailable and isinstance(exc, unavailable):
+        return TranslatorUnavailable(str(exc))
+    return exc
+
+
+class ClaudeTranslator:
+    """Translate via Claude, with the payload schema enforced by the SDK."""
+
+    name = "claude"
+    model = MODEL
+
+    def __init__(self, client=None):
+        self._client = client
+
+    def _get_client(self):
+        if self._client is None:
+            import anthropic
+            self._client = anthropic.Anthropic()
+        return self._client
+
+    def __call__(self, idea: str, vocabulary: str,
+                 feedback: str | None = None) -> TranslationPayload:
+        user = f"因子想法：{idea}"
+        if feedback:
+            user += f"\n\n上一次翻译的问题：{feedback}\n请修正后重新给出。"
+        try:
+            response = self._get_client().messages.parse(
+                model=MODEL,
+                max_tokens=MAX_TOKENS,
+                system=SYSTEM_TEMPLATE.format(vocabulary=vocabulary),
+                messages=[{"role": "user", "content": user}],
+                output_format=TranslationPayload,
+            )
+        except Exception as exc:   # noqa: BLE001 - re-raised after classification
+            raise classify_exception(exc) from exc
+        return response.parsed_output
+
+
+def resolve_translator() -> Translator | None:
+    """Return a usable translator, or ``None`` when one cannot be built.
+
+    ``None`` is a normal outcome, not an error: the CLI prints the capability
+    card instead, so the workflow stays usable without an API key.
+    """
+    try:
+        import anthropic
+    except ImportError:
+        return None
+    try:
+        client = anthropic.Anthropic()
+    except Exception:   # noqa: BLE001 - any credential-resolution failure
+        return None
+    return ClaudeTranslator(client=client)
