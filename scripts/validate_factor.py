@@ -147,7 +147,8 @@ class FactorValidationResult:
 def validate_factor(formula: str, name: str = NEW_NAME, benchmarks: dict | None = None,
                     output_dir: str | Path = PROJECT_ROOT / "outputs" / "factor_validation",
                     project_root: Path = PROJECT_ROOT, bundle=None, primary_horizon: int = 5,
-                    min_names: int = 30) -> FactorValidationResult:
+                    min_names: int = 30,
+                    provenance: dict | None = None) -> FactorValidationResult:
     benchmarks = DEFAULT_BENCHMARKS if benchmarks is None else benchmarks
     if name in benchmarks:
         raise ValueError(f"factor name {name!r} collides with a benchmark name; choose another --name")
@@ -222,10 +223,12 @@ def validate_factor(formula: str, name: str = NEW_NAME, benchmarks: dict | None 
     out = Path(output_dir) / slug
     write_scorecard(tables, markdown, out)
     _atomic_text(out / "scorecard.html", html)
-    _atomic_text(out / "formula.txt", f"name={name}\nformula={formula}\nbenchmarks={benchmarks}\nprimary_horizon={primary_horizon}\npit_meta={pit_meta}\n")
+    provenance_lines = "".join(f"{k}={v}\n" for k, v in (provenance or {}).items())
+    _atomic_text(out / "formula.txt", f"name={name}\nformula={formula}\nbenchmarks={benchmarks}\nprimary_horizon={primary_horizon}\npit_meta={pit_meta}\n" + provenance_lines)
     best = grid.sort_values("p_global").iloc[0]
     append_record(Path(output_dir) / "ledger.jsonl", ExperimentRecord(
         name=name, family_wise_p=float(best["p_global"]), n_hypotheses=len(HORIZONS),
         passed_local=bool(best["p_global"] < 0.05), family="single_factor_dsl",
-        metadata={"formula": formula, "slug": slug, "best_horizon": int(best["horizon"]), "gross_sharpe": gross_sharpe, "net_sharpe": net_sharpe, "pit_meta": pit_meta}))
+        metadata={"formula": formula, "slug": slug, "best_horizon": int(best["horizon"]), "gross_sharpe": gross_sharpe, "net_sharpe": net_sharpe, "pit_meta": pit_meta,
+                  **({"provenance": provenance} if provenance else {})}))
     return FactorValidationResult(slug=slug, output_dir=out, summary=summary, tables=tables)

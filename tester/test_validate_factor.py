@@ -109,3 +109,52 @@ def test_validate_factor_end_to_end(tmp_path):
     html = (res.output_dir / "scorecard.html").read_text()
     assert "http://" not in html and "https://" not in html  # self-contained
     assert "调仓频率权衡" in html  # rebalance tradeoff chart rendered
+
+
+def _pit_bundle(n=420, k=180):
+    """Synthetic bundle whose tickers are real index members.
+
+    validate_factor masks to the point-in-time universe, so tickers absent from
+    the S&P snapshot get dropped and the IC grid comes up empty. Long enough to
+    clear the 126-day warmup the momentum benchmark needs.
+    """
+    import pandas as pd, numpy as np
+    from research_platform.market_data import ResearchOHLCVBundle
+    snapshot = pd.read_csv("data/metadata/sp500_constituents.csv")
+    early = snapshot[pd.to_datetime(snapshot["Date added"], errors="coerce")
+                     < pd.Timestamp("2010-01-01")]
+    tickers = list(early["Symbol"].head(k))
+    dates = pd.bdate_range("2021-01-04", periods=n, tz="America/New_York")
+    rng = np.random.default_rng(3)
+    frames = {}
+    for t in tickers:
+        base = 100 + np.cumsum(rng.standard_normal(n))
+        frames[t] = pd.DataFrame({"Open": base, "High": base + 1, "Low": base - 1,
+                                  "Close": base,
+                                  "Volume": rng.integers(1e5, 1e6, n).astype(float)},
+                                 index=dates)
+    return ResearchOHLCVBundle(frames=frames, metadata={})
+
+
+def test_provenance_is_written_to_formula_txt_and_ledger(tmp_path):
+    from scripts.validate_factor import validate_factor
+    res = validate_factor("-(close/delay(close,5)-1)", name="rev5", bundle=_pit_bundle(),
+                          output_dir=tmp_path, min_names=10,
+                          provenance={"idea": "5 日反转", "translator": "stub"})
+    text = (res.output_dir / "formula.txt").read_text()
+    assert "idea=5 日反转" in text
+    assert "translator=stub" in text
+    import json
+    records = [json.loads(line) for line in (tmp_path / "ledger.jsonl").read_text().splitlines()]
+    assert records[-1]["metadata"]["provenance"]["idea"] == "5 日反转"
+
+
+def test_provenance_none_leaves_formula_txt_unchanged(tmp_path):
+    from scripts.validate_factor import validate_factor
+    res = validate_factor("-(close/delay(close,5)-1)", name="rev5", bundle=_pit_bundle(),
+                          output_dir=tmp_path, min_names=10)
+    text = (res.output_dir / "formula.txt").read_text()
+    assert "idea=" not in text
+    import json
+    records = [json.loads(line) for line in (tmp_path / "ledger.jsonl").read_text().splitlines()]
+    assert "provenance" not in records[-1]["metadata"]
