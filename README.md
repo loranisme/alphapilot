@@ -1,13 +1,13 @@
 # Factor Research Platform（still on construction）
 
-这是一个面向美股截面因子研究的单机平台，覆盖数据清洗、技术/基本面因子、IC 与分层评估、walk-forward、行业/规模中性化、可交易多空组合和结构化实验输出。
+这是一个面向美股截面因子研究的单机平台，覆盖数据清洗、Alpha101 因果算子与技术因子、IC 与分层评估、purged walk-forward、行业/规模中性化、可交易多空组合与容量分析，以及结构化实验输出。
 
 ## 当前能力
 
-- `data_section/`：OHLCV 采集、清洗和质量监控；
-- `factor_section/`：技术因子、基本面因子和合成信号；
-- `research_platform/`：稳定数据契约、PIT 元数据、预处理、中性化、评估、组合与报告；
-- `analysis_section/backtester.py`：现有研究入口及兼容接口；
+- `data_section/`：OHLCV 采集、清洗和质量监控（`data/raw` → `data/cleaned` 的数据生产链）；
+- `factor_section/`：Alpha101 因果算子、技术因子与合成信号（`composite_alpha_latest.csv` 的生产者）；
+- `research_platform/`：稳定数据契约、PIT 宇宙、预处理、中性化、评估、显著性、组合/容量与报告；
+- `scripts/validate_factor.py`：单因子 DSL 验证入口（公式进 → 记分卡 md/HTML + alpha101 基准对比 + 台账）；
 - `tester/`：轻量单元测试和显式标记的真实数据测试。
 
 ## 安装与验证
